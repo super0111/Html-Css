@@ -214,6 +214,7 @@
   color: #09b0ba;
 }
 .ontdek .item1 {
+  position: relative;
   background-color: #57bec9;
   text-align: center;
   margin: 20px 0;
@@ -222,6 +223,16 @@
   height: 150px;
   overflow: auto;
   /* clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0); */
+}
+.ontdek .item1 .piece {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 37px solid white;
+  border-bottom: 29px solid transparent;
 }
 .ontdek .item1 .title {
   margin-top: 5px;
