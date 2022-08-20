@@ -50,10 +50,34 @@
   font-size: 20px;
   color: #57bec9;
 }
+
+/*********** sections ************/
 .sections {
   background-color: #57bec9;
   margin-top: -200px;
-  padding: 35px 0 50px 0;
+}
+.sections .item {
+  padding: 38px 0px 30px 0;
+}
+.sections .active_item {
+  background-color: #379da8;
+  position: relative;
+}
+.sections .active_item .piece{
+  position: absolute;
+  left: 31%;
+  bottom: -25px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 30px solid #379da8;
+}
+.sections .divider {
+  border-left: 1px dotted white;
+  height: 220px;
+  /* width: 1px; */
+  margin-top: -10px;
 }
 .sections .icon_field {
   width: 50px;
@@ -80,17 +104,11 @@
   color: #ddf2f4;
   margin: -5px 0;
 }
-.sections .divider {
-  border-left: 1px dotted white;
-  height: 230px;
-  width: 1px;
-  margin-top: -5px;
-}
 
 /****************** NAVIGEREN **********************/
 
 .navigeren {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .navigeren .icon_field {
   width: 60px;
@@ -165,7 +183,7 @@
 
 /*********** ontdek *************/
 .ontdek {
-  padding: 60px 70px;
+  padding: 60px 0 70px 0;
   background-image: url("../images/background2.png");
   background-size: cover;
   background-position: center center;
@@ -173,11 +191,394 @@
 }
 .ontdek .title_field {
   margin: auto;
-
+  margin-bottom: 20px;
+}
+.ontdek .title_field1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .ontdek .title_field img {
   width: 200px;
+  margin-right: 30px;
 }
 .ontdek .title_field span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #245c5c;
+}
+.ontdek .title_field strong {
+  font-size: 19px;
+  font-weight: 700;
+  color: #09b0ba;
+}
+.ontdek .item1 {
+  background-color: #57bec9;
+  text-align: center;
+  margin: 20px 0;
+  width: 92%;
+  padding: 20px 40px;
+  height: 150px;
+  overflow: auto;
+  /* clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0); */
+}
+.ontdek .item1 .title {
+  margin-top: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.ontdek .item1 .text {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.ontdek .item2 {
+  background-color: #379da8;
+  text-align: center;
+  margin: 20px 0;
+  width: 92%;
+  padding: 20px 40px;
+  height: 150px;
+  overflow: auto;
+}
+.ontdek .item2 .title {
+  margin-top: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.ontdek .item2 li {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: -5px;
+}
+.ontdek .item3 {
+  background-color: #69d6e2;
+  text-align: center;
+  margin: 20px 0;
+  width: 92%;
+  padding: 20px 40px;
+  height: 150px;
+  overflow: auto;
+}
+.ontdek .item3 .title {
+  margin-top: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.ontdek .item4 {
+  background-color: #28b0bf;
+  text-align: center;
+  margin: 20px 0;
+  width: 92%;
+  padding: 20px 40px;
+  height: 150px;
+  overflow: auto;
+}
+.ontdek .item4 .title {
+  margin-top: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.ontdek .item4 .text {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.ontdek .item5 {
+  background-color: #379da8;
+  text-align: center;
+  margin: 20px 0;
+  width: 92%;
+  padding: 20px 40px;
+  height: 150px;
+  overflow: auto;
+}
+.ontdek .item5 .title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.ontdek .item5 .text {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.ontdek .item6 {
+  background-color: #1d3f47;
+  text-align: center;
+  margin: 20px 0;
+  width: 92%;
+  padding: 20px 40px;
+  height: 150px;
+  overflow: auto;
+}
+.ontdek .item6 .title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.ontdek .item6 .text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}
 
+/*********** producten **********/
+.producten {
+  padding: 60px 0 70px 0;
+  background-color: #57bec9;
+}
+.producten .title {
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 30px;
+}
+.producten .title strong {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+.producten img {
+  width: 15px;
+  height: 20px;
+}
+.producten .text {
+  width: 480px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: white;
+}
+/********** footer ***********/
+.footer_img img {
+  width: 100%;
+}
+
+.footer {
+  background-color: black;
+  padding: 10px 0;
+}
+.footer .text {
+  font-size: 14px;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .text img {
+  margin: 0 5px;
+}
+.footer .text li {
+  margin-left: 15px;
+}
+.footer .text .li_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 992px) {
+  .sections .active_item .piece{
+    position: absolute;
+    left: 30%;
+    bottom: -19px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 23px solid #379da8;
+  }
+  .header .title_field {
+    width: 440px;
+    margin-top: 40px;
+}
+  .header .title_field .title {
+    top: 30px;
+    left: 60px;
+    font-size: 27px;
+  }
+  .header .title_field .text {
+    position: absolute;
+    bottom: 55px;
+    left: 60px;
+    font-size: 19px;
+    color: #57bec9;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .text .li_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .sections .active_item .piece{
+    position: absolute;
+    left: 26%;
+    bottom: -19px;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-top: 30px solid #379da8;
+  }
+  .header .title_field {
+    width: 380px;
+  }
+  .header .title_field .title {
+    top: 30px;
+    left: 50px;
+    font-size: 22px;
+  }
+  .header .title_field .text {
+    bottom: 50px;
+    left: 50px;
+    font-size: 18px;
+  }
+  .producten .text {
+    width: 400px;
+  }
+  .navigeren .title {
+    margin: 25px 0px 0px 0px;
+  }
+  .toerisme img {
+    width: 70%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .navigeren .navigeren_img {
+    margin-top: 20px;
+  }
+  .ontdek .title_field1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .ontdek .title_field img {
+    width: 150px;
+    margin-right: 10px;
+  }
+  .ontdek .title_field span {
+    font-size: 17px;
+  }
+  .ontdek .title_field strong {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .ontdek .title_field img {
+    width: 80px;
+    margin-right: 5px;
+  }
+  .ontdek .title_field span {
+    font-size: 16px;
+  }
+  .ontdek .title_field strong {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    height: 650px;
+  }
+  .sections .active_item .piece{
+    position: absolute;
+    left: 37%;
+    bottom: -19px;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 30px solid #379da8;
+  }
+  .header .navbar button {
+    width: 150px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .header .title_field {
+    width: 330px;
+  }
+  .header .title_field .title {
+    top: 30px;
+    left: 50px;
+    font-size: 20px;
+  }
+  .header .title_field .text {
+    bottom: 30px;
+    left: 50px;
+    font-size: 16px;
+  }
+  .producten .text {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .header {
+    height: 610px;
+  }
+  .header .title_field {
+    width: 278px;
+  }
+  .header .title_field .title {
+    top: 15px;
+    left: 30px;
+    font-size: 18px;
+  }
+  .header .title_field .text {
+    bottom: 30px;
+    left: 30px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header .navbar img {
+    width: 160px;
+    height: 27px;
+  }
+  .header .navbar button {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .navigeren {
+    margin-top: 40px;
+  }
+  .ontdek {
+    padding: 40px 0 20px 0;
+  }
+  .producten {
+    padding: 40px 0 20px 0;
+  }
+}
+@media screen and (max-width: 410px) {
+  .ontdek .title_field img {
+    width: 70px;
+    margin-right: 5px;
+  }
+  .ontdek .title_field span {
+    font-size: 14px;
+  }
+  .ontdek .title_field strong {
+    font-size: 14px;
+  }
+  .sections .active_item .piece {
+    left: 30%;
+  }
 }
