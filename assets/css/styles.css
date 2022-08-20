@@ -1,0 +1,183 @@
+
+/********* Header **********/
+.header {
+  background-image: url("../images/Group\ 1.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+.header .background img {
+  width: 100%;
+}
+.header .navbar {
+  padding: 40px 0;
+}
+.header .navbar img {
+  width: 260px;
+  height: 40px;
+}
+.header .navbar button {
+  background-color: #379da8;
+  border: none;
+  outline: none;
+  width: 180px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+}
+.header .title_field {
+  width: 500px;
+  margin-top: 40px;
+}
+.header .title_field .img_field{
+  position: relative;
+}
+.header .title_field img {
+  width: 100%;
+}
+.header .title_field .title {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  font-size: 30px;
+  color: #1d3f47;
+}
+.header .title_field .text {
+  position: absolute;
+  bottom: 60px;
+  left: 70px;
+  font-size: 20px;
+  color: #57bec9;
+}
+.sections {
+  background-color: #57bec9;
+  margin-top: -200px;
+  padding: 35px 0 50px 0;
+}
+.sections .icon_field {
+  width: 50px;
+  height: 50px;
+}
+.sections .icon_field img {
+  width: 100%;
+}
+.sections .title {
+  color: #ddf2f4;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sections span {
+  font-size: 14px;
+  color: #baeceb;
+  width: 150px;
+  text-align: center;
+}
+.sections strong {
+  font-size: 15px;
+  color: #ddf2f4;
+  margin: -5px 0;
+}
+.sections .divider {
+  border-left: 1px dotted white;
+  height: 230px;
+  width: 1px;
+  margin-top: -5px;
+}
+
+/****************** NAVIGEREN **********************/
+
+.navigeren {
+  margin-top: 50px;
+}
+.navigeren .icon_field {
+  width: 60px;
+  height: 60px;
+}
+.navigeren .title {
+  margin: 25px 0px 60px 0px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 25px;
+  color: #1d3f47;
+}
+.navigeren .detial_field .title {
+  text-align: left;
+  text-size-adjust: auto;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #18b1c0;
+}
+.navigeren .detial_field .md_title {
+  text-size-adjust: auto;
+  font-size: 13px;
+  color:  #0cc5d2;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.navigeren .detial_field .text {
+  text-size-adjust: auto;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #0d7e89;
+  font-weight: 500;
+}
+.navigeren .navigeren_img {
+  /* width: 60%; */
+  width: 320px;
+}
+.navigeren .btn_field {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+.navigeren .btn_field button {
+  background-color:#379da8;
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+/************* toerisme ****************/
+.toerisme {
+  padding: 25px 0;
+  background-color: #1d3f47;
+}
+.toerisme .title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #39a7b3;
+  margin-bottom: 10px;
+}
+.toerisme .text {
+  font-size: 15px;
+  color: #d5e4e5;
+}
+.toerisme img {
+  width: 70%;
+}
+
+/*********** ontdek *************/
+.ontdek {
+  padding: 60px 70px;
+  background-image: url("../images/background2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.ontdek .title_field {
+  margin: auto;
+
+}
+.ontdek .title_field img {
+  width: 200px;
+}
+.ontdek .title_field span {
+
+}
