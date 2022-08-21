@@ -16,7 +16,20 @@
       <div class="container">
         <div class="navbar d-flex justify-content-between align-items-center">
           <img src="./assets/images/logo.png" alt="logo" >
-          <button>CONTACTER</button> 
+          <div class="d-flex flex-column justify-content-center lang_field">
+            <div class="d-flex justify-content-center align-items-center lang_item">
+              <span class="lang_active">
+                NL
+              </span>
+              <span>
+                FR
+              </span>
+              <span>
+                ENG
+              </span>
+            </div>
+            <button class="contact_btn">CONTACTER</button> 
+          </div>
         </div>
         <div class="title_field">
           <div class="img_field">
@@ -31,7 +44,7 @@
     <div class="sections">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12 item">
+          <div class="col-md-3 col-sm-6 col-xs-12 padding_1 sections_item active_item" data-number="1">
             <div class="d-flex flex-column align-items-center">
               <div class="icon_field">
                 <img src="./assets//images/simbol1.png" alt="symbol1" >
@@ -41,8 +54,9 @@
               <strong>TourBuilder</strong>
               <span>management platform <br> zelf je POI's</span>
             </div>
+            <div class="piece"></div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 item">
+          <div class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="2">
             <div class="d-flex flex-column align-items-center divider">
               <div class="icon_field">
                 <img src="./assets//images/symbol2.png" alt="symbol1" >
@@ -50,11 +64,12 @@
               <div class="title">2. PRESENTATIE</div>
               <span>Word online <br> vindbear en mooi gevisualiseerd</span>
             </div>
+            <div class="piece"></div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 item active_item">
+          <div class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="3">
             <div class="d-flex flex-column align-items-center divider">
               <div class="icon_field">
-                <img src="./assets//images/symbol3.png" alt="symbol1" >
+                <img src="./assets//images/symbol3.png" alt="symbol1">
               </div>
               <div class="title">3. NAVIGEREN</div>
               <span>ledere bestemming navigeerbaar met de</span>
@@ -62,7 +77,7 @@
             </div>
             <div class="piece"></div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 item">
+          <div class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="4">
             <div class="d-flex flex-column align-items-center divider">
               <div class="icon_field">
                 <img src="./assets//images/symbol4.png" alt="symbol1" >
@@ -74,17 +89,120 @@
               </div>
               <span>volleding op maat</span>
             </div>
+            <div class="piece"></div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="navigeren">
-      <div class="container">
+      <div class="container sections_container" data-number="1">
+        <div class="icon_field m-auto">
+          <img src="./assets//images//symbol5.png" alt="Navigeren icon" >
+        </div>
+        <div class="title">ORGANISEREN</div>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 detial_field">
+            <div class="title">
+              Iedere bestemming navigeerbaar vaar verschillende voertuigen met de TOURBUILDER-GIDS
+            </div>
+            <div class="text">
+              Turn-by-turn navigatie van een route aangepast aan het voertuig en dit op smartphones en tablets.
+            </div>
+            <div class="md_title">
+              .Geannimeerd met extra inhoud
+            </div>
+            <div class="text">
+              Maak uw vituele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
+            </div>
+            <div class="md_title">
+              .Navigatiekits met service
+            </div>
+            <div class="text">
+              Maak uw virtuele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
+            <img class="navigeren_img" src="./assets//images/image1.png" alt="Navigeren image" >
+          </div>
+        </div>
+        <div class="btn_field">
+          <button>GEEF ME MEER INFORMATE</button>
+        </div>
+      </div>
+      <div class="container sections_container display_hidden" data-number="2">
+        <div class="icon_field m-auto">
+          <img src="./assets//images//symbol5.png" alt="Navigeren icon" >
+        </div>
+        <div class="title">PRESENTATIE</div>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 detial_field">
+            <div class="title">
+              Iedere bestemming navigeerbaar vaar verschillende voertuigen met de TOURBUILDER-GIDS
+            </div>
+            <div class="text">
+              Turn-by-turn navigatie van een route aangepast aan het voertuig en dit op smartphones en tablets.
+            </div>
+            <div class="md_title">
+              .Geannimeerd met extra inhoud
+            </div>
+            <div class="text">
+              Maak uw vituele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
+            </div>
+            <div class="md_title">
+              .Navigatiekits met service
+            </div>
+            <div class="text">
+              Maak uw virtuele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
+            <img class="navigeren_img" src="./assets//images/image1.png" alt="Navigeren image" >
+          </div>
+        </div>
+        <div class="btn_field">
+          <button>GEEF ME MEER INFORMATE</button>
+        </div>
+      </div>
+      <div class="container sections_container display_hidden" data-number="3">
         <div class="icon_field m-auto">
           <img src="./assets//images//symbol5.png" alt="Navigeren icon" >
         </div>
         <div class="title">NAVIGEREN</div>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 detial_field">
+            <div class="title">
+              Iedere bestemming navigeerbaar vaar verschillende voertuigen met de TOURBUILDER-GIDS
+            </div>
+            <div class="text">
+              Turn-by-turn navigatie van een route aangepast aan het voertuig en dit op smartphones en tablets.
+            </div>
+            <div class="md_title">
+              .Geannimeerd met extra inhoud
+            </div>
+            <div class="text">
+              Maak uw vituele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
+            </div>
+            <div class="md_title">
+              .Navigatiekits met service
+            </div>
+            <div class="text">
+              Maak uw virtuele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
+            <img class="navigeren_img" src="./assets//images/image1.png" alt="Navigeren image" >
+          </div>
+        </div>
+        <div class="btn_field">
+          <button>GEEF ME MEER INFORMATE</button>
+        </div>
+      </div>
+      <div class="container sections_container display_hidden" data-number="4">
+        <div class="icon_field m-auto">
+          <img src="./assets//images//symbol5.png" alt="Navigeren icon" >
+        </div>
+        <div class="title">PRODUCERN</div>
         <div class="row">
           <div class="col-md-6 col-xs-12 detial_field">
             <div class="title">
@@ -263,4 +381,50 @@
     </div>
 
   </body>
+
+  <script>
+    let lang_Buttons = document.querySelectorAll(".lang_item span");
+    let Select_Buttons = document.querySelectorAll(".sections .sections_item");
+
+    for (let button of lang_Buttons) {
+      button.addEventListener('click', (e) => {
+        const et = e.target;
+        const active = document.querySelector(".lang_active");
+        if (active) {
+          active.classList.remove("lang_active");
+        }
+        et.classList.add("lang_active");
+      });
+    }
+
+    for (let button of Select_Buttons) {
+      button.addEventListener('click', (e) => {
+        const et = e.target;
+        const active = document.querySelector(".active_item");
+        if (active) {
+          active.classList.remove("active_item");
+        }
+        et.classList.add("active_item");
+
+        let allContent = document.querySelectorAll('.sections_container');
+
+        for (let content of allContent) {
+          // display the content if the class has the same data-attribute as the button 
+          if(content.getAttribute('data-number') === button.getAttribute('data-number')) {
+            content.style.display = "block";
+          }
+          // if it's not equal then hide it.
+          else {
+            content.style.display = "none";
+          }
+        }
+      });
+    }
+
+
+
+
+
+  </script>
+
 </html>

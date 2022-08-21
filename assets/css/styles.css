@@ -5,26 +5,50 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 750px;
+  height: 600px;
 }
 .header .background img {
   width: 100%;
 }
 .header .navbar {
-  padding: 40px 0;
+  padding: 44px 0;
 }
 .header .navbar img {
   width: 260px;
   height: 40px;
 }
-.header .navbar button {
+.header .navbar .lang_field {
+  position: relative;
+}
+.header .navbar .contact_btn {
   background-color: #379da8;
   border: none;
   outline: none;
-  width: 180px;
+  width: 170px;
   height: 40px;
   color: white;
-  font-size: 18px;
+  font-size: 17px;
+}
+.header .navbar .lang_item {
+  position: absolute;
+  top: -30px;
+  left: 38px;
+  cursor: pointer;
+}
+.header .navbar .lang_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid white !important;
+  border-radius: 50%;
+  margin-top: -3px !important;
+}
+.header .navbar .lang_item span {
+  font-size: 12px;
+  color: white;
+  margin: 0 5px;
 }
 .header .title_field {
   width: 500px;
@@ -54,9 +78,14 @@
 /*********** sections ************/
 .sections {
   background-color: #57bec9;
-  margin-top: -200px;
 }
-.sections .item {
+.display_hidden {
+  display: none;
+}
+.sections .padding_1 {
+  padding-top: 27px !important;
+}
+.sections .sections_item {
   padding: 38px 0px 30px 0;
 }
 .sections .active_item {
@@ -220,7 +249,7 @@
   margin: 20px 0;
   width: 92%;
   padding: 20px 40px;
-  height: 150px;
+  height: 170px;
   overflow: auto;
   /* clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0); */
 }
@@ -243,7 +272,7 @@
 .ontdek .item1 .text {
   color: #ffffff;
   font-size: 14px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .ontdek .item2 {
   background-color: #379da8;
@@ -251,7 +280,7 @@
   margin: 20px 0;
   width: 92%;
   padding: 20px 40px;
-  height: 150px;
+  height: 170px;
   overflow: auto;
 }
 .ontdek .item2 .title {
@@ -263,7 +292,6 @@
 .ontdek .item2 li {
   color: #ffffff;
   font-size: 14px;
-  margin-bottom: -5px;
 }
 .ontdek .item3 {
   background-color: #69d6e2;
@@ -271,15 +299,14 @@
   margin: 20px 0;
   width: 92%;
   padding: 20px 40px;
-  height: 150px;
+  height: 170px;
   overflow: auto;
 }
 .ontdek .item3 .title {
-  margin-top: 5px;
   color: #ffffff;
   font-size: 15px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 .ontdek .item4 {
   background-color: #28b0bf;
@@ -287,7 +314,7 @@
   margin: 20px 0;
   width: 92%;
   padding: 20px 40px;
-  height: 150px;
+  height: 170px;
   overflow: auto;
 }
 .ontdek .item4 .title {
@@ -307,7 +334,7 @@
   margin: 20px 0;
   width: 92%;
   padding: 20px 40px;
-  height: 150px;
+  height: 170px;
   overflow: auto;
 }
 .ontdek .item5 .title {
@@ -326,7 +353,7 @@
   margin: 20px 0;
   width: 92%;
   padding: 20px 40px;
-  height: 150px;
+  height: 170px;
   overflow: auto;
 }
 .ontdek .item6 .title {
@@ -492,6 +519,9 @@
 }
 
 @media screen and (max-width: 640px) {
+  .header {
+    height: 550px;
+  }
   .ontdek .title_field img {
     width: 80px;
     margin-right: 5px;
@@ -506,7 +536,11 @@
 
 @media screen and (max-width: 576px) {
   .header {
-    height: 650px;
+    height: 520px;
+  }
+  .header .navbar .lang_item {
+    top: -30px;
+    left: 28px;
   }
   .sections .active_item .piece{
     position: absolute;
@@ -518,7 +552,11 @@
     border-right: 75px solid transparent;
     border-top: 30px solid #379da8;
   }
-  .header .navbar button {
+  .sections .sections_item {
+    padding: 38px 0px 30px 0;
+    border-bottom: 1px dotted white;
+  }
+  .header .navbar .contact_btn {
     width: 150px;
     height: 35px;
     font-size: 15px;
@@ -542,7 +580,7 @@
 }
 @media screen and (max-width: 520px) {
   .header {
-    height: 610px;
+    height: 460px;
   }
   .header .title_field {
     width: 278px;
@@ -557,16 +595,46 @@
     left: 30px;
     font-size: 15px;
   }
+  .ontdek .item1 {
+    height: unset;
+    overflow: unset;
+  }
+  .ontdek .item2 {
+    height: unset;
+    overflow: unset;
+  }
+  .ontdek .item3 {
+    height: unset;
+    overflow: unset;
+  }
+  .ontdek .item4 {
+    height: unset;
+    overflow: unset;
+  }
+  .ontdek .item5 {
+    height: unset;
+    overflow: unset;
+  }
+  .ontdek .item6 {
+    height: unset;
+    overflow: unset;
+  }
 }
 @media screen and (max-width: 450px) {
+  .header {
+    height: 400px;
+  }
   .header .navbar img {
     width: 160px;
     height: 27px;
   }
-  .header .navbar button {
+  .header .navbar .contact_btn {
     width: 100px;
     height: 30px;
     font-size: 14px;
+  }
+  .header .navbar .lang_item {
+    left: 0px;
   }
   .navigeren {
     margin-top: 40px;
