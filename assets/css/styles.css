@@ -87,15 +87,19 @@
 }
 .sections .sections_item {
   padding: 38px 0px 30px 0;
+  cursor: pointer;
 }
 .sections .active_item {
   background-color: #379da8;
   position: relative;
 }
-.sections .active_item .piece{
+.sections .active_item .piece_field{
+  width: 100%;
   position: absolute;
-  left: 31%;
   bottom: -25px;
+}
+.sections .active_item .piece{
+  margin: auto;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
@@ -105,7 +109,11 @@
 .sections .divider {
   border-left: 1px dotted white;
   height: 220px;
-  /* width: 1px; */
+  margin-top: -10px;
+}
+.sections .divider1 {
+  border-left: 1px dotted white;
+  height: 220px;
   margin-top: -10px;
 }
 .sections .icon_field {
@@ -137,7 +145,7 @@
 /****************** NAVIGEREN **********************/
 
 .navigeren {
-  margin-top: 60px;
+  padding: 60px 0 70px 0;
 }
 .navigeren .icon_field {
   width: 60px;
@@ -179,7 +187,6 @@
 .navigeren .btn_field {
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 70px;
 }
 .navigeren .btn_field button {
   background-color:#379da8;
@@ -427,16 +434,6 @@
 
 
 @media screen and (max-width: 992px) {
-  .sections .active_item .piece{
-    position: absolute;
-    left: 30%;
-    bottom: -19px;
-    width: 0;
-    height: 0;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-top: 23px solid #379da8;
-  }
   .header .title_field {
     width: 440px;
     margin-top: 40px;
@@ -461,16 +458,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-  }
-  .sections .active_item .piece{
-    position: absolute;
-    left: 26%;
-    bottom: -19px;
-    width: 0;
-    height: 0;
-    border-left: 65px solid transparent;
-    border-right: 65px solid transparent;
-    border-top: 30px solid #379da8;
   }
   .header .title_field {
     width: 380px;
@@ -500,6 +487,9 @@
 @media screen and (max-width: 780px) {
   .navigeren .navigeren_img {
     margin-top: 20px;
+  }
+  .sections .divider1 {
+    border: none;
   }
   .ontdek .title_field1 {
     display: flex;
@@ -541,16 +531,6 @@
   .header .navbar .lang_item {
     top: -30px;
     left: 28px;
-  }
-  .sections .active_item .piece{
-    position: absolute;
-    left: 37%;
-    bottom: -19px;
-    width: 0;
-    height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-top: 30px solid #379da8;
   }
   .sections .sections_item {
     padding: 38px 0px 30px 0;
@@ -595,29 +575,18 @@
     left: 30px;
     font-size: 15px;
   }
-  .ontdek .item1 {
+  .navigeren, .ontdek, .producten {
+    padding: 30px 0 40px 0;
+  }
+  .ontdek .item1, .ontdek .item2, .ontdek .item3, .ontdek .item4, .ontdek .item5, .ontdek .item6 {
     height: unset;
     overflow: unset;
   }
-  .ontdek .item2 {
-    height: unset;
-    overflow: unset;
-  }
-  .ontdek .item3 {
-    height: unset;
-    overflow: unset;
-  }
-  .ontdek .item4 {
-    height: unset;
-    overflow: unset;
-  }
-  .ontdek .item5 {
-    height: unset;
-    overflow: unset;
-  }
-  .ontdek .item6 {
-    height: unset;
-    overflow: unset;
+  .ontdek .item3 .title {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 15px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -636,9 +605,6 @@
   .header .navbar .lang_item {
     left: 0px;
   }
-  .navigeren {
-    margin-top: 40px;
-  }
   .ontdek {
     padding: 40px 0 20px 0;
   }
@@ -656,8 +622,5 @@
   }
   .ontdek .title_field strong {
     font-size: 14px;
-  }
-  .sections .active_item .piece {
-    left: 30%;
   }
 }

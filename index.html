@@ -44,7 +44,7 @@
     <div class="sections">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12 padding_1 sections_item active_item" data-number="1">
+          <div id="sections_item_1" class="col-md-3 col-sm-6 col-xs-12 padding_1 sections_item active_item" data-number="1">
             <div class="d-flex flex-column align-items-center">
               <div class="icon_field">
                 <img src="./assets//images/simbol1.png" alt="symbol1" >
@@ -54,9 +54,11 @@
               <strong>TourBuilder</strong>
               <span>management platform <br> zelf je POI's</span>
             </div>
-            <div class="piece"></div>
+            <div class="piece_field">
+              <div class="piece"></div>
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="2">
+          <div id="sections_item_2" class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="2">
             <div class="d-flex flex-column align-items-center divider">
               <div class="icon_field">
                 <img src="./assets//images/symbol2.png" alt="symbol1" >
@@ -64,10 +66,12 @@
               <div class="title">2. PRESENTATIE</div>
               <span>Word online <br> vindbear en mooi gevisualiseerd</span>
             </div>
-            <div class="piece"></div>
+            <div class="piece_field">
+              <div class="piece"></div>
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="3">
-            <div class="d-flex flex-column align-items-center divider">
+          <div id="sections_item_3" class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="3">
+            <div class="d-flex flex-column align-items-center divider1">
               <div class="icon_field">
                 <img src="./assets//images/symbol3.png" alt="symbol1">
               </div>
@@ -75,9 +79,11 @@
               <span>ledere bestemming navigeerbaar met de</span>
               <strong>TourBuilder-GIDS</strong>
             </div>
-            <div class="piece"></div>
+            <div class="piece_field">
+              <div class="piece"></div>
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="4">
+          <div id="sections_item_4" class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="4">
             <div class="d-flex flex-column align-items-center divider">
               <div class="icon_field">
                 <img src="./assets//images/symbol4.png" alt="symbol1" >
@@ -89,7 +95,9 @@
               </div>
               <span>volleding op maat</span>
             </div>
-            <div class="piece"></div>
+            <div class="piece_field">
+              <div class="piece"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -383,48 +391,50 @@
   </body>
 
   <script>
-    let lang_Buttons = document.querySelectorAll(".lang_item span");
-    let Select_Buttons = document.querySelectorAll(".sections .sections_item");
 
-    for (let button of lang_Buttons) {
-      button.addEventListener('click', (e) => {
-        const et = e.target;
-        const active = document.querySelector(".lang_active");
-        if (active) {
-          active.classList.remove("lang_active");
-        }
-        et.classList.add("lang_active");
-      });
-    }
+      function setButtonListener () {
 
-    for (let button of Select_Buttons) {
-      button.addEventListener('click', (e) => {
-        const et = e.target;
-        const active = document.querySelector(".active_item");
-        if (active) {
-          active.classList.remove("active_item");
-        }
-        et.classList.add("active_item");
-
+        let lang_Buttons = document.querySelectorAll(".lang_item span");
+        let sections = document.getElementsByClassName('sections_item');
         let allContent = document.querySelectorAll('.sections_container');
+        let length = sections.length;
 
-        for (let content of allContent) {
-          // display the content if the class has the same data-attribute as the button 
-          if(content.getAttribute('data-number') === button.getAttribute('data-number')) {
-            content.style.display = "block";
-          }
-          // if it's not equal then hide it.
-          else {
-            content.style.display = "none";
+        for (let button of lang_Buttons) {
+          button.addEventListener('click', (e) => {
+            const et = e.target;
+            const active = document.querySelector(".lang_active");
+            if (active) {
+              active.classList.remove("lang_active");
+            }
+            et.classList.add("lang_active");
+          });
+        }
+
+        for(let i = 0; i < length; i += 1) {
+          let section = sections[i]
+          section.onclick = function() {
+            const active = document.querySelectorAll('.active_item')
+            if(active) {
+              active[0].classList.remove('active_item')
+            }
+            section.classList.add('active_item')
+            for (let content of allContent) {
+              if(content.getAttribute('data-number') === section.getAttribute('data-number')) {
+                content.style.display = "block";
+              }
+              else {
+                content.style.display = "none";
+              }
+            }
           }
         }
-      });
-    }
+      }
 
-
-
-
-
+      document.onload = function () {
+        console.log('set button listener')
+        setButtonListener()
+      }
+      setButtonListener()
   </script>
 
 </html>
