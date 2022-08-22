@@ -1,11 +1,23 @@
 
 /********* Header **********/
 .header {
-  background-image: url("../images/Group\ 1.png");
+  position: relative;
+  background-image: url("../images/headerImage.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 600px;
+}
+.header_lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images//headerImage\ lines.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
 }
 .header .background img {
   width: 100%;
@@ -403,6 +415,35 @@
   font-size: 14px;
   color: white;
 }
+
+/********** details *********/
+.contact {
+  padding: 60px 0 70px 0;
+  background-color: white;
+}
+.contact .title_field .title1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #245c5c;
+}
+.contact .title_field .title2 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #09b0ba;
+}
+.contact .details {
+  margin-top: 30px;
+}
+.contact .details .mobile {
+  font-size: 14px;
+  color: #144642;
+}
+.contact .details .address {
+  font-size: 14px;
+  color: #144642;
+  margin-top: 10px;
+}
+
 /********** footer ***********/
 .footer_img img {
   width: 100%;
