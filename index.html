@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TourBuilder</title>
+    <title>Oaksdale</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets//css/styles.css">
+    <script src="https://kit.fontawesome.com/9920bc3869.js" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -13,397 +16,514 @@
   <body>
 
     <div class="header">
-      <div class="header_lines"></div>
       <div class="container">
-        <div class="navbar d-flex justify-content-between align-items-center">
-          <img src="./assets/images/logo.png" alt="logo" >
-          <div class="d-flex flex-column justify-content-center lang_field">
-            <div class="d-flex justify-content-center align-items-center lang_item">
-              <span class="lang_active">
-                NL
-              </span>
-              <span>
-                FR
-              </span>
-              <span>
-                ENG
-              </span>
+        <div class="d-flex justify-content-between align-items-center toolbar">
+          <div class="d-flex justify-content-between align-items-center field1">
+            <img src="./assets//images/logo.png" alt="logo" >
+            <div class="searchbar">
+              <div class="search_icon">
+                <i class="fa fa-search"></i>
+              </div>
+              <input type="search" placeholder="Zoek naar producten" >
             </div>
-            <button class="contact_btn">CONTACTER</button> 
+          </div>
+          <div class="field2">
+            <div class="d-flex justify-content-start align-items-center icon_field">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-user-o" aria-hidden="true"></i>
+              <i class="fas fa-shopping-basket"></i>
+            </div>
+            <div class="lang_field">
+              <div class="dropdown">
+                <button type="button" data-toggle="dropdown" aria-expanded="false">
+                  NL
+                </button>
+                <div class="dropdown-menu lang_body">
+                  <a class="dropdown-item lang_item" href="#">FR</a>
+                  <a class="dropdown-item lang_item" href="#">ENG</a>
+                  <a class="dropdown-item lang_item" href="#">ES</a>
+                  <a class="dropdown-item lang_item" href="#">FOR</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="title_field">
-          <div class="img_field">
-            <img src="./assets//images/Laag 12.png" alt="promoot" >
-            <div class="title">Promoot uw regio, <br> stad of gemeente</div>
-            <div class="text">door zelf uw virtuele gidsen <br> te beheren en te ontwikkelen!</div>
+        <div class="searchbar1">
+          <div class="search_icon">
+            <i class="fa fa-search"></i>
           </div>
+          <input type="search" placeholder="Zoek naar producten" >
+        </div>
+        <div class="d-flex flex-wrap justify-content-between align-items-center navbars">
+          <a href="#">Eiwitten</a>
+          <a href="#">Afslanken</a>
+          <a href="#">Sportvoeding</a>
+          <a href="#">Vitamines</a>
+          <a href="#">Voeding & repen</a>
+          <a href="#">Kledij & accesories</a>
+          <a href="#">Acties</a>
+          <a href="#">Over Oaksdale</a>
+          <a href="#">Verdelers</a>
+          <a href="#">Concep store Oudenaarde</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="container header_img">
+          <img src="./assets/images/Schermafbeelding.png" alt="header img" >
         </div>
       </div>
     </div>
 
-    <div class="sections">
+    <div class="products">
       <div class="container">
-        <div class="row">
-          <div id="sections_item_1" class="col-md-3 col-sm-6 col-xs-12 padding_1 sections_item active_item" data-number="1">
-            <div class="d-flex flex-column align-items-center">
-              <div class="icon_field">
-                <img src="./assets//images/simbol1.png" alt="symbol1" >
-              </div>
-              <div class="title">1. ORGANISEREN</div>
-              <span>Beheer met het</span>
-              <strong>TourBuilder</strong>
-              <span>management platform <br> zelf je POI's</span>
-            </div>
-            <div class="piece_field">
-              <div class="piece"></div>
-            </div>
+        <div class="onze">
+          <div class="title">
+            Onze Bestsellers
           </div>
-          <div id="sections_item_2" class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="2">
-            <div class="d-flex flex-column align-items-center divider">
-              <div class="icon_field">
-                <img src="./assets//images/symbol2.png" alt="symbol1" >
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
+              <div class="d-flex flex-column justify-content-center item_body">
+                <img src="./assets//images/product.png" alt="products" >
+                <div class="item_title">
+                  OAKSDALE
+                </div>
+                <div class="details">
+                  GOLD hight-end protein blend Gentle-vanilla
+                </div>
+                <div class="d-flex align-items-center justify-content-start review">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="review_value">121</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center cart_fav">
+                    <div class="cart">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="fav">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <i class="fas fa-euro-sign"></i>
+                    46
+                  </div>
+                  <div class="off_price">
+                    <i class="fas fa-euro-sign"></i>                   
+                    36
+                  </div>
+                </div>
               </div>
-              <div class="title">2. PRESENTATIE</div>
-              <span>Word online <br> vindbear en mooi gevisualiseerd</span>
             </div>
-            <div class="piece_field">
-              <div class="piece"></div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
+              <div class="d-flex flex-column justify-content-center item_body">
+                <img src="./assets//images/product.png" alt="products" >
+                <div class="item_title">
+                  OAKSDALE
+                </div>
+                <div class="details">
+                  GOLD hight-end protein blend Gentle-vanilla
+                </div>
+                <div class="d-flex align-items-center justify-content-start review">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="review_value">121</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center cart_fav">
+                    <div class="cart">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="fav">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <i class="fas fa-euro-sign"></i>
+                    46
+                  </div>
+                  <div class="off_price">
+                    <i class="fas fa-euro-sign"></i>                   
+                    36
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
+              <div class="d-flex flex-column justify-content-center item_body">
+                <img src="./assets//images/product.png" alt="products" >
+                <div class="item_title">
+                  OAKSDALE
+                </div>
+                <div class="details">
+                  GOLD hight-end protein blend Gentle-vanilla
+                </div>
+                <div class="d-flex align-items-center justify-content-start review">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="review_value">121</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center cart_fav">
+                    <div class="cart">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="fav">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <i class="fas fa-euro-sign"></i>
+                    46
+                  </div>
+                  <div class="off_price">
+                    <i class="fas fa-euro-sign"></i>                   
+                    36
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
+              <div class="d-flex flex-column justify-content-center item_body">
+                <img src="./assets//images/product.png" alt="products" >
+                <div class="item_title">
+                  OAKSDALE
+                </div>
+                <div class="details">
+                  GOLD hight-end protein blend Gentle-vanilla
+                </div>
+                <div class="d-flex align-items-center justify-content-start review">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="review_value">121</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center cart_fav">
+                    <div class="cart">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="fav">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <i class="fas fa-euro-sign"></i>
+                    46
+                  </div>
+                  <div class="off_price">
+                    <i class="fas fa-euro-sign"></i>                   
+                    36
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div id="sections_item_3" class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="3">
-            <div class="d-flex flex-column align-items-center divider1">
-              <div class="icon_field">
-                <img src="./assets//images/symbol3.png" alt="symbol1">
-              </div>
-              <div class="title">3. NAVIGEREN</div>
-              <span>ledere bestemming navigeerbaar met de</span>
-              <strong>TourBuilder-GIDS</strong>
-            </div>
-            <div class="piece_field">
-              <div class="piece"></div>
-            </div>
+        </div>
+
+        <div class="onze margin_t">
+          <div class="title">
+            Gekke promoties
           </div>
-          <div id="sections_item_4" class="col-md-3 col-sm-6 col-xs-12 sections_item" data-number="4">
-            <div class="d-flex flex-column align-items-center divider">
-              <div class="icon_field">
-                <img src="./assets//images/symbol4.png" alt="symbol1" >
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
+              <div class="d-flex flex-column justify-content-center item_body">
+                <img src="./assets//images/product.png" alt="products" >
+                <div class="item_title">
+                  OAKSDALE
+                </div>
+                <div class="details">
+                  GOLD hight-end protein blend Gentle-vanilla
+                </div>
+                <div class="d-flex align-items-center justify-content-start review">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="review_value">121</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center cart_fav">
+                    <div class="cart">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="fav">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <i class="fas fa-euro-sign"></i>
+                    46
+                  </div>
+                  <div class="off_price">
+                    <i class="fas fa-euro-sign"></i>                   
+                    36
+                  </div>
+                </div>
               </div>
-              <div class="title">4. PRODUCERN</div>
-              <div class="d-flex justify-content-start align-items-center" >
-                <span style="width: 35px">Een</span>
-                <strong>WOW-VERHAAL</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
+              <div class="d-flex flex-column justify-content-center item_body">
+                <img src="./assets//images/product.png" alt="products" >
+                <div class="item_title">
+                  OAKSDALE
+                </div>
+                <div class="details">
+                  GOLD hight-end protein blend Gentle-vanilla
+                </div>
+                <div class="d-flex align-items-center justify-content-start review">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="review_value">121</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center cart_fav">
+                    <div class="cart">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="fav">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <i class="fas fa-euro-sign"></i>
+                    46
+                  </div>
+                  <div class="off_price">
+                    <i class="fas fa-euro-sign"></i>                   
+                    36
+                  </div>
+                </div>
               </div>
-              <span>volleding op maat</span>
             </div>
-            <div class="piece_field">
-              <div class="piece"></div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
+              <div class="d-flex flex-column justify-content-center item_body">
+                <img src="./assets//images/product.png" alt="products" >
+                <div class="item_title">
+                  OAKSDALE
+                </div>
+                <div class="details">
+                  GOLD hight-end protein blend Gentle-vanilla
+                </div>
+                <div class="d-flex align-items-center justify-content-start review">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="review_value">121</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center cart_fav">
+                    <div class="cart">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="fav">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <i class="fas fa-euro-sign"></i>
+                    46
+                  </div>
+                  <div class="off_price">
+                    <i class="fas fa-euro-sign"></i>                   
+                    36
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
+              <div class="d-flex flex-column justify-content-center item_body">
+                <img src="./assets//images/product.png" alt="products" >
+                <div class="item_title">
+                  OAKSDALE
+                </div>
+                <div class="details">
+                  GOLD hight-end protein blend Gentle-vanilla
+                </div>
+                <div class="d-flex align-items-center justify-content-start review">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="review_value">121</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center cart_fav">
+                    <div class="cart">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="fav">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <i class="fas fa-euro-sign"></i>
+                    46
+                  </div>
+                  <div class="off_price">
+                    <i class="fas fa-euro-sign"></i>                   
+                    36
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="navigeren">
-      <div class="container sections_container" data-number="1">
-        <div class="icon_field m-auto">
-          <img src="./assets//images//symbol5.png" alt="Navigeren icon" >
-        </div>
-        <div class="title">ORGANISEREN</div>
-        <div class="row">
-          <div class="col-md-6 col-xs-12 detial_field">
-            <div class="title">
-              Iedere bestemming navigeerbaar vaar verschillende voertuigen met de TOURBUILDER-GIDS
-            </div>
-            <div class="text">
-              Turn-by-turn navigatie van een route aangepast aan het voertuig en dit op smartphones en tablets.
-            </div>
-            <div class="md_title">
-              .Geannimeerd met extra inhoud
-            </div>
-            <div class="text">
-              Maak uw vituele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
-            </div>
-            <div class="md_title">
-              .Navigatiekits met service
-            </div>
-            <div class="text">
-              Maak uw virtuele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <img class="navigeren_img" src="./assets//images/image1.png" alt="Navigeren image" >
-          </div>
-        </div>
-        <div class="btn_field">
-          <button>GEEF ME MEER INFORMATE</button>
-        </div>
-      </div>
-      <div class="container sections_container display_hidden" data-number="2">
-        <div class="icon_field m-auto">
-          <img src="./assets//images//symbol5.png" alt="Navigeren icon" >
-        </div>
-        <div class="title">PRESENTATIE</div>
-        <div class="row">
-          <div class="col-md-6 col-xs-12 detial_field">
-            <div class="title">
-              Iedere bestemming navigeerbaar vaar verschillende voertuigen met de TOURBUILDER-GIDS
-            </div>
-            <div class="text">
-              Turn-by-turn navigatie van een route aangepast aan het voertuig en dit op smartphones en tablets.
-            </div>
-            <div class="md_title">
-              .Geannimeerd met extra inhoud
-            </div>
-            <div class="text">
-              Maak uw vituele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
-            </div>
-            <div class="md_title">
-              .Navigatiekits met service
-            </div>
-            <div class="text">
-              Maak uw virtuele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <img class="navigeren_img" src="./assets//images/image1.png" alt="Navigeren image" >
-          </div>
-        </div>
-        <div class="btn_field">
-          <button>GEEF ME MEER INFORMATE</button>
-        </div>
-      </div>
-      <div class="container sections_container display_hidden" data-number="3">
-        <div class="icon_field m-auto">
-          <img src="./assets//images//symbol5.png" alt="Navigeren icon" >
-        </div>
-        <div class="title">NAVIGEREN</div>
-        <div class="row">
-          <div class="col-md-6 col-xs-12 detial_field">
-            <div class="title">
-              Iedere bestemming navigeerbaar vaar verschillende voertuigen met de TOURBUILDER-GIDS
-            </div>
-            <div class="text">
-              Turn-by-turn navigatie van een route aangepast aan het voertuig en dit op smartphones en tablets.
-            </div>
-            <div class="md_title">
-              .Geannimeerd met extra inhoud
-            </div>
-            <div class="text">
-              Maak uw vituele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
-            </div>
-            <div class="md_title">
-              .Navigatiekits met service
-            </div>
-            <div class="text">
-              Maak uw virtuele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <img class="navigeren_img" src="./assets//images/image1.png" alt="Navigeren image" >
-          </div>
-        </div>
-        <div class="btn_field">
-          <button>GEEF ME MEER INFORMATE</button>
-        </div>
-      </div>
-      <div class="container sections_container display_hidden" data-number="4">
-        <div class="icon_field m-auto">
-          <img src="./assets//images//symbol5.png" alt="Navigeren icon" >
-        </div>
-        <div class="title">PRODUCERN</div>
-        <div class="row">
-          <div class="col-md-6 col-xs-12 detial_field">
-            <div class="title">
-              Iedere bestemming navigeerbaar vaar verschillende voertuigen met de TOURBUILDER-GIDS
-            </div>
-            <div class="text">
-              Turn-by-turn navigatie van een route aangepast aan het voertuig en dit op smartphones en tablets.
-            </div>
-            <div class="md_title">
-              .Geannimeerd met extra inhoud
-            </div>
-            <div class="text">
-              Maak uw vituele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
-            </div>
-            <div class="md_title">
-              .Navigatiekits met service
-            </div>
-            <div class="text">
-              Maak uw virtuele gids visueel atractief door (hier een woordje uitleg hoe of met wat). Met geanimeerde inhoud zoals puzzles, geluidsfragmenten, spellen, film-pjes...
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <img class="navigeren_img" src="./assets//images/image1.png" alt="Navigeren image" >
-          </div>
-        </div>
-        <div class="btn_field">
-          <button>GEEF ME MEER INFORMATE</button>
-        </div>
-      </div>
+    <div class="building">
+      <img src="./assets//images/Laag 2.png" alt="building img" >
     </div>
 
-    <div class="toerisme">
+    <div class="waarom">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-xs-12 d-flex flex-column justify-content-center">
-            <div class="title">
-              BELEVEN IS HET NIEUWE TOERISME
-            </div>
-            <div class="text">
-              Met een uniek belevingsconcept dat inspeelt op de toenemende vraag naar authentieke
-              ervaringen, verrassende ontwikkelen en pure emoties.  
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center align-items-center">
-            <img src="./assets//images/image2.png" alt="Toerisme" >
-          </div>
+        <div class="waarom_title">
+          Waarom kopen bij Oaksdale
         </div>
-      </div>
-    </div>
-
-    <div class="ontdek">
-      <div class="container">
-        <div class="d-flex justify-content-start align-items-center title_field">
-          <img src="./assets/images/image3.png" alt="ontdek" >
-          <div class="title_field1">
-            <span>ONTDEK ZELF DE VOORDELEN VAN HET</span>
-            <strong>TOUEBUILDER MANAGEMENT PLATFORM</strong>            
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <div class="item1">
-              <div class="title">
-                Verrijk uw citymarketing project
-              </div>
-              <div class="text">
-                met een formule waarin of uw historische culturele, 
-                recreatieve, culinaire (meer)waarden aan bod komen
-              </div>
-              <div class="piece"></div>
+        <div class="row mt-5">
+          <div class="col-md-3 col-sm-6 col-xs-12 d-flex flex-column justify-content-between item">
+            <div class="d-flex flex-column align-items-center icon">
+              <img src="./assets//images/KWALITEIT.png" alt="KWALITEIT" >
+              <strong class="mt-3 text-center">TOP KWALITEIT</strong>
+            </div>
+            <div class="details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
             </div>
           </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <div class="item2">
-              <div class="title">
-                Ontwikkel specifieke specifieke routebelevingen
-              </div>
-              <div class="text-center mt-3">
-                  <li>met aangepaste audio-viuelegidsen</li>
-                  <li>rond speciale thema's</li>
-                  <li>gekoppeid aan speciale momenten</li>
-                  <li>voor speciale doeleinden en doelgroepen</li>
-              </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 d-flex flex-column justify-content-between item">
+            <div class="d-flex flex-column align-items-center icon">
+              <img src="./assets//images/ONETWIKKELD.png" alt="KWALITEIT" >
+              <strong class="mt-3 text-center">ONTWIKKELD MET <br> DE KNOW_HOW</strong>
+            </div>
+            <div class="details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
             </div>
           </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <div class="item3">
-              <div class="title">
-                Versterk uw image als een dynamische,
-                innnovatieve en eigentijdse gemeenschap
-              </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 d-flex flex-column justify-content-between item">
+            <div class="d-flex flex-column align-items-center icon">
+              <img src="./assets//images/BELGISCHE.png" alt="KWALITEIT" >
+              <strong class="mt-3 text-center">BELGISCHE MAKELIJ</strong>
+            </div>
+            <div class="details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
             </div>
           </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <div class="item4">
-              <div class="title">
-                Steun de lokale en regionale econamie
-              </div>
-              <div class="text">
-                door handelaars en organisaties 
-                de kans to bieden om to participeren 
-                in unieke belevingsroutes en -events
-              </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 d-flex flex-column justify-content-between item">
+            <div class="d-flex flex-column align-items-center icon">
+              <img src="./assets//images/PASSIE.png" alt="KWALITEIT" >
+              <strong class="mt-3 text-center">MET PASSIE <br> VOOR DE SPORT</strong>
             </div>
-          </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <div class="item5">
-              <div class="title">
-                kies voor
-              </div>
-              <div class="text">
-                een toegepaste belevingsmarketing
-                op hoog niveau voor een brede doeigroep
-                op maat van uw stad of gemeente.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center">
-            <div class="item6">
-              <div class="title">
-                WIJ ZOEKEN, ORGANISEREN EN ONDERSTEUNEN EEN EXPLOIEPARTNER IN UW REGIO.
-              </div>
-              <div class="text">
-                TOURBUILDER zoekt bovendien voor u naar leveranciers van toeristische belevingen.
-              </div>
+            <div class="details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="producten">
-      <div class="container text-center">
-        <div class="title">
-          ONTDEK DE <strong>TOURBUILDER PRODUCTEN</strong>
-        </div>
-        <img src="./assets/images/location.png" alt="location icon" >
-        <div class="text">
-          <strong>Gratis destination management platform</strong> voor steden en genmeenten.<br>
-          Eenvoudig en gebruiksvriendelijk uw POI's beheren
-        </div>
-        <img src="./assets/images/location.png" alt="location icon" >
-        <div class="text">
-          Service om uw <strong>content onliine te presenteren</strong> op je eigen of aparte website.<br>
-          Met bookingsoplossing om het aanbod te vertalen naar reservaties.
-        </div>
-        <img src="./assets/images/location.png" alt="location icon" >
-        <div class="text">
-          <strong>Creeer</strong>met uw ingevoerde's <strong>zelf routes.</strong><br>
-          <strong>Maak van uw POI's een gratis app</strong> voor smartphones of tablets.<br>
-          <strong>Huur of lease de nodige navigatiekits</strong>voor uw digitale outdoor gidsen.
-        </div>
-        <img src="./assets/images/location.png" alt="location icon" >
-        <div class="text">
-          Gebaseerd op de drie vorige diensten geven we de nodige<br>
-          <strong>ondersteuning voor je eigen gepersonaliseerd TOOURBUILDER-verhaal</strong>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact">
-      <div class="container d-flex flex-column justify-content-center">
-        <div class="d-flex flex-column align-items-center justify-content-center title_field">
-          <div class="title1">
-            CONTACTEER ONS
-          </div>
-          <div class="title2">
-            VOOR MEER INFORMATIE
-          </div>
-        </div>
-        <div class="d-flex flex-column align-items-center justify-content-center details">
-          <div class="mobile">
-            sales@tourbuilder.be <br>
-            +32(0)00 000 000
-          </div>
-          <div class="address">
-            Bietenweg 27A <br>
-            3300 TIENEN
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer_img">
-      <img src="./assets/images/background4.png" alt="footer img" >
     </div>
 
     <div class="footer">
-      <div class="container">
+      <div class="left">
+        <div class="text-center logo">
+          <img src="./assets/images/footer_logo.png" alt="footer logo" >
+        </div>
+        <div class="d-flex justify-content-start navbar">
+          <div class="d-flex flex-column justify-content-between mr-3">
+            <a href="#">Eiwitten</a>
+            <a href="#">Afslanken</a>
+            <a href="#">Sportvoeding</a>
+            <a href="#">Vitamines</a>
+            <a href="#">Voeding & repen</a>
+            <a href="#">Kledij & accesories</a>
+            <a href="#">Merken</a>
+            <a href="#">Over Oaksdale</a>
+          </div>
+          <div class="d-flex flex-column h-100 ml-3 margin_top">
+            <a href="#">Acties</a>
+            <a href="#">Waarom Oaksdale</a>
+            <a href="#">Verdelers</a>
+            <a href="#">Concep store</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="margin_auto">
+          <div class="title">
+            Schrijf je in op onze nieuwsbrief
+          </div>
+          <input type="text" placeholder="Voer je mail adres in*" >
+          <div class="d-flex checkbox_field">
+            <input type="checkbox" >
+            <span>
+              Ik ga emee akkoord dat mijn gegevens worden verwerkt
+              in overeenstemming met het privacybeleid*
+            </span>
+          </div>
+          <button>Schrijf Je In</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="min_footer">
+      <div class="body">
         <div class="text">
           <div class="d-flex justify-content-start align-items-center">
-            web by <img src="./assets/images/symbol6.png" alt="footer icon" > RedBit 
+            web by <img src="./assets/images/footer_symbol.png" alt="footer icon" > RedBit 
           </div>
           <div class="li_item">
             <li>2022</li><li>Algemene voorwaarden</li><li>Privacy policy</li><li>cookie policy</li>
@@ -415,50 +535,6 @@
   </body>
 
   <script>
-
-      function setButtonListener () {
-
-        let lang_Buttons = document.querySelectorAll(".lang_item span");
-        let sections = document.getElementsByClassName('sections_item');
-        let allContent = document.querySelectorAll('.sections_container');
-        let length = sections.length;
-
-        for (let button of lang_Buttons) {
-          button.addEventListener('click', (e) => {
-            const et = e.target;
-            const active = document.querySelector(".lang_active");
-            if (active) {
-              active.classList.remove("lang_active");
-            }
-            et.classList.add("lang_active");
-          });
-        }
-
-        for(let i = 0; i < length; i += 1) {
-          let section = sections[i]
-          section.onclick = function() {
-            const active = document.querySelectorAll('.active_item')
-            if(active) {
-              active[0].classList.remove('active_item')
-            }
-            section.classList.add('active_item')
-            for (let content of allContent) {
-              if(content.getAttribute('data-number') === section.getAttribute('data-number')) {
-                content.style.display = "block";
-              }
-              else {
-                content.style.display = "none";
-              }
-            }
-          }
-        }
-      }
-
-      document.onload = function () {
-        console.log('set button listener')
-        setButtonListener()
-      }
-      setButtonListener()
   </script>
 
 </html>
