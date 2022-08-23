@@ -1,11 +1,12 @@
 /********* Header **********/
 .header {
-  background-image: url("../images/header_bg.png");
+  background-image: url("../images/header_bg1.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 290px;
   position: relative;
+  border-bottom: 7px solid #fdc32d;
 }
 .header .toolbar {
   padding: 15px 0;
@@ -181,18 +182,19 @@
   border: 1px solid #fdc32d;
 }
 .products .onze .item .item_body .cart_fav .cart {
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   display: flex;
   justify-content: center;
   align-content: center;
   background-color: #fdc32d;
   padding: 5px 2px;
-  margin-left: -1px;
+  margin: -1px;
 }
 .products .onze .item .item_body .cart_fav .cart i {
   color: white;
   font-size: 13px;
+  margin-top: 2px;
 }
 .products .onze .item .item_body .cart_fav .fav {
   display: flex;
@@ -204,6 +206,7 @@
 }
 .products .onze .item .item_body .cart_fav i {
   color: #fdc32d;
+  margin-top: 2px;
 }
 .products .onze .item .item_body .price {
   font-size: 13px;
@@ -475,5 +478,10 @@
   }
   .products {
     padding: 170px 0 70px 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer .right .checkbox_field span {
+    width: 250px;
   }
 }
