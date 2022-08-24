@@ -137,10 +137,6 @@
             <input type="search" placeholder="Zoek naar producten" >
           </div>
         </div>
-
-        <div class="container header_img">
-          <img src="./assets/images/Schermafbeelding.png" alt="header img" >
-        </div>
       </div>
     </div>
 
@@ -150,23 +146,38 @@
       </div>
       <div class="body">
         <div class="product">
-          <div class="row product_detail">
-            <div class="col-md-6 col-sm-12">
-              <div class="title">
-                GOLD High-end protein blend
+          <div class="title">
+            GOLD High-end protein blend
+          </div>
+          <div class="mediaQuery">
+            <div class="text">OAKSDALE</div>
+            <div class="d-flex align-items-center justify-content-start review">
+              <div class="d-flex justify-content-start align-items-center">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
-              <div class="text">OAKSDALE</div>
-              <div class="d-flex align-items-center justify-content-start review">
-                <div class="d-flex justify-content-start align-items-center">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+              <div class="review_value">121</div>
+            </div>
+          </div>
+          <div class="row flex-column-reverse flex-lg-row product_detail">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="mediaQuery1">
+                <div class="text">OAKSDALE</div>
+                <div class="d-flex align-items-center justify-content-start review">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="review_value">121</div>
                 </div>
-                <div class="review_value">121</div>
               </div>
-              <div class="details">
+              <div class="collapse show details" id="details">
                 Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
                 Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
                 Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
@@ -175,51 +186,87 @@
               </div>
   
               <div class="more_less">
-                <button>
+                <button type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="details">
                   Lees meer
+                  <i class="fas fa-angle-down"></i>
                 </button>
               </div>
 
-              <div class="d-flex justify-content-between">
-                <div class="d-flex flex-column">
-                  <button>
-                    KIES JE SMAAK
-                  </button>
-                  <button>
-                    INHOUD
-                  </button>
-                  <button>
+              <div class="details_tool">
+                <div class="d-flex flex-column left">
+                  <div class="dropdown">
+                    <button class="d-flex align-items-center justify-content-between kies_btn" data-toggle="dropdown" aria-expanded="false">
+                      KIES JE SMAAK
+                      <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-menu kies_body">
+                      <a class="dropdown-item" href="#">KIES1</a>
+                      <a class="dropdown-item" href="#">KIES@</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="d-flex align-items-center justify-content-between kies_btn" data-toggle="dropdown" aria-expanded="false">
+                      INHOUD
+                      <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-menu kies_body">
+                      <a class="dropdown-item" href="#">INHOUD</a>
+                      <a class="dropdown-item" href="#">INHOUD</a>
+                    </div>
+                  </div>
+
+                  <button class="d-flex align-items-center justify-content-between cart_btn">
                     In winkelmandje
+                    <i class="fas fa-shopping-basket"></i>
                   </button>
                 </div>
-                <div class="d-flex flex-column">
-                  <button>
+                <div class="d-flex flex-column right">
+                  <button class="d-flex align-items-center justify-content-between favourite_btn">
                     Bewaar als faonet
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
                   </button>
-                  <div class="d-flex">
-                    <div>45</div>
-                    <div>36</div>
+                  <div class="d-flex justify-content-end mt-2">
+                    <div class="price">
+                      <i class="fas fa-euro-sign"></i>
+                      46
+                    </div>
+                    <div class="off_price">
+                      <i class="fas fa-euro-sign"></i>                   
+                      36
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="">
-                <button>
-                  VOEDINGSINFOMATE
+              <div class="d-flex flex-column more_btn">
+                <button data-toggle="collapse" data-target="#VOEDINGSINFOMATE" aria-expanded="false" aria-controls="VOEDINGSINFOMATE">
+                  <span>
+                    VOEDINGSINFOMATE
+                  </span>
+                  <i class="fas fa-angle-down"></i>
                 </button>
-                <button>
-                  GEBRUIK & DOSERING
+                <div class="collapse more_details" id="VOEDINGSINFOMATE">
+                  This is VOEDINGSINFOMATE
+                </div>
+                <button data-toggle="collapse" data-target="#GEBRUIK" aria-expanded="false" aria-controls="GEBRUIK">
+                  <span>
+                    GEBRUIK & DOSERING
+                  </span>
+                  <i class="fas fa-angle-down"></i>
                 </button>
+                <div class="collapse more_details" id="GEBRUIK">
+                  This is GEBRUIK & DOSERING
+                </div>
               </div>
             </div>
             
-            <div class="col-md-6 col-sm-12 d-flex flex-column image_field">
-              <img src="./assets/images/product_img.png" alt="product image" >
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-between pt-1 image_field">
+              <img class="main_img" src="./assets/images/product_img.png" alt="product image" >
               <div class="d-flex justify-content-between slider">
-                <img src="./assets/images/slider_img.png" alt="slider image" >
-                <img src="./assets/images/slider_img.png" alt="slider image" >
-                <img src="./assets/images/slider_img.png" alt="slider image" >
-                <img src="./assets/images/slider_img.png" alt="slider image" >
+                <img class="slider_img" src="./assets/images/slider_img.png" alt="slider image" >
+                <img class="slider_img" src="./assets/images/slider_img.png" alt="slider image" >
+                <img class="slider_img" src="./assets/images/slider_img.png" alt="slider image" >
+                <img class="slider_img" src="./assets/images/slider_img.png" alt="slider image" >
               </div>
             </div>
 
