@@ -1,4 +1,4 @@
-/********* Header **********/
+/********* Header *********/
 .header {
   background-image: url("../images/header_bg1.png");
   background-size: cover;
@@ -7,6 +7,7 @@
   height: 290px;
   position: relative;
   border-bottom: 7px solid #fdc32d;
+  /* z-index: -10; */
 }
 .header .toolbar {
   padding: 15px 0;
@@ -21,27 +22,26 @@
 }
 .header .toolbar .searchbar input {
   border: none;
-  border-radius: 2px;
+  border-end-end-radius: 3px;
+  border-start-end-radius: 3px;
   outline: none;
-  padding: 8px 5px;
   font-size: 13px;
   color: #333333;
   width: 200px;
+  height: 35px;
 }
 .header .toolbar .searchbar input::placeholder {
-  margin-bottom: 10px;
   text-align: center;
-  padding-bottom: 20px;
   font-size: 12px;
-  color: #78797b
+  color: #78797b;
 }
 .header .toolbar .searchbar .search_icon {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 28px;
-  height: 36px;
+  width: 35px;
+  height: 35px;
   margin-right: -1px;
   border-end-start-radius: 3px;
   border-start-start-radius: 3px;
@@ -62,7 +62,7 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 28px;
+  width: 35.5px;
   height: 35.5px;
   margin-right: -1px;
   border-end-start-radius: 3px;
@@ -127,61 +127,87 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: -12px;
+  margin-left: -15px;
+  z-index: 10;
+}
+.zIndex-1000 {
+  z-index: 1000;
 }
 .header .header_img img {
   width: 100%;
   height: 323px;
 }
 
-/********** products ***********/
-.products {
-  padding: 260px 0 70px 0;
+/*********Product Detail **********/
+.body {
+  padding: 30px;
 }
-.products .onze {
+.body .product .product_detail .review {
+  margin: 10px 0;
+}
+
+.body .product .product_detail .review i {
+  font-size: 10px;
+  color: #fdc32d;
+}
+.body .product .product_detail .review .review_value {
+  font-size: 11px;
+  margin-left: 5px;
+  margin-bottom: 1.5px;
+}
+
+
+
+
+
+/********** Product ***********/
+.body .product {
+  padding: 70px 0;
+}
+.body .product .anderen {
   padding: 0 12%;
 }
-.products .onze .title {
+.body .product .anderen .title {
   text-align: center;
   color: black;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 35px;
 }
-.products .onze .item {
+.body .product .anderen .item {
   margin: 5px 0;
 }
-.products .onze .item .item_body {
+.body .product .anderen .item .item_body {
   width: 150px;
 }
-.products .onze .item .item_body .item_title {
+.body .product .anderen .item .item_body .item_title {
   font-size: 12px;
   color: #78797b;
   text-align: left;
   margin-top: 15px;
 }
-.products .onze .item .item_body .details {
+.body .product .anderen .item .item_body .details {
   font-size: 13px;
   color: black;
   font-weight: 600;
 }
-.products .onze .item .item_body .review {
+.body .product .anderen .item .item_body .review {
   margin: 10px 0;
 }
 
-.products .onze .item .item_body .review i {
+.body .product .anderen .item .item_body .review i {
   font-size: 10px;
   color: #fdc32d;
 }
-.products .onze .item .item_body .review .review_value {
+.body .product .anderen .item .item_body .review .review_value {
   font-size: 11px;
   margin-left: 5px;
   margin-bottom: 1.5px;
 }
-.products .onze .item .item_body .cart_fav {
+.body .product .anderen .item .item_body .cart_fav {
   border: 1px solid #fdc32d;
 }
-.products .onze .item .item_body .cart_fav .cart {
+.body .product .anderen .item .item_body .cart_fav .cart {
   width: 26px;
   height: 26px;
   display: flex;
@@ -191,12 +217,12 @@
   padding: 5px 2px;
   margin: -1px;
 }
-.products .onze .item .item_body .cart_fav .cart i {
+.body .product .anderen .item .item_body .cart_fav .cart i {
   color: white;
   font-size: 13px;
   margin-top: 2px;
 }
-.products .onze .item .item_body .cart_fav .fav {
+.body .product .anderen .item .item_body .cart_fav .fav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,49 +230,25 @@
   height: 25px;
   padding: 5px 2px;
 }
-.products .onze .item .item_body .cart_fav i {
+.body .product .anderen .item .item_body .cart_fav i {
   color: #fdc32d;
   margin-top: 2px;
 }
-.products .onze .item .item_body .price {
+.body .product .anderen .item .item_body .price {
   font-size: 13px;
   color: rgb(116, 115, 115);
   text-decoration: line-through;
   font-weight: 400;
 }
-.products .onze .item .item_body .off_price {
+.body .product .anderen .item .item_body .off_price {
   font-size: 13px;
   color: black;
   font-weight: 700;
 }
-.products .margin_t {
+.body .product .margin_t {
   margin-top: 50px;
 }
-/******* building ********/
-.building  img {  
-  width: 100%;
-}
-/******* waarom ********/
-.waarom {
-  padding: 50px 0 80px 0;
-}
-.waarom .item {
-  margin: 5px 0;
-}
-.waarom .waarom_title {
-  text-align: center;
-  color: black;
-  font-size: 22px;
-  font-weight: 700;
-}
-.waarom .details {
-  word-break: break-all;
-  font-size: 14px;
-  margin-top: 3rem;
-}
-.waarom .icon strong {
-  font-size: 14px;
-}
+
 /********** footer **********/
 .footer {
   width: 100%;
@@ -282,7 +284,7 @@
   color: white;
 }
 .footer .right input {
-  width: 60%;
+  width: 335px;
   outline: none;
   border: none;
   background-color: #4e4e4e;
@@ -297,6 +299,7 @@
 }
 .footer .right .checkbox_field {
   margin: 0 0 22px 0;
+  width: 335px;
 }
 .footer .right .checkbox_field input {
   width: 15px;
@@ -307,7 +310,6 @@
   font-size: 13px;
   color: white;
   margin-left: 10px;
-  width: 318px;
   word-break: break-all;
   text-align: initial;
 }
@@ -352,6 +354,10 @@
   align-items: center;
 }
 
+.navbars2_display {
+  display: none !important;
+}
+
 /************ Media Query *************/
 @media screen and (max-width: 1028px) {
   .footer {
@@ -378,8 +384,8 @@
 }
 
 @media screen and (max-width: 998px) {
-  .products {
-    padding: 220px 0 70px 0;
+  .body .product {
+    padding: 60px 0;
   }
   .header .toolbar .field1 {
     width: 60%;
@@ -389,6 +395,51 @@
   }
   .min_footer .body {
     width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header .navbars_bg {
+    background-image: url("../images/header_bg1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 15px;
+  }  
+  .header .toolbar .searchbar {
+    display: none;
+  }
+  .header .searchbar1 {
+    width: 50%;
+    display: flex !important;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 1000;
+  }
+  .header .searchbar1 input {
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font-size: 13px;
+    color: #333333;
+    width: 100%;
+    height: 35.5px;
+  }
+  .navbars1_display {
+    display: none !important;
+  }
+  .navbars2_display {
+    display: flex !important;
+  }
+  .navbars2_display .a_width {
+    width: 110px;
+  }
+  .header .navbars2_display a {
+    width: 60px;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
   }
 }
 
@@ -402,7 +453,13 @@
   .header .header_img img {
     height: 230px;
   }
-  .products .onze {
+  .navbars2_display .item {
+    width: 33.3%; 
+  }
+  .body .product {
+    padding: 50px 0;
+  }
+  .body .product .anderen {
     padding: 0 8%;
   }
   .waarom .item {
@@ -413,10 +470,7 @@
   }
 }
 
-@media screen and (max-width: 575px) {
-  .header .toolbar .searchbar {
-    display: none;
-  }
+@media screen and (max-width: 576px) {
   .footer .left .margin_top {
     margin-top: -45px;
   }
@@ -429,28 +483,17 @@
     align-items: center;
     width: 100%;
   }
-  .header .searchbar1 {
-    display: block;
-    display: flex !important;
-    align-items: center;
-  }
-  .header .searchbar1 input {
-    border: none;
-    border-radius: 2px;
-    outline: none;
-    padding: 8px 5px;
-    font-size: 13px;
-    color: #333333;
-    width: 100%;
-  }
   .header .header_img {
-    top: 200px;
-  }
+    top: 160px;
+}
   .header .header_img img {
     height: 200px;
   }
-  .products {
-    padding: 215px 0 70px 0;
+  .body .product .anderen {
+    padding: 0 0;
+  }
+  .body .product .anderen .item {
+    width: 50%;
   }
   .footer .left {
     display: flex;
@@ -470,18 +513,26 @@
   }
 }
 @media screen and (max-width: 490px) {
+  .header {
+    height: 220px;
+  }
   .header .header_img {
-    top: 220px;
+    top: 160px;
   }
   .header .header_img img {
     height: 160px;
   }
-  .products {
-    padding: 170px 0 70px 0;
-  }
 }
 @media screen and (max-width: 380px) {
+  .header .header_img {
+    width: 99%;
+  }
   .footer .right .checkbox_field span {
     width: 250px;
+  }
+  .footer .right input {
+    width: 310px;
+  }.footer .right .checkbox_field {
+    width: 310px;
   }
 }
