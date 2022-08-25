@@ -1,0 +1,15 @@
+.navbar .dropdown-menu {
+  top:54px;
+  right: 0px;
+  min-width: 20rem;
+  left: auto;
+  padding: 2rem !important;
+}
+
+.navbar .dropdown-menu label {
+  font-size: 14px !important;
+}
+
+.navbar .dropdown-menu h6 {
+  font-weight: bold;
+}

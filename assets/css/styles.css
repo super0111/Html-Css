@@ -30,7 +30,12 @@
 }
 .navbar .user_cart i {
   margin: 0 5px;
-  font-size: 13px;
+  font-size: 17px;
+  color: #4D5250;
+}
+
+.navbar .user_cart button:hover, button:active {
+  background: #E1F6ED;
 }
 .navbar .navbars {
   width: 40%;
