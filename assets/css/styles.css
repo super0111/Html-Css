@@ -60,12 +60,38 @@
   height: 670px;
 }
 .header .rectangle {
-  background-image: url("../images/Rectangle\ \(1\).svg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height:100px;
+  position: relative;
+  width: 42%;
+  padding-top: 240px;
 }
+.header .rectangle img {
+  width: 100%;
+}
+.header .rectangle .body {
+  position: absolute;
+  bottom: 25%;
+  left: 120px;
+}
+.header .rectangle .body strong {
+  color: #FFFFFF;
+  font-family: FatFrank;
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.header .rectangle .body button {
+  width: 150px;
+  height: 35px;
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0 0 6px 0 rgba(228,228,228,0.5);
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+}
+
 
 /******** overKarri ********/
 .overKarri {
