@@ -1,3 +1,11 @@
+@font-face {
+  font-family:"montserrat-medium";
+  src:url("../fonts/FontsFree-Net-Montserrat-Medium.ttf") format("woff"),
+  url("../fonts/FontsFree-Net-Montserrat-Medium.ttf") format("opentype"),
+  url("../fonts/FontsFree-Net-Montserrat-Medium.ttf") format("truetype");
+}
+
 html, body, div {
-  font-family: 'Montserrat Medium'
+  /* font-family: 'Montserrat Medium' */
+  font-family: 'montserrat-medium';
 }
