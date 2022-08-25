@@ -1,7 +1,7 @@
 .navbar .dropdown-menu {
   top:54px;
   right: 0px;
-  min-width: 20rem;
+  min-width: 24rem;
   left: auto;
   padding: 2rem !important;
 }
@@ -12,4 +12,19 @@
 
 .navbar .dropdown-menu h6 {
   font-weight: bold;
+}
+.navbar .dropdown-menu .form-group input.form-control {
+  border-radius: 20px;
+}
+.navbar .dropdown-menu button {
+  margin-top: 1.5rem;
+  width: 100%;
+  border-radius: 1.5rem;
+}
+/* .navbar .dropdown-menu .notice {
+  margin-top: 1.5rem;
+  /* text-align: center; */
+} */
+.navbar .dropdown-menu .notice label {
+  font-size: 12px;
 }
