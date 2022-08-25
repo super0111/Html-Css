@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Oaksdale</title>
+    <title>Karri</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -15,487 +15,173 @@
   </head>
   <body>
 
-    <div class="header">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center toolbar">
-          <div class="d-flex justify-content-between align-items-center field1">
-            <img src="./assets//images/logo.png" alt="logo" >
-            <div class="searchbar">
-              <div class="search_icon">
-                <i class="fa fa-search"></i>
-              </div>
-              <input type="search" placeholder="Zoek naar producten" >
+    <div class="d-flex flex-column justify-content-between">
+      <div class="container navbar">
+        <div class="d-flex justify-content-between w-100 height1">
+          <div class="d-flex align-items-center logo">
+            <img src="./assets/images/Karri-logo-rgb.png" alt="logo" >
+          </div>
+          <div class="d-flex justify-content-between align-items-end navbars">
+            <div class="item">
+              <div class="border_top"></div>
+              Welkom
+            </div>
+            <div class="item">
+              Assortiment
+            </div>
+            <div class="item">
+              Hoe werken we
+            </div>
+            <div class="item">
+              Contact
             </div>
           </div>
-          <div class="field2">
-            <div class="d-flex justify-content-start align-items-center icon_field">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <div class="d-flex flex-column justify-content-between">
+            <div class="d-flex align-items-center search">
+              <input type="search" placeholder="Naar wat ben je op zpel?" >
+              <img src="./assets//images/Search.svg" alt="search" >
+            </div>
+            <div class="d-flex justify-content-end align-items-center w-100 user_cart">
               <i class="fa fa-user-o" aria-hidden="true"></i>
               <i class="fas fa-shopping-basket"></i>
             </div>
-            <div class="lang_field">
-              <div class="dropdown">
-                <button type="button" data-toggle="dropdown" aria-expanded="false">
-                  NL
-                </button>
-                <div class="dropdown-menu lang_body">
-                  <a class="dropdown-item lang_item" href="#">FR</a>
-                  <a class="dropdown-item lang_item" href="#">ENG</a>
-                  <a class="dropdown-item lang_item" href="#">ES</a>
-                  <a class="dropdown-item lang_item" href="#">FOR</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-
-        <div class="d-flex justify-content-between align-items-baseline w-100 position-relative">
-          <nav class="navbar navbar-expand-lg navbar-dark w-100 zIndex-1000">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse w-100" id="navbarTogglerDemo01">
-              <div class="w-100 navbars navbars_bg">
-                <div class="d-flex flex-wrap justify-content-between align-items-center w-100 navbars1_display">
-                  <a href="#">Eiwitten</a>
-                  <a href="#">Afslanken</a>
-                  <a href="#">Sportvoeding</a>
-                  <a href="#">Vitamines</a>
-                  <a href="#">Voeding & repen</a>
-                  <a href="#">Kledij & accesories</a>
-                  <a href="#">Acties</a>
-                  <a href="#">Over Oaksdale</a>
-                  <a href="#">Verdelers</a>
-                  <a href="#">Concep store Oudenaarde</a>
-                  <a href="#">Contact</a>
-                </div>
-
-                <div class="row navbars2_display">
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Eiwitten</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Afslanken</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Sportvoeding</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Vitamines</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Voeding </a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Kledij</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Acties</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Over</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Verdelers</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Concep store Oudenaarde</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Contact</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div class="searchbar1">
-            <div class="search_icon">
-              <i class="fa fa-search"></i>
-            </div>
-            <input type="search" placeholder="Zoek naar producten" >
+        <div class="navbars1">
+          <div class="item">
+            Welkom
+          </div>
+          <div class="item">
+            Assortiment
+          </div>
+          <div class="item">
+            Hoe werken we
+          </div>
+          <div class="item">
+            Contact
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="url">
-        Home > Eiwitten > GOLD High-end protein blend
+    <div class="header">
+      <div class="container">
+        <div class="rectangle">
+          <img class="posistion-relative" src="./assets/images/Rectangle (1).svg" >
+          <strong>
+            You care, we carry
+          </strong>
+          <button>
+            Ons assortiment
+          </button>
+        </div>
       </div>
-      <div class="body">
-        <div class="product">
-          <div class="title">
-            GOLD High-end protein blend
+    </div>
+
+    <div class="overKarri">
+      <div class="container">
+        <div class="text">
+          Bij Karri mag je als zorgverlener rekenen op een optimale ondersteuning zodat jij je kunt focussen op één doel: de beste zorg verlenen aan de patiënten.
+        </div>
+        <button>
+          Over Karri
+        </button>
+        <div class="row items">
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (1).png" alt="" >
+            <span>
+              Beschermings-materiaal
+            </span>
           </div>
-          <div class="mediaQuery">
-            <div class="text">OAKSDALE</div>
-            <div class="d-flex align-items-center justify-content-start review">
-              <div class="d-flex justify-content-start align-items-center">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="review_value">121</div>
-            </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (2).png" alt="" >
+            <span>
+              Incontinentie
+            </span>
           </div>
-          <div class="row flex-column-reverse flex-lg-row product_detail">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-              <div class="mediaQuery1">
-                <div class="text">OAKSDALE</div>
-                <div class="d-flex align-items-center justify-content-start review">
-                  <div class="d-flex justify-content-start align-items-center">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="review_value">121</div>
-                </div>
-              </div>
-              <div class="collapse show details" id="details">
-                Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
-                Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
-                Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
-                Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
-                Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
-              </div>
-  
-              <div class="more_less">
-                <button type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="details">
-                  Lees meer
-                  <i class="fas fa-angle-down"></i>
-                </button>
-              </div>
-
-              <div class="details_tool">
-                <div class="d-flex flex-column left">
-                  <div class="dropdown">
-                    <button class="d-flex align-items-center justify-content-between kies_btn" data-toggle="dropdown" aria-expanded="false">
-                      KIES JE SMAAK
-                      <i class="fas fa-angle-down"></i>
-                    </button>
-                    <div class="dropdown-menu kies_body">
-                      <a class="dropdown-item" href="#">KIES1</a>
-                      <a class="dropdown-item" href="#">KIES@</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="d-flex align-items-center justify-content-between kies_btn" data-toggle="dropdown" aria-expanded="false">
-                      INHOUD
-                      <i class="fas fa-angle-down"></i>
-                    </button>
-                    <div class="dropdown-menu kies_body">
-                      <a class="dropdown-item" href="#">INHOUD</a>
-                      <a class="dropdown-item" href="#">INHOUD</a>
-                    </div>
-                  </div>
-
-                  <button class="d-flex align-items-center justify-content-between cart_btn">
-                    In winkelmandje
-                    <i class="fas fa-shopping-basket"></i>
-                  </button>
-                </div>
-                <div class="d-flex flex-column right">
-                  <button class="d-flex align-items-center justify-content-between favourite_btn">
-                    Bewaar als faonet
-                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                  </button>
-                  <div class="d-flex justify-content-end mt-2">
-                    <div class="price">
-                      <i class="fas fa-euro-sign"></i>
-                      46
-                    </div>
-                    <div class="off_price">
-                      <i class="fas fa-euro-sign"></i>                   
-                      36
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column more_btn">
-                <button data-toggle="collapse" data-target="#VOEDINGSINFOMATE" aria-expanded="false" aria-controls="VOEDINGSINFOMATE">
-                  <span>
-                    VOEDINGSINFOMATE
-                  </span>
-                  <i class="fas fa-angle-down"></i>
-                </button>
-                <div class="collapse more_details" id="VOEDINGSINFOMATE">
-                  This is VOEDINGSINFOMATE
-                </div>
-                <button data-toggle="collapse" data-target="#GEBRUIK" aria-expanded="false" aria-controls="GEBRUIK">
-                  <span>
-                    GEBRUIK & DOSERING
-                  </span>
-                  <i class="fas fa-angle-down"></i>
-                </button>
-                <div class="collapse more_details" id="GEBRUIK">
-                  This is GEBRUIK & DOSERING
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-between pt-1 image_field">
-              <img class="main_img" src="./assets/images/product_img.png" alt="product image" >
-              <div class="d-flex justify-content-between slider">
-                <img class="slider_img" src="./assets/images/slider_img.png" alt="slider image" >
-                <img class="slider_img" src="./assets/images/slider_img.png" alt="slider image" >
-                <img class="slider_img" src="./assets/images/slider_img.png" alt="slider image" >
-                <img class="slider_img" src="./assets/images/slider_img.png" alt="slider image" >
-              </div>
-            </div>
-
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (3).png" alt="" >
+            <span>
+              Verzorgingssets
+            </span>
           </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (4).png" alt="" >
+            <span>
+              Wondzorg
+            </span>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (5).png" alt="" >
+            <span>
+              Spuiten - naalden- perfusiesets
+            </span>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (6).png" alt="" >
+            <span>
+              Ontsmetting, reiniging en bescherming
+            </span>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (7).png" alt="" >
+            <span>
+              Diagnostiek
+            </span>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (8).png" alt="" >
+            <span>
+              Voeding
+            </span>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (8).png" alt="" >
+            <span>
+              Geneesmiddelen en voedingsupplementen
+            </span>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (9).png" alt="" >
+            <span>
+              Parafarmacie
+            </span>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 item">
+            <img src="./assets/images/Bitmap (10).png" alt="" >
+            <span>
+              Steunbandages en toebehoren
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="anderen">
+    <div class="onzeWorking">
+      <div class="container">
+        <div class="body">
+          <img src="./assets/images/Home-01.jpg" alt="home 01" >
+          <div class="details">
             <div class="title">
-              Anderen kocten ook
+              Het bieden van de geschikte ondersteuning voor elke zorgverlener
             </div>
-            <div class="row">
-  
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
-                <div class="d-flex flex-column justify-content-center item_body">
-                  <img src="./assets//images/product.png" alt="products" >
-                  <div class="item_title">
-                    OAKSDALE
-                  </div>
-                  <div class="details">
-                    GOLD hight-end protein blend Gentle-vanilla
-                  </div>
-                  <div class="d-flex align-items-center justify-content-start review">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="review_value">121</div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center cart_fav">
-                      <div class="cart">
-                        <i class="fas fa-shopping-basket"></i>
-                      </div>
-                      <div class="fav">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                    <div class="price">
-                      <i class="fas fa-euro-sign"></i>
-                      46
-                    </div>
-                    <div class="off_price">
-                      <i class="fas fa-euro-sign"></i>                   
-                      36
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
-                <div class="d-flex flex-column justify-content-center item_body">
-                  <img src="./assets//images/product.png" alt="products" >
-                  <div class="item_title">
-                    OAKSDALE
-                  </div>
-                  <div class="details">
-                    GOLD hight-end protein blend Gentle-vanilla
-                  </div>
-                  <div class="d-flex align-items-center justify-content-start review">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="review_value">121</div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center cart_fav">
-                      <div class="cart">
-                        <i class="fas fa-shopping-basket"></i>
-                      </div>
-                      <div class="fav">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                    <div class="price">
-                      <i class="fas fa-euro-sign"></i>
-                      46
-                    </div>
-                    <div class="off_price">
-                      <i class="fas fa-euro-sign"></i>                   
-                      36
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
-                <div class="d-flex flex-column justify-content-center item_body">
-                  <img src="./assets//images/product.png" alt="products" >
-                  <div class="item_title">
-                    OAKSDALE
-                  </div>
-                  <div class="details">
-                    GOLD hight-end protein blend Gentle-vanilla
-                  </div>
-                  <div class="d-flex align-items-center justify-content-start review">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="review_value">121</div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center cart_fav">
-                      <div class="cart">
-                        <i class="fas fa-shopping-basket"></i>
-                      </div>
-                      <div class="fav">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                    <div class="price">
-                      <i class="fas fa-euro-sign"></i>
-                      46
-                    </div>
-                    <div class="off_price">
-                      <i class="fas fa-euro-sign"></i>                   
-                      36
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center item">
-                <div class="d-flex flex-column justify-content-center item_body">
-                  <img src="./assets//images/product.png" alt="products" >
-                  <div class="item_title">
-                    OAKSDALE
-                  </div>
-                  <div class="details">
-                    GOLD hight-end protein blend Gentle-vanilla
-                  </div>
-                  <div class="d-flex align-items-center justify-content-start review">
-                    <div class="d-flex justify-content-start align-items-center">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <div class="review_value">121</div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center cart_fav">
-                      <div class="cart">
-                        <i class="fas fa-shopping-basket"></i>
-                      </div>
-                      <div class="fav">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                    <div class="price">
-                      <i class="fas fa-euro-sign"></i>
-                      46
-                    </div>
-                    <div class="off_price">
-                      <i class="fas fa-euro-sign"></i>                   
-                      36
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
+            <div class="text">
+              Karri fungeert als de perfecte incubator tussen de eerstelijnszorgverlener en de patiënt. Wij staan ten dienste van een sterk veranderend zorglandschap, waarbij we een stap verder gaan dan enkel verkoop van medische materialen. 
             </div>
+            <button>Onze werking</button>
           </div>
         </div>
       </div>
     </div>
+
+
 
     <div class="footer">
-      <div class="left">
-        <div class="text-center logo">
-          <img src="./assets/images/footer_logo.png" alt="footer logo" >
-        </div>
-        <div class="d-flex justify-content-start navbar">
-          <div class="d-flex flex-column justify-content-between mr-3">
-            <a href="#">Eiwitten</a>
-            <a href="#">Afslanken</a>
-            <a href="#">Sportvoeding</a>
-            <a href="#">Vitamines</a>
-            <a href="#">Voeding & repen</a>
-            <a href="#">Kledij & accesories</a>
-            <a href="#">Merken</a>
-            <a href="#">Over Oaksdale</a>
-          </div>
-          <div class="d-flex flex-column h-100 ml-3 margin_top">
-            <a href="#">Acties</a>
-            <a href="#">Waarom Oaksdale</a>
-            <a href="#">Verdelers</a>
-            <a href="#">Concep store</a>
-            <a href="#">FAQ</a>
-            <a href="#">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div class="right">
-        <div class="margin_auto">
-          <div class="title">
-            Schrijf je in op onze nieuwsbrief
-          </div>
-          <input type="text" placeholder="Voer je mail adres in*" >
-          <label class="d-flex checkbox_field">
-            <input type="checkbox">
-            <span>
-              Ik ga emee akkoord dat mijn gegevens worden verwerkt
-              in overeenstemming met het privacybeleid*
-            </span>
-          </label>
-          <button>Schrijf Je In</button>
-        </div>
-      </div>
+
     </div>
 
     <div class="min_footer">
-      <div class="body">
-        <div class="text">
-          <div class="d-flex justify-content-start align-items-center">
-            web by <img src="./assets/images/footer_symbol.png" alt="footer icon" > RedBit 
-          </div>
-          <div class="li_item">
-            <li>2022</li><li>Algemene voorwaarden</li><li>Privacy policy</li><li>cookie policy</li>
-          </div>
-        </div>
-      </div>
+
     </div>
 
   </body>
