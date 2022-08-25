@@ -148,12 +148,76 @@
 /********* onzeWorking ***********/
 .onzeWerking {
   background-color:#2FAC73;
+  height: 1000px;
 }
 .onzeWerking .body img {
   margin-top: -90px;
   width: 86%;
 }
 .onzeWerking .body .details {
-  width: 86%;
+  width: 80%;
   margin: auto;
+  margin-top: -50px;
 }
+.onzeWerking .body .details .title {
+  color: #404342;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+.onzeWerking .body .details .text {
+  color: #4a4e4c;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.onzeWerking .body .details button {
+  margin-top: 30px;
+  border-radius: 30px;
+  background-color: #2FAC73;
+  border: 1px solid white;
+  font-size: 13px;
+  width: 110px;
+  height: 33px;
+  color: #FFFFFF;
+  font-family: Montserrat;
+}
+
+/********* Service **********/
+.service {
+  margin-top: -590px;
+  padding: 0 50px;
+}
+.service .service_title {
+  margin-top: 110px;
+  color: #FFFFFF;
+  font-family: FatFrank;
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+.service .service_text {
+  margin: 5px;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  width: 36%;
+  word-break: break-all;
+}
+.service .item {
+  width: 90%;
+  position: relative;
+}
+.service .item img {
+  width: 100%;
+}
+.service .item .numberImg {
+  position: absolute;
+  top: -10px;
+  left: 35px;
+  width: 80px;
+  height: 80px;
+}
+
