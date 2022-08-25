@@ -1,3 +1,8 @@
+div.container.navbar {
+  max-width: 100%;
+  width: 100%;
+  padding: 16px 120px;
+}
 .navbar .dropdown-menu {
   top:54px;
   right: 0px;

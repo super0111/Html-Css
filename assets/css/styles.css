@@ -3,7 +3,7 @@
   padding: 15px 0px;
 }
 .navbar .height1 {
-  height: 95px;
+  /* height: 95px; */
 }
 .navbar .search {
   height: 40px;
@@ -28,6 +28,9 @@
   width: 13px;
   margin-top: 3px;
 }
+.navbar .user_cart {
+  padding: 18px;
+}
 .navbar .user_cart i {
   margin: 0 5px;
   font-size: 17px;
@@ -38,10 +41,15 @@
   background: #E1F6ED;
 }
 .navbar .navbars {
-  width: 40%;
+  /* width: 40%; */
+  gap: 80px;
 }
 .navbar .navbars .item {
   font-size: 14px;
+  padding: 24px 0px;
+}
+.navbar .navbars .item.active {
+  border-top: 2px solid #2FAC73;
 }
 .navbar .navbars .item .border_top{
   border-top: 2px solid #2FAC73;
