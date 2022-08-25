@@ -24,7 +24,7 @@
 .navbar .search input::placeholder {
   font-size: 13px;
   color: #4D5250;
-  font-family: Montserrat;
+  font-family: 'Montserrat Medium';
 }
 .navbar .search img {
   width: 13px;
@@ -32,7 +32,12 @@
 }
 .navbar .user_cart i {
   margin: 0 5px;
-  font-size: 13px;
+  font-size: 17px;
+  color: #4D5250;
+}
+
+.navbar .user_cart button:hover, button:active {
+  background: #E1F6ED;
 }
 .navbar .navbars {
   width: 40%;
@@ -60,6 +65,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 670px;
+
 }
 .header .rectangle {
   position: relative;
@@ -76,7 +82,7 @@
 }
 .header .rectangle .body strong {
   color: #FFFFFF;
-  font-family: FatFrank;
+  font-family: 'Fat Frank';
   font-size: 70px;
   font-weight: 900;
   margin-bottom: 25px;
