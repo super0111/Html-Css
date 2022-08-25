@@ -22,7 +22,7 @@
 .navbar .search input::placeholder {
   font-size: 13px;
   color: #4D5250;
-  font-family: Montserrat;
+  font-family: 'Montserrat Medium';
 }
 .navbar .search img {
   width: 13px;
@@ -58,6 +58,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 670px;
+
 }
 .header .rectangle {
   position: relative;
@@ -74,7 +75,7 @@
 }
 .header .rectangle .body strong {
   color: #FFFFFF;
-  font-family: FatFrank;
+  font-family: 'Fat Frank';
   font-size: 70px;
   font-weight: 900;
   margin-bottom: 30px;
