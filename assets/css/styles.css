@@ -70,7 +70,7 @@
 }
 .header .rectangle .body {
   position: absolute;
-  bottom: 25%;
+  bottom: 19%;
   left: 120px;
 }
 .header .rectangle .body strong {
@@ -78,7 +78,7 @@
   font-family: 'Fat Frank';
   font-size: 70px;
   font-weight: 900;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .header .rectangle .body button {
   width: 150px;
@@ -96,22 +96,65 @@
 
 /******** overKarri ********/
 .overKarri {
-
+  padding: 150px 0;
+}
+.overKarri .overKarri_field {
+  width: 85%;
+}
+.overKarri .text {
+  color: #585c5a;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  word-break: break-all;
+}
+.overKarri button {
+  margin-top: 25px;
+  border-radius: 30px;
+  background-color: #2FAC73;
+  border: none;
+  outline: none;
+  width: 95px;
+  height: 35px;
+  font-size: 13px;
+  color: #FFFFFF;
+  font-family: Montserrat;
 }
 .overKarri .items {
-  margin: 70px 30px;
-  border: 1px solid black;
+  margin: 100px 0px;
+  border: 1px solid #DDE6E2;
+  border-radius: 7px;
 }
 .overKarri .items .item {
-  border-right: 1px solid black;
+  padding-top: 50px;
+  height: 170px;
+  border-bottom: 1px solid #DDE6E2;
+  border-right: 1px solid #DDE6E2;
+}
+.overKarri .items .item img {
+  width: 45px;
+  height: 35px;
+}
+.overKarri .items .item span {
+  color: #2FAC73;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /********* onzeWorking ***********/
-.onzeWorking {
+.onzeWerking {
   background-color:#2FAC73;
 }
-.onzeWorking .body {
-  display: flex;
-  justify-content: space-between;
-
+.onzeWerking .body img {
+  margin-top: -90px;
+  width: 86%;
+}
+.onzeWerking .body .details {
+  width: 86%;
+  margin: auto;
 }
