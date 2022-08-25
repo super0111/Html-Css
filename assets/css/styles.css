@@ -222,18 +222,91 @@
   width: 36%;
   word-break: break-all;
 }
-.service .item {
+.service .item1 {
   width: 90%;
   position: relative;
 }
-.service .item img {
+.service .item2 {
+  margin-top: 185px;
+  width: 90%;
+  position: relative;
+}
+.service .item3 {
+  margin-top: -55px;
+  width: 90%;
+  position: relative;
+}
+.service .item4 {
+  margin-top: 100px;
+  width: 90%;
+  position: relative;
+}
+.service .item1 img,
+.service .item2 img,
+.service .item3 img,
+.service .item4 img {
   width: 100%;
 }
-.service .item .numberImg {
+.service .item1 .numberImg,
+.service .item2 .numberImg,
+.service .item3 .numberImg,
+.service .item4 .numberImg {
   position: absolute;
   top: -10px;
   left: 35px;
   width: 80px;
   height: 80px;
 }
+.service .item1 .text,
+.service .item2 .text,
+.service .item3 .text,
+.service .item4 .text {
+  padding: 35px 50px;
+  color: #2FAC73;
+  word-break: break-all;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
 
+/********** Recente production **********/
+.recenteProduction {
+  padding: 70px 0;
+}
+.recenteProduction .title {
+  color: #1C211F;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+}
+.recenteProduction button {
+  border: none;
+  outline: none;
+  width: 170px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #2FAC73;
+  box-shadow: 0 0 6px 0 rgb(228 228 228 / 50%);
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+}
+.recenteProduction .item {
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+.recenteProduction .item .type {
+  color: #2FAC73;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 30px 0 15px 0;
+}
+.recenteProduction .item .details {
+  color: #3d3e3e;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+}
