@@ -18,6 +18,8 @@
  outline: none;
  background-color: #F5F5F5;
  margin-top: -3px;
+ font-size: 13px;
+ color: rgb(75, 75, 75);
 }
 .navbar .search input::placeholder {
   font-size: 13px;
