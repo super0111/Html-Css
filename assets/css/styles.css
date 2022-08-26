@@ -9,6 +9,12 @@
   border-bottom: 7px solid #fdc32d;
   /* z-index: -10; */
 }
+.header .custom-nav-bg {
+  background-image: url('../images/header_bg1.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .header .toolbar {
   padding: 15px 0;
 }
@@ -213,7 +219,7 @@
   word-break: break-all;
 }
 .body .product_detail .more_less {
-  margin: 18px 0 30px 0;
+  margin: 18px 0 0px 0;
 }
 .body .product_detail .more_less button {
   border: none;
@@ -221,19 +227,23 @@
   outline: none;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #959494;
+  width: 100px;
+  padding: 0 0 0 0;
+}
+.body .product_detail .more_less button span {
   font-size: 14px;
   color: #5c5c5c;
-  border-bottom: 1px solid #959494;
-  width: 83px;
-  padding: 0 0 0 0;
 }
 .body .product_detail .more_less button i {
   font-size: 12px;
   margin-left: 7px;
   margin-top: 3px;
   font-weight: 600;
+  color: #5c5c5c;
 }
 .body .product_detail .details_tool {
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -588,16 +598,23 @@
     background-repeat: no-repeat;
     padding: 15px;
   }  
+  .header .fullWidth {
+    margin: 0 -16px;
+  }
   .header .toolbar .searchbar {
     display: none;
   }
+  .header .searchbar1_field {
+
+  }
   .header .searchbar1 {
-    width: 50%;
     display: flex !important;
-    position: absolute;
-    top: 10px;
-    right: 15px;
+    width: 50%;
     z-index: 1000;
+    margin-top: 15px;
+    position: absolute;
+    right: 0px;
+    top: -2px;
   }
   .header .searchbar1 input {
     border: none;
@@ -605,8 +622,8 @@
     outline: none;
     font-size: 13px;
     color: #333333;
-    width: 100%;
     height: 35.5px;
+    width: 100%;
   }
   .navbars1_display {
     display: none !important;
@@ -659,11 +676,14 @@
 }
 
 @media screen and (max-width: 576px) {
-  .footer .left .margin_top {
-    margin-top: -45px;
-  }
   .header .toolbar .field1 {
     width: 0%;
+  }
+  .header .custom-nav-bg {
+    padding: 0 15px;
+  }
+  .header .toolbar {
+    padding: 15px 15px;
   }
   .header .toolbar .field2 {
     display: flex;
@@ -677,11 +697,21 @@
   .header .header_img img {
     height: 200px;
   }
+  .header .searchbar1 {
+    width: 240px;
+  }
+  .header .searchbar1 input {
+    width: 200px;
+
+  }
   .body .product .anderen {
     padding: 30px 0;
   }
   .body .product .anderen .item {
     width: 50%;
+  }
+  .footer .left .margin_top {
+    margin-top: -45px;
   }
   .footer .left {
     display: flex;
@@ -731,6 +761,9 @@
   }
 }
 @media screen and (max-width: 430px) {
+  .header .item {
+    width:50%;
+  }
   .body {
     padding: 0 10px 20px 10px;
   }
@@ -740,10 +773,18 @@
   .body .product_detail .details_tool .right .price {
     font-size: 15px;
   }
+  .url {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #5c5c5c;
+  }
 }
 @media screen and (max-width: 380px) {
   .header .header_img {
     width: 99%;
+  }
+  .navbars2_display .a_width {
+    margin-left: 35px;
   }
   .footer .right .checkbox_field span {
     width: 250px;

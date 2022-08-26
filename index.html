@@ -12,12 +12,14 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+    </style>
   </head>
   <body>
 
     <div class="header">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center toolbar">
+        <div class="d-flex justify-content-between align-items-center toolbar container">
           <div class="d-flex justify-content-between align-items-center field1">
             <img src="./assets//images/logo.png" alt="logo" >
             <div class="searchbar">
@@ -49,95 +51,101 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-between align-items-baseline w-100 position-relative">
-          <nav class="navbar navbar-expand-lg navbar-dark w-100 zIndex-1000">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse w-100" id="navbarTogglerDemo01">
-              <div class="w-100 navbars navbars_bg">
-                <div class="d-flex flex-wrap justify-content-between align-items-center w-100 navbars1_display">
-                  <a href="#">Eiwitten</a>
-                  <a href="#">Afslanken</a>
-                  <a href="#">Sportvoeding</a>
-                  <a href="#">Vitamines</a>
-                  <a href="#">Voeding & repen</a>
-                  <a href="#">Kledij & accesories</a>
-                  <a href="#">Acties</a>
-                  <a href="#">Over Oaksdale</a>
-                  <a href="#">Verdelers</a>
-                  <a href="#">Concep store Oudenaarde</a>
-                  <a href="#">Contact</a>
-                </div>
-
-                <div class="row navbars2_display">
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
+        <div class="d-flex justify-content-between align-items-baseline w-100 custom-nav-bg">
+          <div style="padding: 0 !important;" class="container position-relative">
+            <nav style="padding: 10px 0 !important;" class="navbar navbar-expand-lg navbar-dark w-100 zIndex-1000 navbar_field container">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse w-100 fullWidth" id="navbarTogglerDemo01">
+                <div class="w-100 navbars navbars_bg">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center w-100 navbars1_display">
                     <a href="#">Eiwitten</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
                     <a href="#">Afslanken</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
                     <a href="#">Sportvoeding</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
                     <a href="#">Vitamines</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Voeding </a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Kledij</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
+                    <a href="#">Voeding & repen</a>
+                    <a href="#">Kledij & accesories</a>
                     <a href="#">Acties</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
-                    <a href="#">Over</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
+                    <a href="#">Over Oaksdale</a>
                     <a href="#">Verdelers</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
                     <a href="#">Concep store Oudenaarde</a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 item">
-                    <div class="a_width">
                     <a href="#">Contact</a>
+                  </div>
+
+                  <div class="row m-auto navbars2_display">
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Eiwitten</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Afslanken</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Sportvoeding</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Vitamines</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Voeding </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Kledij</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Acties</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Over</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Verdelers</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Verdelers</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Oudenaarde</a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 d-flex justify-content-end item">
+                      <div class="a_width">
+                        <a href="#">Contact</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </nav>
+            <div class="searchbar1">
+              <div class="search_icon">
+                <i class="fa fa-search"></i>
+              </div>
+              <input type="search" placeholder="Zoek naar producten" >
             </div>
-          </nav>
-          <div class="searchbar1">
-            <div class="search_icon">
-              <i class="fa fa-search"></i>
-            </div>
-            <input type="search" placeholder="Zoek naar producten" >
           </div>
         </div>
-      </div>
     </div>
 
     <div class="container">
@@ -177,7 +185,7 @@
                   <div class="review_value">121</div>
                 </div>
               </div>
-              <div class="collapse show details" id="details">
+              <div class="details">
                 Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
                 Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
                 Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
@@ -186,18 +194,23 @@
               </div>
   
               <div class="more_less">
-                <button type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="details">
-                  Lees meer
-                  <i class="fas fa-angle-down"></i>
+                <button class="d-flex justify-content-between align-items-center less-btn" type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="details">
+                  <span>Lees meer</span>
+                  <i id="allowIcon" class="fas fa-angle-down"></i>
                 </button>
+              </div>
+
+              <div class="collapse details" id="details">
+                Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
+                Loerem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et dolore magna aliqua.
               </div>
 
               <div class="details_tool">
                 <div class="d-flex flex-column left">
                   <div class="dropdown">
-                    <button class="d-flex align-items-center justify-content-between kies_btn" data-toggle="dropdown" aria-expanded="false">
+                    <button class="d-flex align-items-center justify-content-between less-btn kies_btn" type="button" data-toggle="dropdown" aria-expanded="false">
                       KIES JE SMAAK
-                      <i class="fas fa-angle-down"></i>
+                      <i id="allowIcon" class="fas fa-angle-down"></i>
                     </button>
                     <div class="dropdown-menu kies_body">
                       <a class="dropdown-item" href="#">KIES1</a>
@@ -205,9 +218,9 @@
                     </div>
                   </div>
                   <div class="dropdown">
-                    <button class="d-flex align-items-center justify-content-between kies_btn" data-toggle="dropdown" aria-expanded="false">
+                    <button class="d-flex align-items-center justify-content-between kies_btn less-btn" type="button" data-toggle="dropdown" aria-expanded="false">
                       INHOUD
-                      <i class="fas fa-angle-down"></i>
+                      <i id="allowIcon" class="fas fa-angle-down"></i>
                     </button>
                     <div class="dropdown-menu kies_body">
                       <a class="dropdown-item" href="#">INHOUD</a>
@@ -239,20 +252,20 @@
               </div>
 
               <div class="d-flex flex-column more_btn">
-                <button data-toggle="collapse" data-target="#VOEDINGSINFOMATE" aria-expanded="false" aria-controls="VOEDINGSINFOMATE">
+                <button class="less-btn" type="button" data-toggle="collapse" data-target="#VOEDINGSINFOMATE" aria-expanded="false" aria-controls="VOEDINGSINFOMATE">
                   <span>
                     VOEDINGSINFOMATE
                   </span>
-                  <i class="fas fa-angle-down"></i>
+                  <i id="allowIcon" class="fas fa-angle-down"></i>
                 </button>
                 <div class="collapse more_details" id="VOEDINGSINFOMATE">
                   This is VOEDINGSINFOMATE
                 </div>
-                <button data-toggle="collapse" data-target="#GEBRUIK" aria-expanded="false" aria-controls="GEBRUIK">
+                <button class="less-btn" type="button" data-toggle="collapse" data-target="#GEBRUIK" aria-expanded="false" aria-controls="GEBRUIK">
                   <span>
                     GEBRUIK & DOSERING
                   </span>
-                  <i class="fas fa-angle-down"></i>
+                  <i id="allowIcon" class="fas fa-angle-down"></i>
                 </button>
                 <div class="collapse more_details" id="GEBRUIK">
                   This is GEBRUIK & DOSERING
@@ -501,6 +514,26 @@
   </body>
 
   <script>
+    function setButtonListener () {
+
+      let buttons = $('.less-btn');
+      buttons.each(function () {
+        $(this).click(() => {
+          let icon = $(this).find('i')
+          if (icon.hasClass("fa-angle-down")) {
+            icon.removeClass("fa-angle-down");
+            icon.addClass("fa-angle-up");
+            
+          } else if (icon.hasClass("fa-angle-up")) {
+            icon.removeClass("fa-angle-up");
+            icon.addClass("fa-angle-down");
+          }
+        });
+      })
+    }
+    $(document).ready(() => {
+      setButtonListener()
+    })
   </script>
 
 </html>
