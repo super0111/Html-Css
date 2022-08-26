@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/utilities.css">
@@ -19,36 +21,35 @@
   </head>
   <body>
     <div class="d-flex flex-column justify-content-between">
-      <div class="container navbar">
-        <div class="d-flex justify-content-between w-100 height1">
+      <div class="container karri_navbar">
+        <div class="d-flex justify-content-between align-items-center w-100 position-relative height1">
           <div class="d-flex align-items-center logo py-5">
             <img src="./assets/images/Karri-logo-rgb.png" alt="logo" >
           </div>
-          <div class="d-flex justify-content-between align-items-end navbars">
-            <div class="item active">
-              Welkom
-            </div>
-            <div class="item">
-              Assortiment
-            </div>
-            <div class="item">
-              Hoe werken we
-            </div>
-            <div class="item">
-              Contact
-            </div>
+
+          <div class="navbars1">
+            <a target=“_blank” href="#" class="item active">Welkom</a>
+            <a target=“_blank” href="#" class="item">Assortiment</a>
+            <a target=“_blank” href="#" class="item">Hoe werken we</a>
+            <a target=“_blank” href="/Working/PSD Convert/Karri/contact.html" class="item">Contact</a>
           </div>
-          <div class="d-flex flex-column justify-content-between">
-            <div class="d-flex align-items-center search">
+
+          <div class="search2">
+            <input type="search" placeholder="Naar wat ben je op zpel?" >
+            <img src="./assets/images/Search.svg" alt="search" >
+          </div>
+
+          <div class="navbar_tool">
+            <div class="search1">
               <input type="search" placeholder="Naar wat ben je op zpel?" >
               <img src="./assets/images/Search.svg" alt="search" >
             </div>
             <div class="d-flex justify-content-end align-items-center w-100 user_cart">
               <div class="dropdown">
-                <button class="btn px-2 rounded-circle" type="button" id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn rounded-circle" type="button" id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-user-o" aria-hidden="true"></i>
                 </button>
-                <form class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton-1">
+                <form class="dropdown-menu position1 p-4" aria-labelledby="dropdownMenuButton-1">
                   <div class="form-group">
                     <h6>Aanmelden</h6>
                   </div>
@@ -60,13 +61,13 @@
                     <label for="exampleDropdownFormPassword2">Wachtwoord</label>
                     <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="">
                   </div>
-                  <div class="form-check">
+                  <div class="form-check d-flex align-items-center">
                     <input type="checkbox" class="form-check-input" id="dropdownCheck2">
                     <label class="form-check-label" for="dropdownCheck2">
                       Onthoud wachtwoord
                     </label>
                   </div>
-                  <button type="button" class="btn btn-success">Sign in</button>
+                  <button type="button" class="btn btn-success">Aanmelden</button>
                   <div class="form-group notice text-center mt-3">
                     <label>Ik heb nog geen account, log in.</label>
                   </div>
@@ -74,9 +75,9 @@
               </div>
               <div class="ml-3 dropdown">
                 <button class="btn px-2 rounded-circle" type="button" id="dropdownMenuButton-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-shopping-basket"></i>
+                  <i class="fas fa-shopping-bag"></i>
                 </button>
-                <form class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton-2">
+                <form class="dropdown-menu position2 p-4" aria-labelledby="dropdownMenuButton-2">
                   <div class="form-group">
                     <h6>Winkelwagen</h6>
                   </div>
@@ -86,23 +87,36 @@
                   <button type="button" class="btn btn-success">Winkel nu</button>
                 </form>
               </div>
+              <nav class="navbar navbar-expand-lg navbars2_field">
+                <button id="responsive_navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse w-100 navBody_position" id="navbarTogglerDemo01">
+                  <div class="navbars2 row" style="margin-right: 0;margin-left: 0;">
+                    <div class="col-md-3 item_field">
+                      <a target=“_blank” href="/Working/PSD Convert/Karri/index.html" class="item active">Welkom</a>
+                    </div>
+                    <div class="col-md-3 item_field">
+                      <a target=“_blank” href="#" class="item">Assortiment</a>
+                    </div>
+                    <div class="col-md-3 item_field">
+                      <a target=“_blank” href="#" class="item">Hoe werken we</a>
+                    </div>
+                    <div class="col-md-3 item_field">
+                      <a target=“_blank” href="/Working/PSD Convert/Karri/contact.html" class="item">Contact</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
             </div>
           </div>
         </div>
-        <div class="navbars1">
-          <div class="item">
-            Welkom
-          </div>
-          <div class="item">
-            Assortiment
-          </div>
-          <div class="item">
-            Hoe werken we
-          </div>
-          <div class="item">
-            Contact
-          </div>
+
+        <div class="search3">
+          <input type="search" placeholder="Naar wat ben je op zpel?" >
+          <img src="./assets/images/Search.svg" alt="search" >
         </div>
+        <div class="mobile-navbar-wrapper"></div>
       </div>
     </div>
 
@@ -119,85 +133,84 @@
         </div>
       </div>
     </div>
-
     <div class="overKarri">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12">
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6 col-sm-12">
             <div class="overKarri_field">
               <div class="text">
                 Bij Karri mag je als zorgverlener rekenen op een optimale ondersteuning zodat jij je kunt focussen op één doel: de beste zorg verlenen aan de patiënten.
               </div>
               <button>
                 Over Karri
+              </button>
             </div>
-            </button>
           </div>
         </div>
         <div class="row items">
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 d-flex flex-column align-items-center item active">
             <img src="./assets/images/Bitmap (1).png" alt="" >
             <span>
               Beschermings-materiaal
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (2).png" alt="" >
             <span>
               Incontinentie
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (3).png" alt="" >
             <span>
               Verzorgingssets
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (4).png" alt="" >
             <span>
               Wondzorg
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (5).png" alt="" >
             <span>
               Spuiten - naalden- perfusiesets
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (6).png" alt="" >
             <span>
               Ontsmetting, reiniging en bescherming
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (7).png" alt="" >
             <span>
               Diagnostiek
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (8).png" alt="" >
             <span>
               Voeding
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (8).png" alt="" >
             <span>
               Geneesmiddelen en voedingsupplementen
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (9).png" alt="" >
             <span>
               Parafarmacie
             </span>
           </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
             <img src="./assets/images/Bitmap (10).png" alt="" >
             <span>
               Steunbandages en toebehoren
@@ -210,10 +223,10 @@
     <div class="onzeWerking">
       <div class="container">
         <div class="row body">
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-12 item">
             <img src="./assets/images/Home-01.jpg" alt="home 01" >
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-12 item">
             <div class="details">
               <div class="title">
                 Het bieden van de geschikte <br> ondersteuning voor elke zorgverlener
@@ -237,7 +250,7 @@
           De apotheken van Karri liggen strategisch verspreid in Brugge, Assebroek en Jabbeke, en zijn vlot bereikbaar. In een minimum van tijd kun je de nodige medicatieboxen oppikken en meteen opnieuw richting de patiënt vertrekken.
         </div>
         <div class="row mt-5 pt-4">
-          <div class="col-md-6 col-smm-12">
+          <div class="col-md-6 col-smm-12 item">
             <div class="item1">
               <img src="./assets/images/home-02.jpg" alt="" >
               <img class="numberImg" src="./assets/images/number (1).svg" alt="" >     
@@ -246,7 +259,7 @@
               </div>   
             </div>
           </div>
-          <div class="col-md-6 col-smm-12">
+          <div class="col-md-6 col-smm-12 item">
             <div class="item2">
               <img src="./assets/images/home-03.jpg" alt="" >   
               <img class="numberImg" src="./assets/images/number (2).svg" alt="" >
@@ -255,7 +268,7 @@
               </div>               
             </div>
           </div>
-          <div class="col-md-6 col-smm-12">
+          <div class="col-md-6 col-smm-12 item">
             <div class="item3">
               <img src="./assets/images/home-04.jpg" alt="" >   
               <img class="numberImg" src="./assets/images/number (3).svg" alt="" >               
@@ -264,7 +277,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-smm-12">
+          <div class="col-md-6 col-smm-12 item">
             <div class="item4">
               <img src="./assets/images/home-05.jpg" alt="" >  
               <img class="numberImg" src="./assets/images/number (4).svg" alt="" >                
@@ -288,7 +301,7 @@
           </button>
         </div>
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="item">
               <div class="d-flex justify-content-center w-100">
                 <img src="./assets/images/product.png" alt="product" >
@@ -299,7 +312,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="item">
               <div class="d-flex justify-content-center w-100">
                 <img src="./assets/images/product.png" alt="product" >
@@ -310,7 +323,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="item">
               <div class="d-flex justify-content-center w-100">
                 <img src="./assets/images/product.png" alt="product" >
@@ -321,7 +334,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="item">
               <div class="d-flex justify-content-center w-100">
                 <img src="./assets/images/product.png" alt="product" >
@@ -337,63 +350,148 @@
     </div>
 
     <div class="metKarri">
-      <div class="title">
-        Met Karri ben je als zorgverlener vlot & efficiënt op weg naar elke patiënt 
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <img src="./assets/images/home-06.jpg" alt="" >
+      <div class="body">
+        <div class="title">
+          Met Karri ben je als zorgverlener vlot & efficiënt op weg naar elke patiënt 
         </div>
-        <div class="col-md-6 col-sm-12 d-flex flex-column">
-          <div class="item">
-            <div class="text">
-              Met Karri kreeg ik een duidelijke structuur tijdens de vaak drukke werkdagen. Ik hoef zelf niets meer voor te bereiden of te herorganiseren in de wagen. 
-            </div>
-            <div class="name">
-              <span>Katrien L.</span>
-              <div class="divide"></div>
-              <span>Thuisverpleger</span>
-            </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 left">
+            <img src="./assets/images/home-06.jpg" alt="" >
           </div>
-          
-          <div class="item">
-            <div class="text">
-              De boxen en voorgemaakte zakjes zorgen ervoor dat ik me 100% op mijn patiënten kan concentreren. 
+          <div class="col-md-6 col-sm-12 d-flex flex-column align-items-start right">
+            <div class="item">
+              <div class="text">
+                Met Karri kreeg ik een duidelijke structuur tijdens de vaak drukke werkdagen. Ik hoef zelf niets meer voor te bereiden of te herorganiseren in de wagen. 
+              </div>
+              <div class="d-flex justify-content-start align-items-center mt-2  name">
+                <span>Katrien L.</span>
+                <div class="divider"></div>
+                <span>Thuisverpleger</span>
+              </div>
             </div>
-            <div class="name">
-              <span>Bert M L.</span>
-              <div class="divide"></div>
-              <span>Zorgveriener</span>
+            
+            <div class="item mt-4">
+              <div class="text">
+                De boxen en voorgemaakte zakjes zorgen ervoor dat ik me 100% op mijn patiënten kan concentreren. 
+              </div>
+              <div class="d-flex justify-content-start align-items-center mt-2 name">
+                <span>Bert M L.</span>
+                <div class="divider"></div>
+                <span>Zorgveriener</span>
+              </div>
             </div>
-          </div>
 
-          <div class="item">
-            <div class="text">
-              Eindelijk geen chaos meer in de wagen tijdens de rondritten. We besparen sinds het gebruik van het platform van Karri héél veel tijd in onze dagelijkse routine.
-            </div>
-            <div class="name">
-              <span>Paulien D.</span>
-              <div class="divide"></div>
-              <span>Thuisverpleger</span>
+            <div class="item mt-4">
+              <div class="text">
+                Eindelijk geen chaos meer in de wagen tijdens de rondritten. We besparen sinds het gebruik van het platform van Karri héél veel tijd in onze dagelijkse routine.
+              </div>
+              <div class="d-flex justify-content-start align-items-center mt-2  name">
+                <span>Paulien D.</span>
+                <div class="divider"></div>
+                <span>Thuisverpleger</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
+<!-- 
+  
     <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="left">
+              <div class="title">ASSORTIMENT</div>
+              <div class="text">Verzorgingssets</div>
+              <div class="text">Wondzorg</div>
+              <div class="text">Ontsmetting, reiniging en bescherming</div>
+              <div class="text">Spuiten - Naalden - Perfusiesets</div>
+              <div class="text">Incontinentie</div>
+              <div class="text">Beschermingsmateriaal</div>
+              <div class="text">Diagnostiek</div>
+              <div class="text">Voeding</div>
+              <div class="text">Geneesmiddelen en voedingssupplementen</div>
+              <div class="text">Parafarmacie</div>
+              <div class="text">Steunbandages en toebehoren</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="right">
 
+              <div class="d-flex flex-column">
+                <div class="title">OVERZICHT</div>
+                <div class="text">Home</div>
+                <div class="text">Assortiment</div>
+                <div class="text">Hoe werken we</div>
+                <div class="text">Contact</div>
+              </div>
+    
+              <div class="d-flex flex-column">
+                <div class="title">account</div>
+                <div class="d-flex align-items-center">
+                  <i class="fa fa-user-o" aria-hidden="true"></i>
+                  <div class="text">Mijn account</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-shopping-bag"></i>
+                  <div class="text">Mijn bestellingen</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-house-user"></i>
+                  <div class="text">Mijn patiënten</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <img src="./assets/images/logo-plus.svg" alt="" >
+      </div>
     </div>
 
     <div class="min_footer">
-
-    </div>
+      <div class="container">
+        <div class="text">
+          Copyright © 2022 Distrimed  |  Algemene voorwaarden  |  Privacyverklaring  |  Cookieverklaring  |  BE 0880.610.342
+        </div>
+      </div>
+    </div>  -->
 
   </body>
 
   <script>
+    function setButtonListener () {
+
+      let nav_Buttons = document.querySelectorAll(".karri_navbar a");
+      let responsive_navbar = $('#responsive_navbar');
+      let show = false;
+      responsive_navbar.click(() => {
+        if (!show) {
+          $('.mobile-navbar-wrapper').addClass('show')
+        }
+        else {
+          $('.mobile-navbar-wrapper').removeClass('show')
+        } 
+        show = !show
+      });
+
+      for (let button of nav_Buttons) {
+        button.addEventListener('click', (e) => {
+          const et = e.target;
+          const active = document.querySelector(".active");
+          if (active) {
+            active.classList.remove("active");
+          }
+          et.classList.add("active");
+        });
+      }
+    }
+
+    $(document).ready(() => {
+      setButtonListener()
+    })
   </script>
 
 </html>
