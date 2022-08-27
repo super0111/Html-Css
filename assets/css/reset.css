@@ -26,10 +26,6 @@ div.container.navbar {
   width: 100%;
   border-radius: 1.5rem;
 }
-/* .navbar .dropdown-menu .notice {
-  margin-top: 1.5rem;
-  /* text-align: center; */
-} */
 .navbar .dropdown-menu .notice label {
   font-size: 12px;
 }
