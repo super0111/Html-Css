@@ -29,10 +29,10 @@
           </div>
 
           <div class="navbars1">
-            <a target=“_self” href="#" class="item active">Welkom</a>
-            <a target=“_self” href="#" class="item">Assortiment</a>
-            <a target=“_self” href="#" class="item">Hoe werken we</a>
-            <a target=“_self” href="/Working/PSD Convert/Karri/contact.html" class="item">Contact</a>
+            <a target="_self" href="index.html" class="item">Welkom</a>
+            <a target="_self" href="#" class="item">Assortiment</a>
+            <a target="_self" href="#" class="item">Hoe werken we</a>
+            <a target="_self" href="contact.html" class="item active">Contact</a>
           </div>
 
           <div class="search2">
@@ -95,16 +95,16 @@
                 <div class="collapse navbar-collapse w-100 navBody_position" id="navbarTogglerDemo01">
                   <div class="navbars2 row" style="margin-right: 0;margin-left: 0;">
                     <div class="col-md-3 item_field">
-                      <a target=“_self” href="#" class="item active">Welkom</a>
+                      <a target="_self" href="index.html" class="item">Welkom</a>
                     </div>
                     <div class="col-md-3 item_field">
-                      <a target=“_self” href="#" class="item">Assortiment</a>
+                      <a target="_self" href="#" class="item">Assortiment</a>
                     </div>
                     <div class="col-md-3 item_field">
-                      <a target=“_self” href="#" class="item">Hoe werken we</a>
+                      <a target="_self" href="#" class="item">Hoe werken we</a>
                     </div>
                     <div class="col-md-3 item_field">
-                      <a target=“_self” href="/Working/PSD Convert/Karri/contact.html" class="item">Contact</a>
+                      <a target="_self" href="contact.html" class="item active">Contact</a>
                     </div>
                   </div>
                 </div>
@@ -201,7 +201,7 @@
           <div class="col-md-3 col-sm-6 col-xs-12">
             <img src="./assets/images/contact-02.jpg" alt="" >
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="col-md-6 col-sm-12 col-xs-12">
             <img src="./assets/images/contact-03.jpg" alt="" >
           </div>
         </div>
@@ -263,8 +263,6 @@
       </div>
     </div>
 
-
-
     <div class="min_footer">
       <div class="container">
         <div class="text">
@@ -278,7 +276,19 @@
   <script>
     function setButtonListener () {
 
-      let nav_Buttons = document.querySelectorAll(".karri_navbar .navbar a");
+      let nav_Buttons = document.querySelectorAll(".karri_navbar a");
+      let responsive_navbar = $('#responsive_navbar');
+      let show = false;
+      responsive_navbar.click(() => {
+        if (!show) {
+          $('.mobile-navbar-wrapper').addClass('show')
+        }
+        else {
+          $('.mobile-navbar-wrapper').removeClass('show')
+        } 
+        show = !show
+      });
+
       for (let button of nav_Buttons) {
         button.addEventListener('click', (e) => {
           const et = e.target;
