@@ -1,4 +1,11 @@
 /********* Navbar *********/
+#navbarTool_in {
+  display: none;
+}
+#navbarTool_out {
+  display: block;
+}
+
 .karri_navbar {
   padding: 15px 0px;
 }
