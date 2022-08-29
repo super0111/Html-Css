@@ -4,7 +4,7 @@
 .contact .contact_title {
   color: #2FAC73;
   font-family: FatFrank;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 900;
 }
 .contact .contact_text {
@@ -68,6 +68,11 @@
 @media screen and (max-width: 768px) {
   .contact img {
     margin: 15px 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contact .contact_text {
+    width: 100%;
   }
 }
 

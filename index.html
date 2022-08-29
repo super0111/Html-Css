@@ -39,7 +39,7 @@
             <img src="./assets/images/Search.svg" alt="search" >
           </div>
 
-          <div class="navbar_tool">
+          <div class="navbar_tool" style="display: block;" id="navbarTool_out">
             <div class="search1">
               <input type="search" placeholder="Naar wat ben je op zpel?" >
               <img src="./assets/images/Search.svg" alt="search" >
@@ -67,7 +67,9 @@
                       Onthoud wachtwoord
                     </label>
                   </div>
-                  <button type="button" class="btn btn-success">Aanmelden</button>
+                  <button type="button" class="btn btn-success" onclick="login()">
+                    Aanmelden
+                  </button>
                   <div class="form-group notice text-center mt-3">
                     <label>Ik heb nog geen account, log in.</label>
                   </div>
@@ -87,8 +89,117 @@
                   <button type="button" class="btn btn-success">Winkel nu</button>
                 </form>
               </div>
+
+
+              
               <nav class="navbar navbar-expand-lg navbars2_field">
-                <button id="responsive_navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="responsive_navbar_2" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse w-100 navBody_position" id="navbarTogglerDemo01">
+                  <div class="navbars2 row" style="margin-right: 0;margin-left: 0;">
+                    <div class="col-md-3 item_field">
+                      <a target="_self" href="#" class="item active">Welkom</a>
+                    </div>
+                    <div class="col-md-3 item_field">
+                      <a target="_self" href="#" class="item">Assortiment</a>
+                    </div>
+                    <div class="col-md-3 item_field">
+                      <a target="_self" href="#" class="item">Hoe werken we</a>
+                    </div>
+                    <div class="col-md-3 item_field">
+                      <a target="_self" href="contact.html" class="item">Contact</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <div class="navbar_tool" style="display: none;" id="navbarTool_in">
+            <div class="search1">
+              <input type="search" placeholder="Naar wat ben je op zpel?" >
+              <img src="./assets/images/Search.svg" alt="search" >
+            </div>
+            <div class="d-flex justify-content-end align-items-center w-100 user_cart">
+              <div class="dropdown">
+                <button class="btn rounded-circle login_btn" type="button" id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-user-o" aria-hidden="true"></i>
+                  <div class="user_name">
+                    Hi, John
+                  </div>
+                </button>
+                <form class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton-1">
+                  <div class="d-flex justify-content-start align-items-center mb-2 login_item">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <span class="ml-3">Mijn account</span>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-center mb-2 login_item">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="ml-3">Mijn bestellingen</span>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-center mb-2 login_item">
+                    <i class="fas fa-house-user"></i>
+                    <span class="ml-12">Mijn patiënten</span>
+                  </div>
+                </form>
+              </div>
+
+              <div class="ml-3 dropdown">
+                <button class="btn px-2 rounded-circle" type="button" id="dropdownMenuButton-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+                <form class="dropdown-menu login_form p-4" aria-labelledby="dropdownMenuButton-2">
+                  <div class="form-group">
+                    <h6>Winkelwagen</h6>
+                  </div>
+                  <div class="form-group">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <img src="./assets/images/product.png" alt="product" >
+                      <div class="d-flex flex-column">
+                        <span>Steri-strip 3m Ster 6,0mmx 38mm Does 1x 6 1542p-1</span>
+                        <div class="d-flex align-items-center mt-3">
+                          <i class="fas fa-euro-sign"></i>   
+                          <strong>00,00</strong>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                          <div class="icon_field">
+                            <i class="fas fa-minus"></i>
+                          </div>
+                          <div class="value">2</div>
+                          <div class="icon_field">
+                            <i class="fas fa-plus"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <img src="./assets/images/product.png" alt="product" >
+                      <div class="d-flex flex-column">
+                        <span>Steri-strip 3m Ster 6,0mmx 38mm Does 1x 6 1542p-1</span>
+                        <div class="d-flex align-items-center mt-3">
+                          <i class="fas fa-euro-sign"></i>   
+                          <strong>00,00</strong>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                          <div class="icon_field">
+                            <i class="fas fa-minus"></i>
+                          </div>
+                          <div class="value">2</div>
+                          <div class="icon_field">
+                            <i class="fas fa-plus"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <button type="button" class="btn btn-success mt-3">Winkel nu</button>
+                </form>
+              </div>
+
+              <nav class="navbar navbar-expand-lg navbars2_field">
+                <button id="responsive_navbar_1" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                   <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse w-100 navBody_position" id="navbarTogglerDemo01">
@@ -133,6 +244,7 @@
         </div>
       </div>
     </div>
+
     <div class="overKarri">
       <div class="container">
         <div class="row">
@@ -150,72 +262,73 @@
           </div>
         </div>
         <div class="row items">
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 d-flex flex-column align-items-center item active">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item active">
             <img src="./assets/images/Bitmap (1).png" alt="" >
             <span>
               Beschermings-materiaal
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (2).png" alt="" >
             <span>
               Incontinentie
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (3).png" alt="" >
             <span>
               Verzorgingssets
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (4).png" alt="" >
             <span>
               Wondzorg
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (5).png" alt="" >
             <span>
               Spuiten - naalden- perfusiesets
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (6).png" alt="" >
             <span>
               Ontsmetting, reiniging en bescherming
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (7).png" alt="" >
             <span>
               Diagnostiek
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (8).png" alt="" >
             <span>
               Voeding
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (8).png" alt="" >
             <span>
               Geneesmiddelen en voedingsupplementen
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (9).png" alt="" >
             <span>
               Parafarmacie
             </span>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item">
             <img src="./assets/images/Bitmap (10).png" alt="" >
             <span>
               Steunbandages en toebehoren
             </span>
           </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 item mobile_item"></div>
         </div>
       </div>
     </div>
@@ -425,7 +538,7 @@
                 <div class="text">Contact</div>
               </div>
               <div class="d-flex flex-column">
-                <div class="title">account</div>
+                <div class="title1">account</div>
                 <div class="d-flex align-items-center">
                   <i class="fa fa-user-o" aria-hidden="true"></i>
                   <div class="text">Mijn account</div>
@@ -459,10 +572,8 @@
   </body>
 
   <script>
-    function setButtonListener () {
-
-      let nav_Buttons = document.querySelectorAll(".karri_navbar a");
-      let responsive_navbar = $('#responsive_navbar');
+    function setListenerForMenuButton (id) {
+      let responsive_navbar = $('#' + id);
       let show = false;
       responsive_navbar.click(() => {
         if (!show) {
@@ -473,6 +584,9 @@
         } 
         show = !show
       });
+    }
+    function setButtonListener () {
+      let nav_Buttons = document.querySelectorAll(".karri_navbar a");
 
       for (let button of nav_Buttons) {
         button.addEventListener('click', (e) => {
@@ -486,8 +600,15 @@
       }
     }
 
+    function login () {
+      document.getElementById("navbarTool_out").style.display="none";
+      document.getElementById("navbarTool_in").style.display="block";
+    }
+
     $(document).ready(() => {
       setButtonListener()
+      setListenerForMenuButton('responsive_navbar_1');
+      setListenerForMenuButton('responsive_navbar_2');
     })
   </script>
 
