@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Karri</title>
+    <title>Platteeuw</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link href="http://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
@@ -20,296 +22,104 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="d-flex flex-column justify-content-between">
-      <div class="container karri_navbar">
-        <div class="d-flex justify-content-between align-items-center w-100 position-relative height1">
-          <div class="d-flex align-items-center logo py-5">
-            <img src="./assets/images/Karri-logo-rgb.png" alt="logo" >
+    <div class="min_navbar">
+      <div class="container d-flex justify-content-end align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <div class="online_status mr-2"></div>
+            <div class="text">NU GEOPEND</div>
           </div>
-
-          <div class="navbars1">
-            <a target="_self" href="#" class="item active">Welkom</a>
-            <a target="_self" href="#" class="item">Assortiment</a>
-            <a target="_self" href="#" class="item">Hoe werken we</a>
-            <a target="_self" href="contact.html" class="item">Contact</a>
-          </div>
-
-          <div class="search2">
-            <input type="search" placeholder="Naar wat ben je op zpel?" >
-            <img src="./assets/images/Search.svg" alt="search" >
-          </div>
-
-          <div class="navbar_tool" style="display: block;" id="navbarTool_out">
-            <div class="search1">
-              <input type="search" placeholder="Naar wat ben je op zpel?" >
-              <img src="./assets/images/Search.svg" alt="search" >
-            </div>
-            <div class="d-flex justify-content-end align-items-center w-100 user_cart">
-              <div class="dropdown">
-                <button class="btn rounded-circle" type="button" id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-user-o" aria-hidden="true"></i>
-                </button>
-                <form class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton-1">
-                  <div class="form-group">
-                    <h6>Aanmelden</h6>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleDropdownFormEmail2">Gebruikersnaam of e-mailadres</label>
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleDropdownFormPassword2">Wachtwoord</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="">
-                  </div>
-                  <div class="form-check d-flex align-items-center">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                    <label class="form-check-label" for="dropdownCheck2">
-                      Onthoud wachtwoord
-                    </label>
-                  </div>
-                  <button type="button" class="btn btn-success" onclick = "login()">
-                    Aanmelden
-                  </button>
-                  <div class="form-group notice text-center mt-3">
-                    <label>Ik heb nog geen account, log in.</label>
-                  </div>
-                </form>
-              </div>
-              <div class="ml-3 dropdown">
-                <button class="btn px-2 rounded-circle" type="button" id="dropdownMenuButton-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-shopping-bag"></i>
-                </button>
-                <form class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton-2">
-                  <div class="form-group">
-                    <h6>Winkelwagen</h6>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleDropdownFormEmail2">Je hebt momenteel nog geen artikelen in je winkelwagen staan.</label>
-                  </div>
-                  <button type="button" class="btn btn-success">Winkel nu</button>
-                </form>
-              </div>
-
-
-              
-              <nav class="navbar navbar-expand-lg navbars2_field">
-                <button id="responsive_navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse w-100 navBody_position" id="navbarTogglerDemo01">
-                  <div class="navbars2 row" style="margin-right: 0;margin-left: 0;">
-                    <div class="col-md-3 item_field">
-                      <a target="_self" href="#" class="item active">Welkom</a>
-                    </div>
-                    <div class="col-md-3 item_field">
-                      <a target="_self" href="#" class="item">Assortiment</a>
-                    </div>
-                    <div class="col-md-3 item_field">
-                      <a target="_self" href="#" class="item">Hoe werken we</a>
-                    </div>
-                    <div class="col-md-3 item_field">
-                      <a target="_self" href="contact.html" class="item">Contact</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-
-          <div class="navbar_tool" style="display: none;" id="navbarTool_in">
-            <div class="search1">
-              <input type="search" placeholder="Naar wat ben je op zpel?" >
-              <img src="./assets/images/Search.svg" alt="search" >
-            </div>
-            <div class="d-flex justify-content-end align-items-center w-100 user_cart">
-              <div class="dropdown">
-                <button class="btn rounded-circle" type="button" id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-user-o" aria-hidden="true"></i>
-                  <div class="user_name">
-                    Hi, John
-                  </div>
-                </button>
-                <form class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton-1">
-                  <div class="d-flex justify-content-start align-items-center">
-                    <i class="fa fa-user-o" aria-hidden="true"></i>
-                    <span>Mijn account</span>
-                  </div>
-                  <div class="d-flex justify-content-start align-items-center">
-                    <i class="fas fa-shopping-bag"></i>
-                    <span>Mijn bestellingen</span>
-                  </div>
-                  <div class="d-flex justify-content-start align-items-center">
-                    <i class="fas fa-house-user"></i>
-                    <span>Mijn patiënten</span>
-                  </div>
-                </form>
-              </div>
-              <div class="ml-3 dropdown">
-                <button class="btn px-2 rounded-circle" type="button" id="dropdownMenuButton-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-shopping-bag"></i>
-                </button>
-                <form class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton-2">
-                  <div class="form-group">
-                    <h6>Winkelwagen</h6>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleDropdownFormEmail2">Je hebt momenteel nog geen artikelen in je winkelwagen staan.</label>
-                  </div>
-                  <button type="button" class="btn btn-success">Winkel nu</button>
-                </form>
-              </div>
-
-
-
-              <nav class="navbar navbar-expand-lg navbars2_field">
-                <button id="responsive_navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse w-100 navBody_position" id="navbarTogglerDemo01">
-                  <div class="navbars2 row" style="margin-right: 0;margin-left: 0;">
-                    <div class="col-md-3 item_field">
-                      <a target="_self" href="#" class="item active">Welkom</a>
-                    </div>
-                    <div class="col-md-3 item_field">
-                      <a target="_self" href="#" class="item">Assortiment</a>
-                    </div>
-                    <div class="col-md-3 item_field">
-                      <a target="_self" href="#" class="item">Hoe werken we</a>
-                    </div>
-                    <div class="col-md-3 item_field">
-                      <a target="_self" href="contact.html" class="item">Contact</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
+          <div class="d-flex justify-content-center align-items-center ml-5 lang_item">
+            <div class="text active">NL</div>
+            <div class="divider"></div>
+            <div class="text">FR</div>
           </div>
         </div>
-
-        <div class="search3">
-          <input type="search" placeholder="Naar wat ben je op zpel?" >
-          <img src="./assets/images/Search.svg" alt="search" >
-        </div>
-        <div class="mobile-navbar-wrapper"></div>
       </div>
     </div>
 
-    <div class="header">
-      <div class="rectangle">
-        <img class="" src="./assets/images/Rectangle (1).svg" >
-        <div class="d-flex flex-column body">
-          <strong>
-            You care,<br> we carry
-          </strong>
-          <button>
-            Ons assortiment
+    <div class="navbar">
+      <div class="d-flex justify-content-between align-items-center container">
+        <div class="d-flex justify-content-between align-items-center mobile-w-100">
+          <img class="logo" src="./assets//images/logo.png" alt="logo" >
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="d-flex flex-column justify-content-center mobile-w-100">
+          <div class="d-flex justify-content-end align-items-center toolbar">
+            <div class="d-flex align-items-center search">
+              <img src="./assets/images/Search.svg" alt="search" >
+              <input type="search" placeholder="Naar wat ben je op zpel?" >
+            </div>
+            <button class="d-flex justify-content-center align-items-center reserveren_btn">
+              <img src="./assets/images/Slim vectorobject.png" alt="button symbol" >
+              <span>PRODUCTEN RESERVEREN</span>
+            </button>
+          </div>
+
+          <nav class="navbar navbar-expand-lg container">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <div class="d-flex justify-content-end align-items-center navbars1">
+                <a href="#">AANBOD</a>
+                <a href="#">PROMO</a>
+                <a href="#">BLOG/THEMAS</a>
+                <a href="#">MUTTIGE INFO</a>
+                <a href="#">OVER ONS</a>
+                <a href="#">FOTO'S</a>
+                <a href="#">CONTACT</a>
+              </div>  
+
+              <div class="row mobile-navbars">
+                <div class="col-md-4 d-flex flex-column justify-content-start item">
+                    <a href="#">AANBOD</a>
+                    <a href="#">PROMO</a>
+                    <a href="#">BLOG/THEMAS</a>
+
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-start item">
+                  <a href="#">MUTTIGE INFO</a>
+                  <a href="#">OVER ONS</a>
+                  <a href="#">FOTO'S</a>
+
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-start item">
+                    <a href="#">CONTACT</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="w-100 mt-2 mobile-toolbar">
+          <div class="d-flex align-items-center search">
+            <img src="./assets/images/Search.svg" alt="search" >
+            <input type="search" placeholder="Naar wat ben je op zpel?" >
+          </div>
+          <button class="d-flex justify-content-center align-items-center reserveren_btn">
+            <img src="./assets/images/Slim vectorobject.png" alt="button symbol" >
+            <span>PRODUCTEN RESERVEREN</span>
           </button>
         </div>
       </div>
-    </div>
+    </div> 
 
-    <div class="overKarri">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <div class="overKarri_field">
-              <div class="text">
-                Bij Karri mag je als zorgverlener rekenen op een optimale ondersteuning zodat jij je kunt focussen op één doel: de beste zorg verlenen aan de patiënten.
-              </div>
-              <button>
-                Over Karri
-              </button>
+    <div class="container">
+      <div class="header">
+        <div class="title">
+          UW GEZONDHEID IN GOEDE HANDEN!
+        </div>
+        <div class="commar">
+          <img src="./assets/images/black_symbol.png" alt="commar" >
+          <div class="details">
+            <div class="text">
+              Onze missie,
             </div>
-          </div>
-        </div>
-        <div class="row items">
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 d-flex flex-column align-items-center item active">
-            <img src="./assets/images/Bitmap (1).png" alt="" >
-            <span>
-              Beschermings-materiaal
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (2).png" alt="" >
-            <span>
-              Incontinentie
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (3).png" alt="" >
-            <span>
-              Verzorgingssets
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (4).png" alt="" >
-            <span>
-              Wondzorg
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (5).png" alt="" >
-            <span>
-              Spuiten - naalden- perfusiesets
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (6).png" alt="" >
-            <span>
-              Ontsmetting, reiniging en bescherming
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (7).png" alt="" >
-            <span>
-              Diagnostiek
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (8).png" alt="" >
-            <span>
-              Voeding
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (8).png" alt="" >
-            <span>
-              Geneesmiddelen en voedingsupplementen
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (9).png" alt="" >
-            <span>
-              Parafarmacie
-            </span>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (10).png" alt="" >
-            <span>
-              Steunbandages en toebehoren
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="onzeWerking">
-      <div class="container">
-        <div class="row body">
-          <div class="col-md-6 col-sm-12 item">
-            <img src="./assets/images/Home-01.jpg" alt="home 01" >
-          </div>
-          <div class="col-md-6 col-sm-12 item">
-            <div class="details">
-              <div class="title">
-                Het bieden van de geschikte <br> ondersteuning voor elke zorgverlener
-              </div>
-              <div class="text">
-                Karri fungeert als de perfecte incubator tussen de eerstelijnszorgverlener en de patiënt. Wij staan ten dienste van een sterk veranderend zorglandschap, waarbij we een stap verder gaan dan enkel verkoop van medische materialen. 
-              </div>
-              <button>Onze werking</button>
+            <strong>Uw gezondheid en welzijn!</strong>
+            <div class="text mt-2">
+              Alles wat daartoe bijdraagt <br>
+              beschouwen wij als
+              <strong>onze taak.</strong>
             </div>
           </div>
         </div>
@@ -317,219 +127,100 @@
     </div>
 
     <div class="container">
-      <div class="service">
-        <div class="service_title">
-          Vlotte & flexibele service
-        </div>
-        <div class="service_text">
-          De apotheken van Karri liggen strategisch verspreid in Brugge, Assebroek en Jabbeke, en zijn vlot bereikbaar. In een minimum van tijd kun je de nodige medicatieboxen oppikken en meteen opnieuw richting de patiënt vertrekken.
-        </div>
-        <div class="row mt-5 pt-4">
-          <div class="col-md-6 col-smm-12 item">
-            <div class="item1">
-              <img src="./assets/images/home-02.jpg" alt="" >
-              <img class="numberImg" src="./assets/images/number (1).svg" alt="" >     
-              <div class="text">
-                Je bestelt voordelig in zowel grote als kleine hoeveelheden via ons platform met een unieke login.
-              </div>   
-            </div>
-          </div>
-          <div class="col-md-6 col-smm-12 item">
-            <div class="item2">
-              <img src="./assets/images/home-03.jpg" alt="" >   
-              <img class="numberImg" src="./assets/images/number (2).svg" alt="" >
-              <div class="text">
-                Karri maakt medicatieboxen voor je klaar zodat jij efficiënt alle patiënten kunt opvolgen.
-              </div>               
-            </div>
-          </div>
-          <div class="col-md-6 col-smm-12 item">
-            <div class="item3">
-              <img src="./assets/images/home-04.jpg" alt="" >   
-              <img class="numberImg" src="./assets/images/number (3).svg" alt="" >               
-              <div class="text">
-                Je kunt de voorbereide medicatieboxen dezelfde dag nog oppikken in één van onze apotheken.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-smm-12 item">
-            <div class="item4">
-              <img src="./assets/images/home-05.jpg" alt="" >  
-              <img class="numberImg" src="./assets/images/number (4).svg" alt="" >                
-              <div class="text">
-                Nu kun jij vlot en gemakkelijk elke individuele patiënt helpen tijdens je huisbezoeken.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="recenteProduction">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
-          <div class="title">
-            Recente Production
-          </div>
-          <button>
-            Ons Assortiment
-          </button>
+      <div class="item_field">
+        <div class="text">
+          Wij zijn een team van apothekers en assistenten die dageliks voor uw zorg en welzij gaan.<br>
+          Wij werken samen met een bandagist om u ook <a>thuiszorgprodukten</a> aab te bieden.
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="item">
-              <div class="d-flex justify-content-center w-100">
-                <img src="./assets/images/product.png" alt="product" >
-              </div>
-              <div class="type">3M</div>
-              <div class="details">
-                Medische <br> mondmaskers klasse <br> IIR - 50 stuks
-              </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <img src="./assets/images/symbol1.png" alt="symbol1">
+            <strong>HUISAPOTHEEK</strong>
+            <div class="text mt-5">
+              Als huisapotheker houden wij ook uw pharmaceutisch dossier / medicatieschema bij.
+            </div>
+            <div class="text mt-3">
+              Wij zorgen voor de communicatie met de arts, het ziekenhuis en je pillendoos
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="item">
-              <div class="d-flex justify-content-center w-100">
-                <img src="./assets/images/product.png" alt="product" >
-              </div>
-              <div class="type">3M</div>
-              <div class="details">
-                Steri-strip Hechtstrip <br> Ster 6x 75mm 2x 5 <br> 1541p-2
-              </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <img src="./assets/images/symbol2.png" alt="symbol1">
+            <strong>AFHAALKLUISJES</strong>
+            <div class="text mt-5">
+              Bij ons kan je ieder moment je produkten komen afhalen in onze afhaalkluisjes.
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="item">
-              <div class="d-flex justify-content-center w-100">
-                <img src="./assets/images/product.png" alt="product" >
-              </div>
-              <div class="type">3M</div>
-              <div class="details">
-                Steri-strip Hechtstrip <br> Ster 3x 75mm 2x 5 <br> 1540p-02
-              </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <img src="./assets/images/symbol3.png" alt="symbol1">
+            <strong>BEZORGDIENST</strong>
+            <div class="text mt-5">
+              Kan je er niet geraken? <br>
+              Geen zorg, met onze bezorg-dienst worden onze produkten tot aan jouw deur gebracht.
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="item">
-              <div class="d-flex justify-content-center w-100">
-                <img src="./assets/images/product.png" alt="product" >
-              </div>
-              <div class="type">3M</div>
-              <div class="details">
-                Steri-strip 3m Ster <br> 6,0mmx 38mm Doos 1x <br> 6 1542p-1
-              </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <img src="./assets/images/symbol1.png" alt="symbol1">
+            <strong>EXTRA DIENSTEN</strong>
+            <div class="text mt-5">
+              Wij bieden ook Covid-tests & bloeddrukmetingen aan en begeleiden je met jouw asthmamedicatie. 
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="metKarri">
-      <div class="body"></div>
-        <div class="title">
-          Met Karri ben je als zorgverlener vlot & efficiënt op weg naar elke patiënt 
-        </div>
-        <div class="row" style="margin: 0;">
-          <div class="col-md-6 col-sm-12 left">
-            <img src="./assets/images/home-06.jpg" alt="" >
-          </div>
-          <div class="col-md-6 col-sm-12 d-flex flex-column align-items-start right">
-            <div class="item">
-              <div class="text">
-                Met Karri kreeg ik een duidelijke structuur tijdens de vaak drukke werkdagen. Ik hoef zelf niets meer voor te bereiden of te herorganiseren in de wagen. 
-              </div>
-              <div class="d-flex justify-content-start align-items-center mt-2  name">
-                <span>Katrien L.</span>
-                <div class="divider"></div>
-                <span>Thuisverpleger</span>
-              </div>
-            </div>
-            
-            <div class="item mt-4">
-              <div class="text">
-                De boxen en voorgemaakte zakjes zorgen ervoor dat ik me 100% op mijn patiënten kan concentreren. 
-              </div>
-              <div class="d-flex justify-content-start align-items-center mt-2 name">
-                <span>Bert M L.</span>
-                <div class="divider"></div>
-                <span>Zorgveriener</span>
-              </div>
-            </div>
-
-            <div class="item mt-4">
-              <div class="text">
-                Eindelijk geen chaos meer in de wagen tijdens de rondritten. We besparen sinds het gebruik van het platform van Karri héél veel tijd in onze dagelijkse routine.
-              </div>
-              <div class="d-flex justify-content-start align-items-center mt-2  name">
-                <span>Paulien D.</span>
-                <div class="divider"></div>
-                <span>Thuisverpleger</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
+          
     <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="left">
-              <div class="title">ASSORTIMENT</div>
-              <div class="text">Verzorgingssets</div>
-              <div class="text">Wondzorg</div>
-              <div class="text">Ontsmetting, reiniging en bescherming</div>
-              <div class="text">Spuiten - Naalden - Perfusiesets</div>
-              <div class="text">Incontinentie</div>
-              <div class="text">Beschermingsmateriaal</div>
-              <div class="text">Diagnostiek</div>
-              <div class="text">Voeding</div>
-              <div class="text">Geneesmiddelen en voedingssupplementen</div>
-              <div class="text">Parafarmacie</div>
-              <div class="text">Steunbandages en toebehoren</div>
+      <div class="left">
+        <div class="body">
+          <div class="d-flex flex-column justify-content-between logo">
+            <img src="./assets/images/footer_logo.png" alt="footer logo" >
+            <div class="d-flex flex-column info">
+              <span>Elzelestraat 102, 9600 RONSE</span>
+              <span>055 21 16 86</span>
+              <span>info@apotheekplatteeuw.be</span>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="right">
-              <div class="d-flex flex-column">
-                <div class="title">OVERZICHT</div>
-                <div class="text">Home</div>
-                <div class="text">Assortiment</div>
-                <div class="text">Hoe werken we</div>
-                <div class="text">Contact</div>
-              </div>
-              <div class="d-flex flex-column">
-                <div class="title">account</div>
-                <div class="d-flex align-items-center">
-                  <i class="fa fa-user-o" aria-hidden="true"></i>
-                  <div class="text">Mijn account</div>
-                </div>
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-shopping-bag"></i>
-                  <div class="text">Mijn bestellingen</div>
-                </div>
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-house-user"></i>
-                  <div class="text">Mijn patiënten</div>
-                </div>
-              </div>
-            </div>
+          <div class="d-flex flex-column justify-content-between">
+            <a href="#">AANBOD</a>
+            <a href="#">PROMO</a>
+            <a href="#">BLOG</a>
+            <a href="#">NUTTIGE INFO</a>
+            <a href="#">OVER ONS</a>
+            <a href="#">FOTO'S</a>
+            <a href="#">CONTACT</a>
           </div>
         </div>
       </div>
-      <div class="logo">
-        <img src="./assets/images/logo-plus.svg" alt="" >
-      </div>  
+      <div class="right">
+        <div class="body">
+          <div class="margin_auto">
+            <div class="title">
+              Schrijf je in op onze nieuwsbrief
+            </div>
+            <input type="text" placeholder="Voer je mail adres in*" >
+            <label class="d-flex checkbox_field">
+              <input type="checkbox">
+              <span>
+                Ik ga emee akkoord dat mijn gegevens worden verwerkt
+                in overeenstemming met het privacybeleid*
+              </span>
+            </label>
+            <button>Schrijf Je In</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="min_footer">
-      <div class="container">
-        <div class="text">
-          Copyright © 2022 Distrimed  |  Algemene voorwaarden  |  Privacyverklaring  |  Cookieverklaring  |  BE 0880.610.342
+      <div class="text">
+        <div class="d-flex justify-content-start align-items-center">
+          web by <img src="./assets/images/footer_symbol.png" alt="footer icon" > RedBit 
+        </div>
+        <div class="li_item">
+          <li>2022</li><li>Algemene voorwaarden</li><li>Privacy policy</li><li>cookie policy</li>
         </div>
       </div>
-    </div> 
+    </div>
 
   </body>
 
@@ -559,11 +250,6 @@
           et.classList.add("active");
         });
       }
-    }
-
-    function login () {
-      document.getElementById("navbarTool_out").style.display="none";
-      document.getElementById("navbarTool_in").style.display="block";
     }
 
     $(document).ready(() => {

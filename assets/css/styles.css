@@ -1,906 +1,362 @@
-/********* Navbar *********/
-#navbarTool_in {
-  display: none;
+/********* Min Navbar *********/
+.min_navbar {
+  background: black;
+  padding: 5px 0;
 }
-#navbarTool_out {
-  display: block;
-}
-
-.karri_navbar {
-  padding: 15px 0px;
-}
-.navbar_tool {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.navbar_tool1 {
-  display: none;
-}
-.karri_navbar .search1 {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  border: none;
-  border-radius: 35px;
-  background-color: #F5F5F5;
-  width: 100%;
-  padding: 0 20px;
-}
-.karri_navbar .search2, .karri_navbar .search3 {
-  display: none
-}
-.karri_navbar .search1 input, 
-.karri_navbar .search2 input, 
-.karri_navbar .search3 input {
-  border: none;
-  outline: none;
-  background-color: #F5F5F5;
-  margin-top: -3px;
-  font-size: 13px;
-  color: rgb(75, 75, 75);
-}
-.karri_navbar .search1 input::placeholder,
-.karri_navbar .search2 input::placeholder,
-.karri_navbar .search3 input::placeholder {
-  font-size: 13px;
-  color: #4D5250;
-  font-family: 'Montserrat Medium';
-}
-.karri_navbar .search1 img, 
-.karri_navbar .search2 img,
-.karri_navbar .search3 img {
-  width: 13px;
-  margin-top: 3px;
-}
-.karri_navbar .user_cart {
-  padding: 18px;
-}
-.karri_navbar .user_cart button {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.karri_navbar .dropdown form {
-  width: 260px;
-  position: absolute !important;
-  transform: translate3d(-4px, 40px, 0px) !important;
-  top: 15px !important;
-  left: -110px !important;
-  will-change: transform !important;
-}
-.karri_navbar .dropdown-menu input {
-  background-color: #F5F5F5;
-}
-.karri_navbar .dropdown-menu .form-check-input {
-  background-color: #F5F5F5;
-  width: 13px;
-  height: 13px;
-  margin-bottom: 5px;
-}
-.karri_navbar .mobile-navbar-wrapper {
-  width: 100%;
-  height: 0px;
-  transition: height 0.4s;
-}
-.karri_navbar .mobile-navbar-wrapper.show {
-  height: 125px;
-}
-.karri_navbar .dropdown-menu label {
-  color: #4D5250;
-  font-size: 13px !important;
-}
-.karri_navbar .dropdown-menu h6 {
-  color: #4D5250;
-}
-.karri_navbar .dropdown-menu button {
-  border-radius: 30px;
-  background-color: #2FAC73;
-  border: none;
-  font-size: 16px;
-  width: 100%;
-  margin-top: 10px;
-}
-.karri_navbar .user_cart i {
-  font-size: 16px;
-  color: #4D5250;
-}
-.karri_navbar .user_cart .rounded-circle:hover, .rounded-circle:active {
-  background: #E1F6ED;
+.min_navbar .online_status {
+  width: 10px;
+  height: 10px;
+  background: #07812c;
   border-radius: 50%;
 }
-.karri_navbar .navbars1 {
-  display: flex;
-  justify-content: space-between;
-  margin-block-start: auto;
-  gap: 80px;
+.min_navbar .divider {
+  border-left: 1px solid white;
+  height: 12px;
+  margin: 0 5px;
 }
-.karri_navbar .navbars2_field {
+.min_navbar .text {
+  font-size: 13px;
+  color: white;
+}
+.min_navbar .active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/******** Navbar **********/
+.navbar {
+  padding: 25px 0;
+}
+.navbar .logo {
+  width: 280px;
+}
+.navbar .navbar-toggler {
   display: none;
 }
-.karri_navbar .navbars2_field .navBody_position{
-  position: absolute;
-  top: 110px;
-  right: 0;
+.navbar .toolbar {
+  margin-bottom: -10px;
 }
-.karri_navbar .navbars1 .item, .karri_navbar .navbars2 .item {
-  color: #4D5250;
-  font-family: 'Montserrat Medium';
-  font-size: 14px;
-  margin: 10px 0 24px 0px;
-  padding-top: 10px;
+.navbar .mobile-toolbar {
+  display: none;
+}
+.navbar .search {
+  width: 210px;
+  border: 1px solid #c7b37c;
+  padding: 0px 10px;
+  margin-right: 10px;
+}
+.navbar .search img {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+.navbar .search input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  margin-bottom: 1px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #aeacaa;
+}
+.navbar .search input::placeholder {
+  font-size: 13px;
+}
+.navbar .reserveren_btn {
+  border: none;
+  outline: none;
+  width: 210px;
+  height: 32px;
+  background-color: #c7b37c;
+  color: white;
+  font-size: 13px;
+  margin-bottom: -1px;
+}
+.navbar .reserveren_btn img {
+  width: 17px;
+  height: 12px;
+  margin-right: 8px;
+}
+.navbar a {
+  font-size: 13px;
   text-decoration: none;
-  cursor: pointer;
+  color: #414141;
+  margin-left: 30px;
 }
-.karri_navbar .navbars1 .item.active, .karri_navbar .navbars2 .item.active {
-  border-top: 2px solid #2FAC73;
+.navbar .mobile-navbars {
+  display: none;
 }
-.karri_navbar .navbars2 .item_field {
-  width: 23%;
+.navbar nav {
+  padding: 0 !important;
+  margin-top: 50px;
 }
-.karri_navbar .logo img {
-  width: 90px;
-  cursor: pointer;
+.navbar nav .item {
+  width: 48%;
 }
 
 /********* Header *********/
 .header {
-  background-image: url("../images/Header.jpg");
+  background-image: url("../images/Laag\ 2.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 670px;
-
+  height: 370px;
+  padding: 50px 0;
 }
-.header .rectangle {
-  position: relative;
-  top: 240px;
-}
-.header .rectangle img {
-  width: 620px;
-}
-.header .rectangle .body {
-  position: absolute;
-  bottom: 19%;
-  left: 120px;
-}
-.header .rectangle .body strong {
-  color: #FFFFFF;
-  font-family: 'Fat Frank';
-  font-size: 70px;
-  font-weight: 900;
-  margin-bottom: 25px;
-}
-.header .rectangle .body button {
-  width: 150px;
-  height: 40px;
-  background: none;
-  border: 1px solid #FFFFFF;
-  border-radius: 30px;
-  box-shadow: 0 0 6px 0 rgba(228,228,228,0.5);
-  color: #FFFFFF;
-  font-family: 'Montserrat Medium';
-  font-size: 15px;
-  font-weight: 500;
-}
-.header .rectangle .body button:hover {
-  box-shadow: 0 0 6px 0 #9ad7bc;
-}
-
-
-/******** overKarri ********/
-.overKarri {
-  padding: 150px 0;
-}
-.overKarri .overKarri_field {
-  width: 85%;
-}
-.overKarri .text {
-  color: #767676;
-  font-family: 'Montserrat Medium';
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  word-break: break-all;
-}
-.overKarri button {
-  margin-top: 25px;
-  border-radius: 30px;
-  background-color: #2FAC73;
-  border: none;
-  outline: none;
-  width: 95px;
-  height: 35px;
-  font-size: 13px;
-  color: #FFFFFF;
-  font-family: 'Montserrat Medium';
-}
-.overKarri .items {
-  margin: 100px 0px 0 0;
-  border: 1px solid #DDE6E2;
-  border-radius: 7px;
-}
-.overKarri .items .item {
-  padding-top: 50px;
-  height: 170px;
-  border-bottom: 1px solid #DDE6E2;
-  border-right: 1px solid #DDE6E2;
-  cursor: pointer;
-}
-.overKarri .items .item:hover {
-  background-color: #def3ea;
-}
-.overKarri .items .item img {
-  width: 45px;
-  height: 35px;
-}
-.overKarri .items .item span {
-  color: #2FAC73;
-  font-family: 'Montserrat Medium';
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0;
-  margin-top: 10px;
-  text-align: center;
-}
-
-/********* onzeWorking ***********/
-.onzeWerking {
-  background-color:#2FAC73;
-  height: 1000px;
-}
-.onzeWerking .body img {
-  margin-top: -90px;
-  width: 86%;
-}
-.onzeWerking .body .details {
-  width: 80%;
-  margin: auto;
-  margin-top: 60px;
-}
-.onzeWerking .body .details .title {
-  color: white;
-  font-family: 'Montserrat Medium';
+.header .title {
+  background-color: #dfc889;
+  padding: 10px 15px 10px 30px;
   font-size: 17px;
-  font-weight: bold;
-  letter-spacing: 0;
-}
-.onzeWerking .body .details .text {
   color: white;
-  word-break: break-all;
-  font-family: 'Montserrat Medium';
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 30px;
-}
-.onzeWerking .body .details button {
-  margin-top: 30px;
-  border-radius: 30px;
-  background-color: #2FAC73;
-  border: 1px solid white;
-  font-size: 13px;
-  width: 110px;
-  height: 33px;
-  color: #FFFFFF;
-  font-family: 'Montserrat Medium';
+  width: 350px;
 }
 
-/********* Service **********/
-.service {
-  margin-top: -590px;
-  padding: 0 50px;
-}
-.service .service_title {
-  margin-top: 110px;
-  word-break: break-all;
-  color: #FFFFFF;
-  font-family: 'FatFrank';
-  font-size: 45px;
-  font-weight: 900;
-  letter-spacing: 0;
-}
-.service .service_text {
-  margin: 5px;
-  color: #FFFFFF;
-  font-family: 'Montserrat Medium';
-  font-size: 14px;
-  width: 36%;
-  word-break: break-all;
-}
-.service .item1 {
-  width: 90%;
-  position: relative;
-}
-.service .item2 {
-  margin-top: 160px;
-  width: 90%;
-  position: relative;
-}
-.service .item3 {
-  margin-top: -55px;
-  width: 90%;
-  position: relative;
-}
-.service .item4 {
-  margin-top: 100px;
-  width: 90%;
-  position: relative;
-}
-.service .item1 img,
-.service .item2 img,
-.service .item3 img,
-.service .item4 img {
-  width: 100%;
-}
-.service .item1 .numberImg,
-.service .item2 .numberImg,
-.service .item3 .numberImg,
-.service .item4 .numberImg {
-  position: absolute;
-  top: -10px;
-  left: 35px;
-  width: 80px;
-  height: 80px;
-}
-.service .item1 .text,
-.service .item2 .text,
-.service .item3 .text,
-.service .item4 .text {
-  padding: 35px 50px;
-  color: #2FAC73;
-  word-break: break-all;
-  font-family: 'Montserrat Medium';
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 0;
-}
-
-/********** Recente production **********/
-.recenteProduction {
-  padding: 70px 0;
-}
-.recenteProduction .title {
-  color: #1C211F;
-  font-family: 'Montserrat Medium';
-  font-size: 16px;
-  font-weight: bold;
-}
-.recenteProduction button {
-  border: none;
-  outline: none;
-  width: 170px;
-  height: 40px;
-  border-radius: 30px;
-  background-color: #2FAC73;
-  box-shadow: 0 0 6px 0 rgb(228 228 228 / 50%);
-  color: #FFFFFF;
-  font-family: 'Montserrat Medium';
-  font-size: 16px;
-  font-weight: 500;
-}
-.recenteProduction .item {
-  background-color: #F5F5F5;
-  padding: 30px;
-}
-.recenteProduction .item .type {
-  color: #2FAC73;
-  font-family: 'Montserrat Medium';
-  font-size: 13px;
-  font-weight: 600;
-  margin: 30px 0 15px 0;
-}
-.recenteProduction .item .details {
-  color: #3d3e3e;
-  font-family: 'Montserrat Medium';
-  font-size: 13px;
-  font-weight: 600;
-  height: 60px;
-  overflow-y: auto;
-}
-
-/********* MetKarri ***********/
-.metKarri {
-  padding: 35px 0 70px 0;
-}
-.metKarri .title {
-  word-break: break-all;
-  width: 60%;
-  margin: auto;
-  margin-bottom: 80px;
-  text-align: center;
-  color: #2FAC73;
-  font-family: 'FatFrank';
-  font-size: 40px;
-  font-weight: 900;
-  letter-spacing: 0;
-}
-.metKarri .left img {
-  width: 80%;
-  margin-left: -10px;
-}
-.metKarri .right {  
-  margin-top: 130px;
-}
-.metKarri .right .item {
-  width: 60%;
-  border-radius: 5px;
-  background-color: #E6F2ED;
-  padding: 40px;
-}
-.metKarri .right .item .text {
-  color: #353C39;
-  font-family: 'Montserrat Medium';
-  font-size: 15px;
-  font-weight: 500;
-}
-.metKarri .right .item .name span {
-  color: #2FAC73;
-  font-family: 'Montserrat Medium';
-  font-size: 15px;
-  font-weight: bold;
-}
-.metKarri .right .item .divider {
-  border-left: 2px solid #2FAC73;
-  height: 13px;
-  margin: 0 9px;
-}
-
-/********** Footer ***********/
+/********** footer **********/
 .footer {
-  position: relative;
-  margin-top: 20px;
-  padding: 70px 0;
-  background: #F5F5F5;
-}
-.footer .logo {
-  position: absolute;
-  top: 75px;
-  right: 0;
-  width: 35px;
-}
-.footer .logo img {
   width: 100%;
+  display: flex;
+}
+.footer .left {
+  background-color: #c7b37c;
+  width: 55%;
+  padding: 40px 70px 40px 170px
+}
+.footer .left .body {
+  display: flex;
+  justify-content: space-between; 
+}
+.footer .left .info span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #303030;
+}
+.footer .left a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #303030;
+  text-decoration: none;
 }
 .footer .right {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
+  background-color: black;
+  width: 45%;
+  padding: 33px 50px;
 }
-.footer .title {
-  color: #2FAC73;
-  font-family: 'Montserrat Medium';
+.footer .left img {
+  width: 240px;
+}
+.footer .right .title {
+  font-size: 16px;
+  color: white;
+}
+.footer .right input {
+  width: 335px;
+  outline: none;
+  border: none;
+  background-color: #4b4b4b;
+  font-size: 14px;
+  color: rgb(196, 196, 196);
+  padding: 9px;
+  margin: 20px 0 10px 0;
+}
+.footer .right input::placeholder {
+  color: rgb(209, 209, 209);
+  padding-left: 10px;
+}
+.footer .right .checkbox_field {
+  margin: 0 0 22px 0;
+  width: 335px;
+}
+.footer .right .checkbox_field input {
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+}
+.footer .right .checkbox_field span {
   font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 15px;
+  color: white;
+  margin-left: 10px;
+  word-break: break-all;
+  text-align: initial;
 }
-.footer .text {
-  color: #4D5250;
-  font-family: 'Montserrat Medium';
-  font-size: 15px;
-  font-weight: 500;
-  padding: 3px 0;
-  cursor: pointer;
-}
-.footer .right i {
-  font-size: 13px;
-  color: #4D5250;
-  margin-right: 10px;
-  cursor: pointer;
+.footer .right button {
+  border: none;
+  outline: none;
+  background-color: #c7b37c;
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 20px;
 }
 
-/******* Min Footer ********/
+/********* Min footer ********/
 .min_footer {
-  padding: 30px 0;
+  background-color: black;
+  padding: 10px 0;
+}
+.min_footer .body {
+  width: 55%;
+  text-align: center;
 }
 .min_footer .text {
-  word-break: break-all;
-  color: #A4A4A4;
-  font-family: 'Montserrat Medium';
-  font-size: 11px;
+  font-size: 12px;
+  margin: auto;
+  color: rgb(219, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.min_footer .text img {
+  margin: 0 5px;
+}
+.min_footer .text li {
+  margin: 0 6px;
+}
+.min_footer .text .li_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-/*********** Meida QUERY *************/
-@media screen and (max-width: 1380px) {
-  .header .rectangle {
-    top: 300px;
-  }
-  .header .rectangle img {
-    width: 520px;
-  }
-  .header .rectangle .body {
-    position: absolute;
-    bottom: 18%;
-    left: 80px;
+/************ Media Query *************/
+@media screen and (max-width: 1150px) {
+  .footer .left {
+    padding: 40px 70px 40px 110px;
   }
 }
-@media screen and (max-width: 1330px) {
-  .karri_navbar .dropdown form {
-    width: 260px;
-    left: -190px !important;
-  }
-  .metKarri .right {
-    margin-top: 65px;
-  }
-  .metKarri .right .item {
-    width: 80%;
-  }
-  .metKarri .left img {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .onzeWerking {
-    height: 890px;
-  }
-  .service .item2 {
-    margin-top: 140px;
-  }
-  .service .service_text {
-    width: 47%;
-  }
-  .metKarri .left img {
-    width: 90%;
-  }
-  .metKarri .right .item {
-    width: 90%;
-  }
-  .onzeWerking .body .details {
-    margin-top: 30px;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  .header .rectangle {
-    top: 350px;
-  }
-  .header .rectangle img {
-    width: 460px;
-  }
-  .header .rectangle .body strong {
-    font-size: 60px;
-  }
-}
-
-@media screen and (max-width: 1054px) {
-  .header .rectangle {
-    top: 390px;
-  }
-  .header .rectangle img {
-    width: 460px;
-  }
-  .header .rectangle .body strong {
-    font-size: 60px;
+@media screen and (max-width: 1024px) {
+  .footer .left {
+    padding: 40px 40px 40px 50px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .header {
-    height: 500px;
+  .navbar {
+    padding: 25px 0;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 13%);
   }
-  .karri_navbar .navbars2_field .navBody_position {
-    position: absolute;
-    top: 72px;
-    right: 0;
+  .navbar .navbar-toggler {
+    display: block;
   }
-  .height1 {
-    height: 50px;
-  }
-  .height2 {
-    height: 100px;
-  }
-  .karri_navbar .navbars1 .item.active, .karri_navbar .navbars2 .item.active {
-    border-left: 2px solid #2FAC73;
-    border-top: none;
-    margin: 10px 0;
-  }
-  .karri_navbar .navbars1 .item, .karri_navbar .navbars2 .item {
-    color: #4D5250;
-    font-family: 'Montserrat Medium';
-    font-size: 14px;
-    margin: 10px 0 24px 0px;
-    padding-left: 10px;
-    padding-top: 0;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .header .rectangle .body strong {
-    color: #2fac73;
-  }
-  .header .rectangle .body button {
-    border: 1px solid #2fac73;
-    color: #2fac73;
-  }
-  .header .rectangle .body button:hover {
-    box-shadow: 0 0 6px 0 #62ce9e;
-  }
-  .header .rectangle img {
-    display: none;
-  }
-  .overKarri {
-    padding: 70px 10px 200px 10px;
-  }
-  .overKarri .overKarri_field {
+  .navbar .mobile-w-100 {
     width: 100%;
-  } 
-  .onzeWerking {
-    height: 740px;
   }
-  .onzeWerking .body img {
-    margin-top: -80px;
-    width: 95%;
-  }
-  .onzeWerking .body .details {
-    width: 95%;
-  }
-  .onzeWerking .body .details .title {
-    font-size: 15px;
-  }
-  .onzeWerking .body .details .text {
-    font-size: 13px;
-    margin-top: 16px;
-  }
-  .onzeWerking .body .details button {
-    margin-top: 15px;
-  }
-  .karri_navbar .navbars1 {
+  .navbar .toolbar {
     display: none !important;
   }
-  .karri_navbar .dropdown form {
-    left: -175px !important;
-  }
-  .karri_navbar .navbars2_field  {
-    display: flex !important;
-    padding: 3px 0px 0px 10px !important;
-    position: inherit;
-  }
-  .karri_navbar .navbars2  {
-    width: 100%;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: white;
-  }
-  .karri_navbar .search1 {
-    display: none !important;
-  }
-  .karri_navbar .search2 {
-    display: flex !important;
+  .navbar .mobile-toolbar {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
-    border: none;
-    border-radius: 35px;
-    background-color: #F5F5F5;
-    width: 250px;
-    padding: 0 20px;
   }
-  .karri_navbar .user_cart {
-    padding: 0;
+  .navbar .navbars1 {
+    display: none !important;
   }
-  .service {
-    margin-top: -560px;
+  .navbar .mobile-navbars {
+    display: flex;
+    justify-content: space-between;
+    align-items: none;
+    padding: 10px 0;
   }
-  .service .service_text {
-    width: 70%;
+  .navbar nav {
+    margin-top: 0px;
   }
-  .service .item1 .text, .service .item2 .text, .service .item3 .text, .service .item4 .text {
-    padding: 15px 10px;
+  .navbar nav button span {
+    color: black;
   }
-  .recenteProduction .item {
-    margin: 10px 0;
-    padding: 30px;
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  .metKarri {
-    padding: 0px 0 50px 0;
-  }
-  .metKarri .title {
-    margin-bottom: 60px;
-    font-size: 35px;
-  }
-  .metKarri .left img {
+  .footer .left {
     width: 100%;
   }
-  .metKarri .right .item {
+  .footer .left .body {
+    max-width: 700px;
+    margin: auto;
+  }
+  .footer .right {
     width: 100%;
   }
-  .metKarri .right .item {
-    padding: 20px;
+  .footer .right .body {
+    max-width: 700px;
+    margin: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .karri_navbar .navbars2 .item {
-    font-size: 13px;
-  }
-  .karri_navbar .navbars2 .item_field {
-    width: 50%;
-  }
-  .overKarri {
-    padding: 70px 10px 70px 10px;
-  }
-  .onzeWerking {
-    height: auto;
-    padding: 70px 10px;
-  }
-  .onzeWerking .body img {
-    margin-top: 0;
-    width: 100%;
-  }
-  .onzeWerking .body .item {
-    display: flex;
-    justify-content: center;
-  }
-  .onzeWerking .body .details {
-    width: 100%;
+  .footer .left .body {
+    max-width: 540px;
     margin: auto;
-    margin-top: 30px;
   }
-  .onzeWerking .body .details .title {
-    color: white;
-  }
-  .onzeWerking .body .details .text {
-    color: #e1f2e9;
-  }
-  .metKarri .left img {
-    margin-left: 0;
-  }
-  .service {
-    margin-top: 0;
-    padding: 0;
-  }
-  .service .item {
-    display: flex;
-    justify-content: center;
-  }
-  .service .item1 {
-    width: 80%;
-  }
-  .service .item2, .service .item3, .service .item4 {
-    margin-top: 30px;
-    width: 80%;
-  }
-  .service .service_title {
-    margin-top: 35px;
-    color: #2fac73;
-  }
-  .service .service_text {
-    margin: 5px;
-    color: #2fac73;
-  }
-  .metKarri .title {
-    width: 100%;
-  }
-  .metKarri .body {
+  .footer .right .body {
+    max-width: 540px;
     margin: auto;
-    max-width: 576px;
   }
-  .service .service_title {
-    font-size: 35px;
-    margin-top: 33px;
-    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar .logo {
+    width: 230px;
   }
   .footer .left {
-    margin-left: 15%;
+    padding: 30px 15px;
   }
-  .footer .right {
-    margin-top: 20px;
-    margin-left: 15%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .metKarri {
-    padding: 0 20px;
-  }
-  .metKarri .body {
-    margin: auto;
+  .footer .left .body {
     max-width: 100%;
+    margin: auto;
   }
-  .metKarri .title {
-    font-size: 30px;
-    margin-top: -15px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .karri_navbar {
-    padding: 15px;
-  }
-  .recenteProduction .item .details {
-    height: auto;
-  }
-}
-@media screen and (max-width: 550px) {
-  .header .rectangle .body {
-    position: absolute;
-    bottom: 18%;
-    left: 30px;
-  }
-}
-@media screen and (max-width: 526px) {
-  .karri_navbar .search2 {
-    display: none !important;
-  }
-  .karri_navbar .search3 {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    border: none;
-    border-radius: 35px;
-    background-color: #F5F5F5;
-    width: 100%;
-    padding: 0 20px;
-    margin-top: 15px;
-  }
-  .karri_navbar .navbars2_field .navBody_position {
-    position: absolute;
-    top: 120px;
-    right: 0;
-  }
-  .footer {
-    padding: 40px 0;
-  }
-}
-@media screen and (max-width: 460px) {
-  .service .service_title {
-    font-size: 35px;
-  }
-  .service {
-    padding: 0 5px;
-  }
-  .service .service_text {
-    width: 100%;
-    margin: 0 0 -50px 0;
-  }
-  .service .item1,
-  .service .item2,
-  .service .item3,
-  .service .item4 {
-    width: 100%;
+  .footer .right .body {
+    max-width: 100%;
+    margin: auto;
   }
   .footer .right {
+    padding: 30px 15px;
+  }
+  .min_footer .text {
     display: flex;
     flex-direction: column;
   }
-  .footer .title {
-    margin-top: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .navbar .mobile-toolbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
-  .header {
-    height: 450px;
+  .navbar .search {
+    width: 100%;
+    margin-right: 0px;
   }
-  .header .rectangle {
-    top: 310px;
+  .navbar .reserveren_btn {
+    width: 100%;
+    height: 32px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .footer .left img {
+    width: 200px;
+  }
+  .min_footer .text {
+    display: flex;
+    flex-direction: row;
+  }
+  .min_footer .text .li_item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }
+
 @media screen and (max-width: 400px) {
-  .header .rectangle .body strong {
-    font-size: 48px;
+  .footer .right input {
+    width: 100%;
   }
-  .service .service_title {
-    font-size: 28px;
-  }
-  .recenteProduction button {
-    width: 140px;
-    height: 33px;
-    border-radius: 20px;
-    font-size: 13px;
-  }
-  .metKarri .right .item .text {
-    font-size: 14px;
-  }
-  .metKarri .right .item .name span {
-    font-size: 14px;
-  }
-  .metKarri .title {
-    font-size: 25px;
-    margin-top: -50px;
-    margin-bottom: 30px;
-    text-align: left;
+  .footer .right .checkbox_field {
+    margin: 0 0 22px 0;
+    width: 100%;
   }
 }
-
-

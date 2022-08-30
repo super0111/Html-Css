@@ -1,5 +1,5 @@
-@font-face {
-  font-family:"Montserrat Medium";
+/* @font-face {
+  font-family:"Gill Sans";
   src:url("../fonts/FontsFree-Net-Montserrat-Medium.ttf") format("woff"),
   url("../fonts/FontsFree-Net-Montserrat-Medium.ttf") format("opentype"),
   url("../fonts/FontsFree-Net-Montserrat-Medium.ttf") format("truetype");
@@ -10,9 +10,8 @@
   src:url("../fonts/Fat Frank/FatFrank-Regular.otf") format("woff"),
   url("../fonts/Fat Frank/FatFrank-Regular.otf") format("opentype"),
   url("../fonts/Fat Frank/FatFrank-Regular.otf") format("truetype");
-}
-
+} */
 
 html, body, div {
-  font-family: 'Montserrat Medium';
+  /* font-family: 'Gill Sans', sans-serif; */
 }
