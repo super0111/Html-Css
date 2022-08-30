@@ -27,6 +27,9 @@
 .navbar {
   padding: 25px 0;
 }
+.navbar_boxShadow {
+  box-shadow: 0px 2px 3px rgb(0 0 0 / 13%);
+}
 .navbar .logo {
   width: 280px;
 }
@@ -105,11 +108,216 @@
   padding: 50px 0;
 }
 .header .title {
-  background-color: #dfc889;
+  background-color: #c0a869;
   padding: 10px 15px 10px 30px;
   font-size: 17px;
   color: white;
   width: 350px;
+}
+.header .commar {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-right: 25px;
+  margin-top: 60px;
+}
+.header .commar img {
+  width: 260px;
+}
+.header .details {
+  position: absolute;
+  top: 70px;
+  right: 35px;
+  text-align: center;
+}
+.header .details .text {
+  font-size: 14px;
+  color: white;
+}
+.header .details strong {
+  font-size: 14px;
+  color: white;
+}
+
+/********* Item Field *********/
+.sections {
+  padding: 40px 20px;
+}
+.sections .text {
+  padding: 0 30px;
+  font-size: 14px;
+  color: #524d4d;
+}
+.sections .text a {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  text-decoration: underline;
+}
+.sections .item {
+  background-color: #e7e0cb;
+  height: 300px;
+  overflow-y: auto;
+  padding: 20px 15px;
+  margin: 10px 0;
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+.sections .item img {
+  width: 25px;
+  height: 25px;
+}
+.sections .item strong {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  margin-top: 10px;
+}
+.sections .item .text {
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  word-break: break-all;
+  padding: 0;
+}
+
+/********** OnzePromoties *********/
+.onzePromoties {
+  padding: 30px 0 60px 0;
+}
+.onzePromoties .title {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.onzePromoties .item  img {
+  width: 100px;
+  height: 100px;
+}
+.onzePromoties .item .type {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #212121;
+}
+.onzePromoties .item .name {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
+.onzePromoties .item .offPrice {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #272727;
+  font-weight: 500;
+  text-decoration: line-through;
+  text-decoration-color: #474747;
+  text-decoration-thickness: 1.2px;
+}
+.onzePromoties .item .price {
+  font-size: 13px;
+  font-weight: 700;
+  color: black;
+  margin-top: 3px;
+}
+.onzePromoties .item button {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #bda868;
+  background: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+/********** Verschil *********/
+.verschil {
+  background-color: #ceb87c;
+  padding: 40px 0;
+}
+.verschil .title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.verschil .item_field {
+  width: 80%;
+  margin: auto;
+}
+.verschil .item_field .item1 {
+
+}
+.verschil .item_field .item2 {
+  margin-left: 60px;
+}
+.verschil .item1 .text,
+.verschil .item2 .text  {
+  font-size: 15px;
+  color: white;
+  margin-left: 5px;
+}
+.verschil .item1 i,
+.verschil .item2 i {
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+/********* Interessant *********/
+.interessant {
+  padding: 70px 0 80px 0;
+}
+.interessant .title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.interessant .item {
+  height: 500px;
+}
+.interessant .item .body img {
+  width: 100%;
+}
+.interessant .item .body .title {
+  font-size: 16px;
+  width: 90%;
+  font-weight: 700;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.interessant .item .body .text {
+  font-size: 14px;
+  color: #666262;
+  word-break: break-all;
+  width: 90%;
+  margin: auto;
+}
+.interessant .item button {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #bda868;
+  background: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+.interessant .alle_btn {
+  background-color: #cdb268;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  width: 300px;
+  height: 35px;
+  margin-top: 70px;
 }
 
 /********** footer **********/
@@ -217,6 +425,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.padding-0 {
+  padding: 0 0 !important;
+}
+
 
 /************ Media Query *************/
 @media screen and (max-width: 1150px) {
@@ -233,7 +445,6 @@
 @media screen and (max-width: 992px) {
   .navbar {
     padding: 25px 0;
-    box-shadow: 0px 2px 3px rgb(0 0 0 / 13%);
   }
   .navbar .navbar-toggler {
     display: block;
@@ -264,6 +475,13 @@
   .navbar nav button span {
     color: black;
   }
+  .header .commar img {
+    width: 240px;
+  }
+  .header .details {
+    top: 65px;
+    right: 25px;
+  }
   .footer {
     width: 100%;
     display: flex;
@@ -286,6 +504,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .verschil .item_field .item2 {
+    margin-left: 0;
+  }
+  .interessant .item {
+    height: auto;
+    margin: 10px 0;
+  }
+  .interessant .item button {
+    margin-top: 20px;
+  }
   .footer .left .body {
     max-width: 540px;
     margin: auto;
@@ -299,6 +527,19 @@
 @media screen and (max-width: 576px) {
   .navbar .logo {
     width: 230px;
+  }
+  .sections .item {
+    height: auto;
+    padding: 20px 15px;
+  }
+  .onzePromoties {
+    padding: 0px 0 30px 0;
+  }
+  .onzePromoties .item {
+    margin: 10px 0;
+  }
+  .onzePromoties .item .type {
+    margin-top: 15px;
   }
   .footer .left {
     padding: 30px 15px;
@@ -336,6 +577,38 @@
     height: 32px;
     margin-top: 10px;
     margin-bottom: 0px;
+  }
+  .sections {
+    padding: 30px 0px;
+  }
+  .sections .text {
+    padding: 0 0px;
+  }
+  .header .commar {
+    margin-right: 15px;
+    margin-top: 85px;
+  }
+  .header .commar img {
+    width: 210px;
+  }
+  .header .details {
+    top: 42px;
+    right: 14px;
+  }
+  .header .details .text {
+    font-size: 13px;
+    width: 154px;
+  }
+  .header .title {
+    padding: 7px 0px 7px 15px;
+    font-size: 14px;
+    width: 275px;
+  }
+  .verschil .item_field {
+    width: 100%;
+  }
+  .verschil .title {
+    margin-bottom: 15px;
   }
   .footer .left img {
     width: 200px;
