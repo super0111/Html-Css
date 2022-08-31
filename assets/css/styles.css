@@ -200,14 +200,12 @@
   text-align: center;
   margin-top: 60px;
 }
-.navigeren .btn_field button {
-  background-color:#379da8;
-  width: 300px;
-  height: 50px;
+.navigeren .btn_field a {
+  background-color: #379da8;
+  padding: 9px 20px 12px 20px;
   font-size: 16px;
   color: #ffffff;
-  border: none;
-  outline: none;
+  text-decoration: none;
 }
 
 /************* toerisme ****************/
