@@ -24,36 +24,34 @@
 }
 
 /******** Navbar **********/
-.navbar {
+header {
   padding: 25px 0;
-}
-.navbar_boxShadow {
   box-shadow: 0px 2px 3px rgb(0 0 0 / 13%);
 }
-.navbar .logo {
+header .logo {
   width: 280px;
 }
-.navbar .navbar-toggler {
+header .navbar-toggler {
   display: none;
 }
-.navbar .toolbar {
+header .toolbar {
   margin-bottom: -10px;
 }
-.navbar .mobile-toolbar {
+header .mobile-toolbar {
   display: none;
 }
-.navbar .search {
+header .search {
   width: 210px;
   border: 1px solid #c7b37c;
   padding: 0px 10px;
   margin-right: 10px;
 }
-.navbar .search img {
+header .search img {
   width: 12px;
   height: 12px;
   margin-right: 10px;
 }
-.navbar .search input {
+header .search input {
   width: 100%;
   height: 30px;
   border: none;
@@ -63,10 +61,10 @@
   font-weight: 400;
   color: #aeacaa;
 }
-.navbar .search input::placeholder {
+header .search input::placeholder {
   font-size: 13px;
 }
-.navbar .reserveren_btn {
+header .reserveren_btn {
   border: none;
   outline: none;
   width: 210px;
@@ -76,25 +74,25 @@
   font-size: 13px;
   margin-bottom: -1px;
 }
-.navbar .reserveren_btn img {
+header .reserveren_btn img {
   width: 17px;
   height: 12px;
   margin-right: 8px;
 }
-.navbar a {
+header a {
   font-size: 13px;
   text-decoration: none;
   color: #414141;
   margin-left: 30px;
 }
-.navbar .mobile-navbars {
+header .mobile-navbars {
   display: none;
 }
-.navbar nav {
+header nav {
   padding: 0 !important;
   margin-top: 50px;
 }
-.navbar nav .item {
+header nav .item {
   width: 48%;
 }
 
@@ -249,9 +247,6 @@
   width: 80%;
   margin: auto;
 }
-.verschil .item_field .item1 {
-
-}
 .verschil .item_field .item2 {
   margin-left: 60px;
 }
@@ -316,48 +311,49 @@
   font-weight: 700;
   color: white;
   width: 300px;
-  height: 35px;
+  padding: 9px;
+  text-align: center;
   margin-top: 70px;
 }
 
 /********** footer **********/
-.footer {
+footer {
   width: 100%;
   display: flex;
 }
-.footer .left {
+footer .left {
   background-color: #c7b37c;
   width: 55%;
   padding: 40px 70px 40px 170px
 }
-.footer .left .body {
+footer .left .body {
   display: flex;
   justify-content: space-between; 
 }
-.footer .left .info span {
+footer .left .info span {
   font-size: 14px;
   font-weight: 600;
   color: #303030;
 }
-.footer .left a {
+footer .left a {
   font-size: 14px;
   font-weight: 600;
   color: #303030;
   text-decoration: none;
 }
-.footer .right {
+footer .right {
   background-color: black;
   width: 45%;
   padding: 33px 50px;
 }
-.footer .left img {
+footer .left img {
   width: 240px;
 }
-.footer .right .title {
+footer .right .title {
   font-size: 16px;
   color: white;
 }
-.footer .right input {
+footer .right input {
   width: 335px;
   outline: none;
   border: none;
@@ -367,27 +363,27 @@
   padding: 9px;
   margin: 20px 0 10px 0;
 }
-.footer .right input::placeholder {
+footer .right input::placeholder {
   color: rgb(209, 209, 209);
   padding-left: 10px;
 }
-.footer .right .checkbox_field {
+footer .right .checkbox_field {
   margin: 0 0 22px 0;
   width: 335px;
 }
-.footer .right .checkbox_field input {
+footer .right .checkbox_field input {
   width: 15px;
   height: 15px;
   margin-top: 3px;
 }
-.footer .right .checkbox_field span {
+footer .right .checkbox_field span {
   font-size: 13px;
   color: white;
   margin-left: 10px;
   word-break: break-all;
   text-align: initial;
 }
-.footer .right button {
+footer .right button {
   border: none;
   outline: none;
   background-color: #c7b37c;
@@ -432,47 +428,47 @@
 
 /************ Media Query *************/
 @media screen and (max-width: 1150px) {
-  .footer .left {
+  footer .left {
     padding: 40px 70px 40px 110px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .footer .left {
+  footer .left {
     padding: 40px 40px 40px 50px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .navbar {
+  header {
     padding: 25px 0;
   }
-  .navbar .navbar-toggler {
+  header .navbar-toggler {
     display: block;
   }
-  .navbar .mobile-w-100 {
+  header .mobile-w-100 {
     width: 100%;
   }
-  .navbar .toolbar {
+  header .toolbar {
     display: none !important;
   }
-  .navbar .mobile-toolbar {
+  header .mobile-toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .navbar .navbars1 {
+  header .navbars1 {
     display: none !important;
   }
-  .navbar .mobile-navbars {
+  header .mobile-navbars {
     display: flex;
     justify-content: space-between;
     align-items: none;
     padding: 10px 0;
   }
-  .navbar nav {
+  header nav {
     margin-top: 0px;
   }
-  .navbar nav button span {
+  header nav button span {
     color: black;
   }
   .header .commar img {
@@ -482,22 +478,22 @@
     top: 65px;
     right: 25px;
   }
-  .footer {
+  footer {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .footer .left {
+  footer .left {
     width: 100%;
   }
-  .footer .left .body {
+  footer .left .body {
     max-width: 700px;
     margin: auto;
   }
-  .footer .right {
+  footer .right {
     width: 100%;
   }
-  .footer .right .body {
+  footer .right .body {
     max-width: 700px;
     margin: auto;
   }
@@ -514,18 +510,18 @@
   .interessant .item button {
     margin-top: 20px;
   }
-  .footer .left .body {
+  footer .left .body {
     max-width: 540px;
     margin: auto;
   }
-  .footer .right .body {
+  footer .right .body {
     max-width: 540px;
     margin: auto;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .navbar .logo {
+  header .logo {
     width: 230px;
   }
   .sections .item {
@@ -535,24 +531,34 @@
   .onzePromoties {
     padding: 0px 0 30px 0;
   }
+  .onzePromoties .item_field {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+  }
   .onzePromoties .item {
-    margin: 10px 0;
+    height: 280px;
   }
   .onzePromoties .item .type {
     margin-top: 15px;
   }
-  .footer .left {
+  .onzePromoties .title {
+    margin-bottom: 20px;
+  }
+  footer .left {
     padding: 30px 15px;
   }
-  .footer .left .body {
+  footer .left .body {
     max-width: 100%;
     margin: auto;
   }
-  .footer .right .body {
+  footer .right .body {
     max-width: 100%;
     margin: auto;
   }
-  .footer .right {
+  footer .right {
     padding: 30px 15px;
   }
   .min_footer .text {
@@ -562,17 +568,17 @@
 }
 
 @media screen and (max-width: 450px) {
-  .navbar .mobile-toolbar {
+  header .mobile-toolbar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
-  .navbar .search {
+  header .search {
     width: 100%;
     margin-right: 0px;
   }
-  .navbar .reserveren_btn {
+  header .reserveren_btn {
     width: 100%;
     height: 32px;
     margin-top: 10px;
@@ -610,26 +616,47 @@
   .verschil .title {
     margin-bottom: 15px;
   }
-  .footer .left img {
+  footer .left img {
     width: 200px;
   }
   .min_footer .text {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .min_footer .text .li_item {
     display: flex;
     flex-direction: column;
     align-items: start;
   }
+  .min_footer .text li {
+    width: 143px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .footer .right input {
+  header .search {
+    background-color: #f0e7cc;
+  }
+  header .search input {
+    background-color: #f0e7cc;
+  }
+  header .navbar-toggler i {
+    color: #2584e7;
+  }
+  .interessant {
+    padding: 50px 0 50px 0;
+  }
+  .interessant .alle_btn {
+    margin-top: 50px;
+  }
+  footer .right input {
     width: 100%;
   }
-  .footer .right .checkbox_field {
+  footer .right .checkbox_field {
     margin: 0 0 22px 0;
     width: 100%;
   }
+  .min_footer {
+    padding: 0px 0 20px 0;
+  } 
 }
