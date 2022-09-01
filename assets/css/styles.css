@@ -142,50 +142,50 @@
 .products {
   padding: 260px 0 70px 0;
 }
-.products .onze {
+.products .item_field {
   padding: 0 12%;
 }
-.products .onze .title {
+.products .item_field .title {
   text-align: center;
   color: black;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 35px;
 }
-.products .onze .item {
+.products .item_field .item {
   margin: 5px 0;
 }
-.products .onze .item .item_body {
+.products .item_field .item .item_body {
   width: 150px;
 }
-.products .onze .item .item_body .item_title {
+.products .item_field .item .item_body .item_title {
   font-size: 12px;
   color: #78797b;
   text-align: left;
   margin-top: 15px;
 }
-.products .onze .item .item_body .details {
+.products .item_field .item .item_body .details {
   font-size: 13px;
   color: black;
   font-weight: 600;
 }
-.products .onze .item .item_body .review {
+.products .item_field .item .item_body .review {
   margin: 10px 0;
 }
 
-.products .onze .item .item_body .review i {
+.products .item_field .item .item_body .review i {
   font-size: 10px;
   color: #fdc32d;
 }
-.products .onze .item .item_body .review .review_value {
+.products .item_field .item .item_body .review .review_value {
   font-size: 11px;
   margin-left: 5px;
   margin-bottom: 1.5px;
 }
-.products .onze .item .item_body .cart_fav {
+.products .item_field .item .item_body .cart_fav {
   border: 1px solid #fdc32d;
 }
-.products .onze .item .item_body .cart_fav .cart {
+.products .item_field .item .item_body .cart_fav .cart {
   width: 26px;
   height: 26px;
   display: flex;
@@ -195,12 +195,12 @@
   padding: 5px 2px;
   margin: -1px;
 }
-.products .onze .item .item_body .cart_fav .cart i {
+.products .item_field .item .item_body .cart_fav .cart i {
   color: white;
   font-size: 13px;
   margin-top: 2px;
 }
-.products .onze .item .item_body .cart_fav .fav {
+.products .item_field .item .item_body .cart_fav .fav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,17 +208,17 @@
   height: 25px;
   padding: 5px 2px;
 }
-.products .onze .item .item_body .cart_fav i {
+.products .item_field .item .item_body .cart_fav i {
   color: #fdc32d;
   margin-top: 2px;
 }
-.products .onze .item .item_body .price {
+.products .item_field .item .item_body .price {
   font-size: 13px;
   color: rgb(116, 115, 115);
   text-decoration: line-through;
   font-weight: 400;
 }
-.products .onze .item .item_body .off_price {
+.products .item_field .item .item_body .off_price {
   font-size: 13px;
   color: black;
   font-weight: 700;
@@ -461,7 +461,7 @@
   .products {
     padding: 200px 0 70px 0;
   }
-  .products .onze {
+  .products .item_field {
     padding: 0 8%;
   }
   .waarom .item {
@@ -494,10 +494,10 @@
   .products {
     padding: 150px 0 70px 0;
   }
-  .products .onze {
+  .products .item_field {
     padding: 0 0;
   }
-  .products .onze .item {
+  .products .item_field .item {
     width: 50%;
   }
   .footer .left {
