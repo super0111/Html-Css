@@ -28,6 +28,11 @@ header {
   padding: 25px 0;
   box-shadow: 0px 2px 3px rgb(0 0 0 / 13%);
 }
+header .navbars1 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 header .logo {
   width: 280px;
 }
@@ -634,6 +639,18 @@ footer .right button {
 }
 
 @media screen and (max-width: 400px) {
+  header .navbars1 {
+    display: flex !important;
+    flex-direction: column;
+  }
+  header .mobile-navbars {
+    display: none !important;
+  }
+  header a {
+    margin-left: 30px;
+    width: 100px;
+    margin-bottom: 5px;
+  }
   header .search {
     background-color: #f0e7cc;
   }
@@ -641,7 +658,7 @@ footer .right button {
     background-color: #f0e7cc;
   }
   header .navbar-toggler i {
-    color: #2584e7;
+    color: black;
   }
   .interessant {
     padding: 50px 0 50px 0;
