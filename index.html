@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Karri</title>
+    <title>Mignon</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link href="http://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/font.css">
-    <link rel="stylesheet" href="./assets/css/utilities.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
 
     <script src="https://kit.fontawesome.com/9920bc3869.js" crossorigin="anonymous"></script>
@@ -18,229 +26,291 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="d-flex flex-column justify-content-between">
-      <div class="container navbar">
-        <div class="d-flex justify-content-between w-100 height1">
-          <div class="d-flex align-items-center logo py-5">
-            <img src="./assets/images/Karri-logo-rgb.png" alt="logo" >
-          </div>
-          <div class="d-flex justify-content-between align-items-end navbars">
-            <div class="item active">
-              Welkom
-            </div>
-            <div class="item">
-              Assortiment
-            </div>
-            <div class="item">
-              Hoe werken we
-            </div>
-            <div class="item">
-              Contact
-            </div>
-          </div>
-          <div class="d-flex flex-column justify-content-between">
-            <div class="d-flex align-items-center search">
-              <input type="search" placeholder="Naar wat ben je op zpel?" >
-              <img src="./assets/images/Search.svg" alt="search" >
-            </div>
-            <div class="d-flex justify-content-end align-items-center w-100 user_cart">
-              <div class="dropdown">
-                <button class="btn px-2 rounded-circle" type="button" id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-user-o" aria-hidden="true"></i>
-                </button>
-                <form class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton-1">
-                  <div class="form-group">
-                    <h6>Aanmelden</h6>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleDropdownFormEmail2">Gebruikersnaam of e-mailadres</label>
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleDropdownFormPassword2">Wachtwoord</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="">
-                  </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                    <label class="form-check-label" for="dropdownCheck2">
-                      Onthoud wachtwoord
-                    </label>
-                  </div>
-                  <button type="button" class="btn btn-success">Sign in</button>
-                  <div class="form-group notice text-center mt-3">
-                    <label>Ik heb nog geen account, log in.</label>
-                  </div>
-                </form>
-              </div>
-              <div class="ml-3 dropdown">
-                <button class="btn px-2 rounded-circle" type="button" id="dropdownMenuButton-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-shopping-basket"></i>
-                </button>
-                <form class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton-2">
-                  <div class="form-group">
-                    <h6>Winkelwagen</h6>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleDropdownFormEmail2">Je hebt momenteel nog geen artikelen in je winkelwagen staan.</label>
-                  </div>
-                  <button type="button" class="btn btn-success">Winkel nu</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navbars1">
-          <div class="item">
-            Welkom
-          </div>
-          <div class="item">
-            Assortiment
-          </div>
-          <div class="item">
-            Hoe werken we
-          </div>
-          <div class="item">
-            Contact
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="header">
-      <div class="rectangle">
-        <img class="" src="./assets/images/Rectangle (1).svg" >
-        <div class="d-flex flex-column body">
-          <strong>
-            You care,<br> we carry
-          </strong>
-          <button>
-            Ons assortiment
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="overKarri">
+    <div class="min_navbar">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="min_navbar_field">
+          <div class="text">
+            Uw betrouwbare partner in land- en tuinbouw
           </div>
-          <div class="col-md-6">
-            <div class="overKarri_field">
-              <div class="text">
-                Bij Karri mag je als zorgverlener rekenen op een optimale ondersteuning zodat jij je kunt focussen op één doel: de beste zorg verlenen aan de patiënten.
-              </div>
-              <button>
-                Over Karri
+          <div class="d-flex justify-content-start margin-r5">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-phone"></i>
+              <span>054 58 8066</span>
             </div>
-            </button>
-          </div>
-        </div>
-        <div class="row items">
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (1).png" alt="" >
-            <span>
-              Beschermings-materiaal
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (2).png" alt="" >
-            <span>
-              Incontinentie
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (3).png" alt="" >
-            <span>
-              Verzorgingssets
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (4).png" alt="" >
-            <span>
-              Wondzorg
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (5).png" alt="" >
-            <span>
-              Spuiten - naalden- perfusiesets
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (6).png" alt="" >
-            <span>
-              Ontsmetting, reiniging en bescherming
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (7).png" alt="" >
-            <span>
-              Diagnostiek
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (8).png" alt="" >
-            <span>
-              Voeding
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (8).png" alt="" >
-            <span>
-              Geneesmiddelen en voedingsupplementen
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (9).png" alt="" >
-            <span>
-              Parafarmacie
-            </span>
-          </div>
-          <div class="col-md-2 col-sm-3 col-xs-4 d-flex flex-column align-items-center item">
-            <img src="./assets/images/Bitmap (10).png" alt="" >
-            <span>
-              Steunbandages en toebehoren
-            </span>
+            <div class="d-flex align-items-center ml-4">
+              <span> NU OPEN </span>
+              <div class="online"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="onzeWerking">
+    <header class="d-flex flex-column">
+      <div class="d-flex justify-content-between align-items-center container">
+        <img class="logo" src="./assets/images/logo.png" alt="logo" >
+        <nav class="navbar navbar-expand-lg navbar-dark navbar1">
+          <div class="container-fluid">  
+           <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Landbouw</a>
+                <div class="dropdown-menu">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-column dropdown_item_field">
+                      <a href="#">Amazone</a>
+                      <a href="#">Fendt</a>
+                      <a href="#">Schaffer</a>
+                      <a href="#">Castrol Smeeermiddelen</a>
+                    </div>
+                    <div class="">
+                      <img class="navbar_img" src="./assets/images/navbar_img1.png" alt="navbar image">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Tweedehands</a>
+                <div class="dropdown-menu">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-column dropdown_item_field">
+                      <a href="#">Amazone</a>
+                      <a href="#">Fendt</a>
+                      <a href="#">Schaffer</a>
+                      <a href="#">Castrol Smeeermiddelen</a>
+                    </div>
+                    <div class="">
+                      <img class="navbar_img" src="./assets/images/navbar_img1.png" alt="navbar image">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"> Nieuws </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> Promotises </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> Foto's </a></li>
+            </ul>
+           </div>
+          </div>
+        </nav>
+
+        <button class="contact_btn">Contacteer ons</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
       <div class="container">
-        <div class="row body">
-          <div class="col-md-6 col-sm-12">
-            <img src="./assets/images/Home-01.jpg" alt="home 01" >
+        <nav class="navbar navbar-expand-lg navbar-dark navbar2">
+          <div class="container-fluid">  
+           <div class="collapse navbar-collapse mt-3" id="main_nav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Landbouw</a>
+                <div class="dropdown-menu">
+                  <div class="dropdown_field">
+                    <div class="d-flex flex-column dropdown_item_field">
+                      <a href="#">Amazone</a>
+                      <a href="#">Fendt</a>
+                      <a href="#">Schaffer</a>
+                      <a href="#">Castrol Smeeermiddelen</a>
+                    </div>
+                    <div class="">
+                      <img class="navbar_img" src="./assets/images/navbar_img1.png" alt="navbar image">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Tweedehands</a>
+                <div class="dropdown-menu">
+                  <div class="dropdown_field">
+                    <div class="d-flex flex-column dropdown_item_field">
+                      <a href="#">Amazone</a>
+                      <a href="#">Fendt</a>
+                      <a href="#">Schaffer</a>
+                      <a href="#">Castrol Smeeermiddelen</a>
+                    </div>
+                    <div class="">
+                      <img class="navbar_img" src="./assets/images/navbar_img1.png" alt="navbar image">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"> Nieuws </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> Promotises </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> Foto's </a></li>
+            </ul>
+           </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="details">
-              <div class="title">
-                Het bieden van de geschikte ondersteuning voor elke zorgverlener
-              </div>
-              <div class="text">
-                Karri fungeert als de perfecte incubator tussen de eerstelijnszorgverlener en de patiënt. Wij staan ten dienste van een sterk veranderend zorglandschap, waarbij we een stap verder gaan dan enkel verkoop van medische materialen. 
-              </div>
-              <button>Onze werking</button>
-            </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="header_img_field">
+      <img class="header_img" src="./assets/images/top_image1.png" alt="header image" >
+      <img class="header_footer_img" src="./assets/images/header_image_footer.png" alt="header footer image" >
+      <div class="facebook">
+        <img src="./assets/images/facebook.png" alt="facebook image" >
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="welkom_field">
+        <div class="welkom">
+          <div class="title">WELKOM</div>
+          <div class="text">
+            Sinds vele jaren is ons familiebedrijf gekend voor de verkoop van landbouwmachines, tractoren en tuinmachines. <br><br>
+            Ons aangeboden gamma bestaat uit tot de topmerken in hun branche: Fendt, Amazone, Iseki, Echo,... <br><br>
+            Ook voor herstellingen van deze machines kan u steeds bij ons terecht. <br><br>
+            Met onze jarenlange ervaring en grondige vakkennis staan wij klaar om onze klantenten volle te bedienen! <br><br>
+            We heten u van harte welkom in onze toonzaal of neem een kijkje op onze nieuwspagina voor de laatste weetjes! <br><br>
+            Rony, Carine en Levi
           </div>
+        </div>
+        <div class="promoties">
+          <div class="title">PROMOTIES</div>
+          <div class="text">
+            Ontdek onze maandelijkse promotie hire.
+          </div>
+          <button>Bekijk</button>
         </div>
       </div>
     </div>
 
-
-
-    <div class="footer">
-
+    <div class="symbol">
+      <div class="container">
+        <div class="symbol_field">
+          <!-- <div class="item_field"> -->
+            <div class="item">
+              <img src="./assets/images/symbol1.png" alt="symbol" >
+            </div>
+            <div class="item">
+              <img src="./assets/images/symbol2.png" alt="symbol" >
+            </div>
+            <div class="item">
+              <img src="./assets/images/symbol3.png" alt="symbol" >
+            </div>
+            <div class="item">
+              <img src="./assets/images/symbol4.png" alt="symbol" style="width: 70px; height: 15px;" >
+            </div>
+          <!-- </div> -->
+          <!-- <div class="item_field"> -->
+          <!-- </div> -->
+        </div>
+      </div>
     </div>
+          
+    <footer>
+      <div class="container padding-0">
+        <div class="footer_field">
+          <div class="left">
+            <div class="d-flex flex-column">
+              <div class="text d-flex align-items-center">
+                <i class="fas fa-chevron-right"></i>
+                Landbouw
+              </div>
+              <div class="text d-flex align-items-center">
+                <i class="fas fa-chevron-right"></i>
+                Tuinbouw
+              </div>
+              <div class="text d-flex align-items-center">
+                <i class="fas fa-chevron-right"></i>
+                Tweedehands
+              </div>
+              <div class="text d-flex align-items-center">
+                <i class="fas fa-chevron-right"></i>
+                Nieuws
+              </div>
+            </div>
+            <div class="d-flex flex-column margin-left">
+              <div class="text d-flex align-items-center">
+                <i class="fas fa-chevron-right"></i>
+                Promoties
+              </div>
+              <div class="text d-flex align-items-center">
+                <i class="fas fa-chevron-right"></i>
+                Foto's
+              </div>
+              <div class="text d-flex align-items-center">
+                <i class="fas fa-chevron-right"></i>
+                Contact
+              </div>
+              <div class="text d-flex align-items-center">
+                <i class="fas fa-chevron-right"></i>
+                Facebook
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="info d-flex justify-content-between">
+              <span class="mr-3">
+                Mignon R & L <br> Nieuwstraat 7 <br> 1570 Galmaarden
+              </span>
+              <span class="ml-5">
+                T 054 58 80 66 <br> M 0473 62 72 59 <br> info@mignonri.be
+              </span>
+            </div>
+            <img src="./assets/images/footer_logo.png" alt="footer logo" >
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <div class="min_footer">
-
+      <div class="container">
+        <div class="min_footer_field">
+          <div class="text">
+            <div class="d-flex justify-content-start align-items-center">
+              web by <img src="./assets/images/min_footer.png" alt="footer icon" > RedBit 
+            </div>
+            <div class="li_item">
+              <div class="d-flex">
+                <li>2022</li>
+                <li>Algemene voorwaarden</li>
+              </div>
+              <div class="d-flex">
+                <li>Privacy policy</li>
+                <li>cookie policy</li>
+              </div>
+            </div>
+          </div>
+          <div class="title">BTW BE 0808.603.183</div>
+        </div>
+      </div>
     </div>
 
   </body>
 
   <script>
+    function setButtonListener () {
+
+      let nav_Buttons = document.querySelectorAll(".karri_navbar a");
+      let responsive_navbar = $('#responsive_navbar');
+      let show = false;
+      responsive_navbar.click(() => {
+        if (!show) {
+          $('.mobile-navbar-wrapper').addClass('show')
+        }
+        else {
+          $('.mobile-navbar-wrapper').removeClass('show')
+        } 
+        show = !show
+      });
+
+      for (let button of nav_Buttons) {
+        button.addEventListener('click', (e) => {
+          const et = e.target;
+          const active = document.querySelector(".active");
+          if (active) {
+            active.classList.remove("active");
+          }
+          et.classList.add("active");
+        });
+      }
+    }
+
+    $(document).ready(() => {
+      setButtonListener()
+    })
   </script>
 
 </html>
