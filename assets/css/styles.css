@@ -79,8 +79,7 @@ header .navbar a {
 }
 header .contact_btn {
   background-color: #ec730f;
-  border: none;
-  outline: none;
+  text-decoration: none;
   font-size: 13px;
   font-weight: 600;
   color: white;
@@ -226,6 +225,9 @@ footer img {
 .min_footer {
   background-color: black;
   padding: 10px 0;
+}
+.min_footer span {
+  margin-left: 10px;
 }
 .min_footer_field {
   display: flex;
@@ -394,6 +396,9 @@ footer img {
     background-image: none;
     padding: 0;
   }
+  .w-50 {
+    width: 50%;
+  }
   footer .footer_field {
     flex-direction: column;
   }
@@ -409,11 +414,12 @@ footer img {
     width: 100%;
     background-color: #cecece;
   }
+  .min_footer span {
+    margin-left: 0px;
+  }
   .padding-0 {
     padding: 0 !important;
   }
-
-
   .min_navbar .text {
     margin-left: 0;
   }
