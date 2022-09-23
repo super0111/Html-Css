@@ -10,18 +10,20 @@
 .min_navbar .online {
   width: 5px;
   height: 5px;
-  background: #b1dabd;
+  background: #d1ff1a;
+  box-shadow: 0px 0px 0px 2px #48a330;
   border-radius: 50%;
-  margin-left: 5px;
+  margin-left: 7px;
 }
 .min_navbar .text {
   font-size: 12px;
-  color: #e4e4e4;
+  color: #f7f1f1;
   margin-left: 35%;
+  font-family: Delaney;
 }
 .min_navbar span {
   font-size: 12px;
-  color: #cdcdcd;
+  color: #e2e2e2;
 }
 .min_navbar i {
   font-size: 12px;
@@ -37,8 +39,22 @@
 header {
   padding: 8px 0;
 }
+header .navbar .nav-item .dropdown-menu {
+  top: 41.5px !important;
+  border-radius: 0px !important;
+  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
 header .navbar-toggler {
   display: none;
+}
+header .navbar-nav .nav-link {
+  font-family: Lato !important;
+  color: #1d1c1c !important;
+}
+header .navbar-nav .dropdown a:hover .hover_img {
+  display: block;
+  position: absolute;
 }
 header .logo {
   width: 120px;
@@ -47,15 +63,23 @@ header .logo {
 header .navbar li {
   margin: 0 20px;
 }
-header .navbar .dropdown-menu {
+header .navbar .dropdown-menu{
+  padding: 13px 0 0 0 !important;
+  margin: -2px;
+  border: none !important;
+}
+header .navbar .dropdown-menu .body {
   background-color: #388125;
   padding: 20px !important;
   width: 580px;
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
 }
 header .navbar .dropdown-menu a {
   color: white !important;
   text-decoration: none;
   margin-left: 20px;
+  font-family: Lato !important;
 }
 header .navbar .dropdown-menu a:hover {
   background-color: none !important;
@@ -88,14 +112,19 @@ header .contact_btn {
 
 /******** Header Image *********/
 .header_img_field  {
+  height: 730px;
+  background-image: url("../images/top_image1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 .header_img {
  width: 100%; 
+ height: 730px;
 }
 .header_footer_img {
   position: absolute;
-  bottom: -20px;
+  bottom: -50px;
   left: 0;
   width: 100%;
 }
@@ -128,10 +157,15 @@ header .contact_btn {
   font-size: 16px;
   color: #3a9d21;
   font-weight: 700;
+  font-family: Lato !important;
   margin-bottom: 10px;
 }
 .welkom_field .welkom .text{
   font-size: 13px;
+  font-family: Lato !important;
+}
+.welkom_field .welkom .text span{
+  font-family: Delaney !important;
 }
 .welkom_field .promoties {
   background-color: #388125;
@@ -143,16 +177,18 @@ header .contact_btn {
   font-size: 16px;
   font-weight: 600;
   color: white;
+  font-family: Lato !important;
 }
 .welkom_field .promoties .text {
   font-size: 14px;
+  font-family: Lato !important;
   color: #dfdfdf;
   margin-top: 40px;
 }
 .welkom_field .promoties button {
   position: absolute;
   bottom: 30px;
-  background-color: #dab60e;
+  background-color: #ecc50f;
   border: none;
   outline: none;
   font-size: 15px;
@@ -163,7 +199,7 @@ header .contact_btn {
 
 /********** symbol **********/
 .symbol {
-  background-color: #3a9d21;
+  background-color: #388125;
   margin-top: 70px;
   padding: 15px 0;
 }
@@ -197,6 +233,7 @@ footer .left {
 }
 footer .left .text {
   font-size: 14px;
+  font-family: Lato !important;
   color: white;
   margin: 7px 0;
 }
@@ -215,6 +252,7 @@ footer .right {
 footer .right .info span {
   font-weight: 600;
   font-size: 14px;
+  font-family: Lato !important;
 }
 footer img {
   width: 180px;
@@ -239,11 +277,13 @@ footer img {
 }
 .min_footer .title {
   font-size: 15px;
-  color: rgb(195, 192, 192);
+  font-family: Lato !important;
+  color: white;
 }
 .min_footer .text {
   font-size: 12px;
-  color: rgb(219, 219, 219);
+  font-family: Lato !important;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,8 +309,14 @@ footer img {
 .margin-left {
   margin-left: 70px;
 }
+.hover_img {
+  display: none;
+}
 /************ Media Query *************/
 @media screen and (max-width: 1200px) {
+  header .contact_btn {
+    padding: 7px 12px 8px 12px;
+  }
   footer .right {
     width: 60%;
   }
@@ -278,7 +324,7 @@ footer img {
 
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .nav-link{ display: block }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }	
@@ -292,6 +338,12 @@ footer img {
   }
   header .navbar-toggler {
     display: block;
+  }
+  .header_img_field {
+    height: 600px;
+  }
+  .header_footer_img {
+    bottom: -25px;
   }
   .min_navbar .text {
     margin-left: 50px;
@@ -324,7 +376,7 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
-  header .navbar .dropdown-menu {
+  header .navbar .dropdown-menu .body {
     width: 450px;
   }
   header .navbar .dropdown_item_field {
@@ -376,12 +428,18 @@ footer img {
 }
 
 @media screen and (max-width: 576px) { 
-  header .navbar .dropdown-menu {
+  header .navbar .dropdown-menu .body {
     width: 100%;
   }
   header .navbar .navbar_img {
     width: 100%;
     height: auto;
+  }
+  .header_img_field {
+    height: 520px;
+  }
+  .header_footer_img {
+    bottom: -10px;
   }
   .symbol {
     margin-top: 35px;
@@ -456,6 +514,9 @@ footer img {
   header .navbar .navbar_img {
     margin-top: 10px;
   }
+  .header_img_field {
+    height: 420px;
+  }
   .min_footer .text {
     display: flex;
     flex-direction: column;
@@ -481,6 +542,15 @@ footer img {
   }
   .header_img_field .facebook img {
     height: 23px;
+  }
+  .header_img_field {
+    height: 370px;
+  }
+  .header_footer_img {
+    bottom: -7px;
+  }
+  header .navbar-nav .dropdown a:hover {
+    text-underline-offset: 6px;
   }
   .welkom_field .promoties {
     padding: 15px;
