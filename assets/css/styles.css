@@ -1,13 +1,13 @@
 /********** Header ***********/
-.header {
+header {
   height: 420px;
   position: relative;
   padding: 30px 0;
 }
-.header nav {
+header nav {
   height: 40px;
 }
-.header .mobile-navbars {
+header .mobile-navbars {
   display: none;
 }
 .mobile-navbars_field {
@@ -15,20 +15,20 @@
   justify-content: space-between;
   align-items: center;
 }
-.header nav a {
+header nav a {
   font-size: 13px;
   color: black;
   margin: 0 10px;
   font-weight: 500;
 }
-.header .navbar-toggler {
+header .navbar-toggler {
   display: none;
 }
-.header .navbar_field img {
+header .navbar_field img {
   width: 150px;
   height: 120px;
 }
-.header .contact_btn {
+header .contact_btn {
   width: 220px;
   height: 40px;
   background-color: #ed890d;
@@ -41,18 +41,17 @@
 .z-index-1 {
   z-index: 1;
 }
-.header .bg {
-  width: 40%;
+header .bg {
   position: absolute;
   top: 0;
   right: 0;
   z-index: -1;
 }
-.header .bg img {
-  width: 100%;
+header .bg img {
+  width: 530px;
   height: 420px;
 }
-.header .text {
+header .text {
   width: 50%;
   margin: 80px 0 0 50px;
   font-size: 18px;
@@ -64,9 +63,34 @@
 
 /*********** WhatDo ***********/
 .whatDo {
-  padding: 80px 0;
-  margin: 0 0;
+  background-color: #046a6a;
+  margin: 80px 0 90px 0;
+  height: 364px;
+  position: relative;
 }
+.whatDo .body {
+  background-color: white;
+  position: relative;
+}
+.whatDo .rentangle {
+  width: 51px;
+  height: 49px;
+  position: absolute;
+  left: -50px;
+  top: 0px;
+  background-color: white;
+}
+.whatDo .circle {
+  margin-left: -1px;
+  width: 51px;
+  height: 50px;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #046a6a;
+}
+
 .whatDo .left {
   border-top-right-radius: 25px;
   width: 40%;
@@ -77,10 +101,10 @@
   padding-bottom: 10px;
 }
 .whatDo .right .item_field {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 .whatDo .right .title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
 }
 .whatDo i,
@@ -90,23 +114,34 @@
   align-items: center;
   margin-right: 20px;
 }
-.whatDo .item1,
+.whatDo .item1 {
+  width: 80%;
+  padding-left: 30px;
+}
 .whatDo .item2 {
-  width: 90%;
+  width: 100%;
 }
 .whatDo .item2 img {
-  width: 70%;
-  margin-left: -1px;
+  width: 100%;
 }
 .whatDo .item2 .item2_top {
-  background-color: #046a6a;
+  margin-right: -2px;
   height: 100%;
 }
 
 /********** WhyTrenchless ***********/
+.whyTrenchless {
+  background-image: url("../images/why_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  position: relative;
+}
+.whyTrenchless .why_body {
+}
 .whyTrenchless .left_item {
   display: flex;
-  background-color: #046a6a;
+  padding: 80px 0 0 30px;
 }
 .whyTrenchless .yellow_field {
   width: 50%;
@@ -115,9 +150,7 @@
 }
 .whyTrenchless .body {
   width: 50%;
-  padding: 80px 50px 100px 0px;
 }
-
 .whyTrenchless .body .title {
   font-size: 16px;
   font-weight: 500;
@@ -130,8 +163,8 @@
   margin: 5px 0;
 }
 .whyTrenchless .right_item {
-  width: 60%;
-  margin: 50px;
+  width: 80%;
+  padding: 108px 0 0 50px;
 }
 .whyTrenchless .right_item .text {
   font-size: 13px;
@@ -153,6 +186,11 @@
   margin-right: 20px;
   margin-top: 8px;
 }
+.products .products_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .products .products_list img {
   width:25%;
 }
@@ -160,47 +198,47 @@
   padding: 80px 70px 20px 70px;
 }
 .products .left_item {
-  width: 80%;
+  width: 70%;
 }
 .products .right_item {
   width: 90%;
 }
-.products .body .left_item .title {
-  font-size: 16px;
-  font-weight: 700;
+.products .right_item img {
+  width: 100%;
 }
-.products .body .left_item .text {
-  font-size: 14px;
-  margin-top: 20px;
+.products .body .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.products .body .min_title {
+  font-size: 13.5px;
+  font-weight: 700;
   word-break: break-all;
 }
 .products .text {
   font-size: 14px;
   word-break: break-all;
 } 
-.products .ring {
-  padding: 0px 70px;
+.products .right_item img {
+  width: 80%;
 }
-.products .ring .title {
-  margin-top: 60px;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
+.products .blue {
+  width: 55px;
+  height: 18px;
+  background-color: #046a6a;
+  margin-right: 10px;
 }
-.products .ring img {
-  width: 100%;
+.products .yellow {
+  width: 55px;
+  height: 18px;
+  background-color: #ed890d;
+  margin-right: 10px;
 }
-.products .ring .right_item {
-  position: relative;
-}
-.products .ring .ring_details {
-  position: absolute;
-  top: 43%;
-  left: -62%;
-}
-.products .ring .ring_details .text_position {
-  margin: 12px 0;
-  text-align: right;
+.products .gray {
+  width: 55px;
+  height: 18px;
+  background-color:#bdbdbd;
+  margin-right: 10px;
 }
 
 /********* applied *********/
@@ -215,7 +253,7 @@
   padding: 0 90px;
 }
 .applied .left_item .title {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
   color: white;
   margin-bottom: 20px;
@@ -277,15 +315,14 @@
   background-color: black;
 }
 
-
 /********* Footer ***********/
-.footer {
+footer {
   padding: 30px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer button {
+footer button {
   width: 200px;
   height: 40px;
   background-color: #ed890d;
@@ -306,21 +343,21 @@
   font-weight: 600;
   color: white;
 }
-.footer img {
+footer img {
   width: 180px;
 }
-.footer .name {
+footer .name {
   font-size: 13px;
   font-weight: 600;
 }
-.footer .text {
+footer .text {
   font-size: 13px;
   display: flex;
   justify-content: end;
   align-items: end;
   width: 95px;
 }
-.footer .divider {
+footer .divider {
   border-left: 2px solid #046a6a;
   margin: 0 20px;
 }
@@ -362,13 +399,32 @@
 }
 .yellow_bg {
   background-color: #ed890d;
-  height: 50px;
+  height: 53px;
+}
+.yellow_bg2 {
+  position: absolute;
+  right: 0;
+  bottom: -47px;
+  width: 30%;
+  height: 47px;
+  background: #ed890d;
+}
+.yellow_bg3 {
+  position: absolute;
+  left: 0;
+  top: -0px;
+  width: 20%;
+  height: 45px;
+  background: #ed890d;
 }
 .text_sm {
   font-size: 14px;
 }
 .padding-0 {
   padding: 0 !important;
+}
+.padding-1 {
+  padding-bottom: 1px;
 }
 .margin-0 {
   margin: 0 !important;
@@ -380,85 +436,148 @@
 
 /********* Medai Query **********/
 @media screen and (max-width: 1200px) {
-  .header .bg {
-    width: 50%;
+  header {
+    height: 400px;
   }
-  .products .ring .ring_details {
+  header .bg img {
+    width: 440px;
+    height: 400px;
+  }
+  .whatDo {
+    position: relative;
+    height: 315px;
+  }
+  .whyTrenchless .body {
+    width: 65%;
+  }
+  .whyTrenchless .right_item {
+    width: 100%;
+  }
+  .products .left_item {
+    width: 90%;
+  }
+  .yellow_bg {
+    background-color: #ed890d;
+    height: 51px;
+  }
+  .yellow_bg2 {
     position: absolute;
-    top: 45%;
-    left: -77%;
-  }
-  .products .ring .ring_details .text_position {
-    margin: 4px 0;
+    right: 0;
+    bottom: -37px;
+    width: 200px;
+    height: 44px;
+    background: #ed890d;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .header .mobile-navbars {
+  header .bg img {
+    width: 400px;
+    height: 370px;
+  }
+  .yellow_bg2 {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    width: 200px;
+    height: 44px;
+    background: #ed890d;
+  }
+  header {
+    height: 370px;
+  }
+  header .mobile-navbars {
     display: block;
     padding: 0 !important;
   }
-  .header .navbars {
+  header .navbars {
     display: none;
   }
-  .header .navbar-toggler {
+  header .navbar-toggler {
     display: block;
     margin-left: 50px;
   }
-  .header .navbar-toggler i {
+  header .navbar-toggler i {
     color: white;
   }
-  .header .contact_btn {
+  header .contact_btn {
     width: 160px;
   }
-  .header .text {
+  header .text {
     width: 50%;
-    margin: 40px 0 0 30px;
+    margin: 20px 0 0 30px;
   }
   .whatDo .item1 {
-    width: 110%;
+    width: 100%;
   }
   .whatDo .left {
     width: 45%;
     margin-right: 15px;
   }
-  .whyTrenchless .body {
-    padding: 80px 10px 100px 0px;
+  .whyTrenchless {
+    height: 450px;
+  }
+  .whyTrenchless .left_item {
+    padding: 50px 0 0 30px;
   }
   .whyTrenchless .right_item {
-    width: 65%;
+    padding: 78px 0 0 0;
   }
-  .products .ring .right_item {
-    position: relative;
-    margin-top: 15px;
+  .products .body {
+    padding: 60px 15px 20px 20px;
   }
-  .products .ring .title {
-    margin-top: 15px;
-  }
-  .products .ring .ring_details .text_position {
-    margin: 0px 0px;
-    font-size: 13px !important;
-  }
-  .products .ring .ring_details {
-    position: absolute;
-    top: 45%;
-    left: -105%;
+  .products .left_item {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .whatDo {
-    padding: 50px 0;
+  header {
+    height: 330px;
   }
-  .whatDo .item1, .whatDo .item2 {
+  .yellow_bg, .yellow_bg2, .yellow_bg3 {
+    display: none;
+  }
+  header .bg img {
+    width: 340px;
+    height: 330px;
+  }
+  header .text {
+    width: 50%;
+    margin: 0px 0 0 15px;
+    font-size: 16px;
+  }
+  .whatDo {
+    background: none;
+    margin: 45px 0;
+    height: auto;
+  }
+  .whatDo .rentangle {
+    display: none;
+  }
+  .whatDo .item1 {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .whatDo .item2 {
     width: 100%;
   }
-  .whyTrenchless .right_item {
-    width: 95%;
-    margin: 50px 13px;
+  .whyTrenchless {
+    background-color: #046a6a;
+    background-image: none;
+    height: auto;
   }
   .whyTrenchless .body {
-    padding: 80px 10px 30px 0px;
+    width: 100%;
+  }
+  .whyTrenchless .left_item {
+    padding: 40px 0 0 0px;
+  }
+  .whyTrenchless .right_item {
+    padding: 30px 0 20px 0;
+  }
+  .whyTrenchless .right_item .text {
+    color: white;
   }
   .products .body {
     padding: 35px 0px 15px 0px;
@@ -469,27 +588,22 @@
   .products .right_item {
     width: 100%;
     margin-top: 20px;
-  }
-  .products .ring {
-    padding: 0px 0px;
-  }
-  .products .ring .right_item {
     display: flex;
-    justify-content: end;
+    flex-direction: column;
   }
-  .products .ring img {
-    width: 55%;
+  .products .ring_details {
+    width: 65%;
+    margin: auto;
   }
-  .products .ring .ring_details {
-    position: absolute;
-    top: 46%;
-    left: -3%;
+  .products .right_item img {
+    width: 65%;
+    margin: auto;
   }
   .applied .body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 15px;
   }
   .applied .right_item {
     margin-top: 20px;
@@ -497,94 +611,112 @@
   .applied .left_item .text {
     width: 48%;
   }
-  .footer {
+  footer {
     padding: 30px 0px;
   }
-  .footer button {
+  footer button {
     height: 35px;
     font-size: 13px;
   }
-  .footer img {
+  footer img {
     width: 150px;
   }
 }
 
+@media screen and (max-width: 578px) {
+  header {
+    height: 300px;
+  }
+  header .bg img {
+    width: 310px;
+    height: 300px;
+  }
+  header .text {
+    margin-top: -10px;
+  }
+}
 @media screen and (max-width: 576px) {
-  .header .bg {
-    width: 60%;
+  .whatDo .item2 .item2_top {
+    padding: 0 15px;
   }
-  .products .ring .right_item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .products .ring .ring_details {
-    position: initial;
-    margin-left: 30px;
-  }
-  .products .ring .ring_details .text_position {
-    margin: 12px 0;
-    text-align: left;
+  .products .ring_details {
+    width: 100%;
   }
   .applied {
     padding: 50px 15px;
   }
-  .footer button {
+  footer button {
     display: none;
   }
   .mobile-button {
     display: block !important;
     margin: auto;
     margin-bottom: 30px;
+    width: 145px;
+    height: 35px;
+    font-size: 14px;
   }
   .min_footer .text {
     display: flex;
     flex-direction: column;
   }
-  
 }
 
-@media screen and (max-width: 450px) {
-  .header {
-    height: 320px;
+@media screen and (max-width: 520px) {
+  header {
+    height: 280px;
   }
-  .header .bg {
-    width: 65%;
+  header .bg img {
+    width: 280px;
+    height: 280px;
   }
-  .header .bg img {
-    height: 320px;
-  }
-  .header .navbar_field img {
+  header .navbar_field img {
     width: 120px;
     height: 100px;
   }
-  .header .navbar-toggler {
+  header .contact_btn {
+    width: 130px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .bg {
+    display: none;
+  }
+  header .navbar-toggler i {
+    color: black;
+  }
+  header .navbar_field img {
+    width: 120px;
+    height: 100px;
+  }
+  header .navbar-toggler {
     margin-left: 5px;
   }
-  .header .nav .item {
+  header .nav .item {
     width: 100%;
   }
   .mobile-navbars_field {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    height: 148px;
   }
-  .header nav a {
+  header nav a {
     width: 120px;
     margin: 5px 0;
   }
-  .header .contact_btn {
+  header .contact_btn {
     width: 100px;
     height: 30px;
     font-size: 12px;
   }
-  .header .text {
+  header .text {
     width: 80%;
     margin: 0px 0 0 30px;
     font-size: 15px;
-  }
-  .whatDo {
-    padding: 50px 0;
   }
   .whatDo .right {
     padding-right: 15px;
@@ -594,9 +726,6 @@
   }
   .black_bg {
     padding: 15px 0;
-  }
-  .products .ring .ring_details {
-    margin-left: 20px;
   }
   .applied {
     padding: 70px 15px 30px 15px;
@@ -614,31 +743,50 @@
     width: 100%;
     height: 40px;
   }
-  .footer img {
+  footer img {
     width: 110px;
   }
-  .footer button, .mobile-button {
+  footer button, .mobile-button {
     width: 150px;
     height: 35px;
     font-size: 14px;
   }
   .min_footer .text {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .min_footer .text .li_item {
     display: flex;
     flex-direction: column;
     align-items: start;
   }
+  .min_footer .text li {
+    width: 143px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .header {
+  header {
     padding: 10px 0;
   }
-  .header .text {
-    margin: 50px 0 0 30px;
+  header nav a {
+    width: 100%;
+    padding-left: 30px;
+    margin: 5px 0;
+  }
+  header .text {
+    width: 100%;
+    margin: -10px 15px 0 0px;
+    word-break: break-all;
+  }
+  .mobile-navbars_field {
+    margin-top: 10px;
+  }
+  .whyTrenchless .text {
+    word-break: break-all;
+  }
+  .products .body .title {
+    word-break: break-all;
   }
   .whyTrenchless .left_item {
     display: flex;
@@ -649,13 +797,22 @@
   }
   .whyTrenchless .body {
     width: 100%;
-    padding: 15px;
   }
   .whyTrenchless .yellow_field {
     width: 100%;
     height: 40px;
   }
-  .footer img {
-    width: 85px;
+  .products .products_list img {
+    width: 50%;
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer img {
+    margin-bottom: 10px;
+  }
+  .min_footer {
+    padding: 15px 0 15px 0;
+  } 
 }
