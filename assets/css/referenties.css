@@ -1,0 +1,70 @@
+.referenties {
+  padding: 30px 70px;
+}
+.referenties img {
+  width: 100%;
+}
+.referenties .header_title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #707070;
+}
+.referenties .greenplaces_item {
+  margin: 35px 0;
+}
+.referenties .greenplaces_item .title {
+  font-size: 25px;
+  color: #707070;
+}
+.referenties .greenplaces_item a {
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-color: #97C975;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  color: #707070;
+}
+.referenties .border_bottom {
+  border-bottom: 2px solid #c5c5c5;
+  margin: 50px -65px 0 -65px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .referenties {
+    padding: 30px 20px;
+  }
+  .referenties .header_title {
+    font-size: 25px;
+  }
+  .referenties .greenplaces_item .title {
+    font-size: 20px;
+  }
+  .referenties .greenplaces_item a {
+    font-size: 14px;
+  }
+  .referenties .border_bottom {
+    margin: 30px 0px 0 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .referenties .header_title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .referenties .header_title {
+    font-size: 18px;
+  }
+  .referenties .greenplaces_item {
+    margin: 15px 0;
+  }
+  .referenties .greenplaces_item .title {
+    font-size: 16px;
+  }
+  .referenties .greenplaces_item a {
+    font-size: 12px;
+  }
+}
