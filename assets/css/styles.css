@@ -1,173 +1,868 @@
-/********* Navbar *********/
-.navbar {
-  padding: 15px 0px;
-}
-.navbar .height1 {
-  /* height: 95px; */
-}
-.navbar .search {
-  height: 40px;
-  border: none;
-  border-radius: 35px;
-  background-color: #F5F5F5;
-  width: 100%;
-  padding: 0 20px;
-}
-.navbar .search input {
- border: none;
- outline: none;
- background-color: #F5F5F5;
- margin-top: -3px;
-}
-.navbar .search input::placeholder {
-  font-size: 13px;
-  color: #4D5250;
-  font-family: 'Montserrat Medium';
-}
-.navbar .search img {
-  width: 13px;
-  margin-top: 3px;
-}
-.navbar .user_cart {
-  padding: 18px;
-}
-.navbar .user_cart i {
-  margin: 0 5px;
-  font-size: 17px;
-  color: #4D5250;
-}
 
-.navbar .user_cart button:hover, button:active {
-  background: #E1F6ED;
-}
-.navbar .navbars {
-  /* width: 40%; */
-  gap: 80px;
-}
-.navbar .navbars .item {
-  font-size: 14px;
-  padding: 24px 0px;
-}
-.navbar .navbars .item.active {
-  border-top: 2px solid #2FAC73;
-}
-.navbar .navbars .item .border_top{
-  border-top: 2px solid #2FAC73;
-  width: 94%;
-  margin: auto;
-  margin-bottom: 13px;
-}
-.navbar .navbars1 {
-  display: none;
-}
-.navbar .logo img {
-  width: 90px;
-}
-
-/********* Header *********/
-.header {
-  background-image: url("../images/Header.jpg");
-  background-size: cover;
+/********* Header **********/
+header {
+  background-image: url("../images/header_1.png");
   background-position: center center;
   background-repeat: no-repeat;
-  height: 670px;
-
-}
-.header .rectangle {
+  background-size: cover;
+  height: 730px;
   position: relative;
-  width: 42%;
-  padding-top: 240px;
 }
-.header .rectangle img {
+header .logo {
+  width: 100px;
+}
+header .navbar-toggler i {
+  font-size: 30px;
+  color: white;
+}
+header nav {
+  display: none !important;
+}
+header nav ul li a {
+  padding: 5px 10px;
+  margin: -2px 5px;
+  text-decoration: none;
+  color: #fff !important;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+header nav ul li a span {
+  font-size: 0.8em;
+  margin: 0 0 0 0.4em;
+  box-sizing: border-box;
+  color: #fff;
+  letter-spacing: 1px;
+}
+header nav .dropdown-menu {
+  background-color: initial;
+  margin-top: -10px !important;
+  border: none !important;
+}
+header nav .dropdown-toggle::after {
+  vertical-align: 0.055em;
+}
+.navbar-nav .dropdown-menu {
+  position: static !important;
+}
+
+
+header .header_title {
+  font-size: 75px;
+  font-weight: 700;
+  max-width: 50%;
+  line-height: 70px;
+  color: white;
+  margin-top: 50px;
+}
+header .header_text {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  margin-top: 90px;
+}
+header .ontdesk_field {
+  margin-top: 115px;
+}
+header .ontdesk_field a {
+  background: #e4d500;
+  color: black;
+  font-size: 23px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 20px 20px;
+  border-radius: 50px;
+}
+header .ontdesk_field a:hover {
+  color: white;
+  transition: 0.5s;
+}
+/********* OntdeskProjecten ***********/
+.ontdeskProjecten {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ontdeskProjecten .title {
+  font-size: 50px;
+  font-weight: 700;
+  max-width: 37%;
+  line-height: 55px;
+}
+.ontdeskProjecten .title span {
+  color: #e3d003;
+}
+
+.carousel-container {
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 800px;
+  position: relative;
+  box-shadow: 0 0 30px -20px #223344;
+  margin: auto;
+  z-index: 0;
+}
+.carousel-container .slider_logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: black;
+  width: 90px;
+  height: 70px;
+  padding: 5px;
+}
+.carousel-container .slider_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  display: block;
   width: 100%;
 }
-.header .rectangle .body {
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  bottom: 19%;
-  left: 120px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0 8px 8px 0;
+  background: rgba(173, 216, 230, 0.1);
+  user-select: none;
+  text-decoration: none;
 }
-.header .rectangle .body strong {
-  color: #FFFFFF;
-  font-family: 'Fat Frank';
-  font-size: 70px;
-  font-weight: 900;
-  margin-bottom: 25px;
+.next {
+  right: 0;
+  border-radius: 8px 0 0 8px;
 }
-.header .rectangle .body button {
-  width: 150px;
-  height: 35px;
-  background: none;
-  border: 1px solid #FFFFFF;
-  border-radius: 30px;
-  box-shadow: 0 0 6px 0 rgba(228,228,228,0.5);
-  color: #FFFFFF;
-  font-family: Montserrat;
-  font-size: 15px;
-  font-weight: 500;
+.prev:hover,
+.next:hover {
+  background-color: rgba(173, 216, 230, 0.3);
+  color: white;
+}
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.dots {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 0 4px;
+  background-color: rgba(173, 216, 230, 0.2);
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.active,
+.dots:hover {
+  background-color: rgba(173, 216, 230, 0.8);
 }
 
+/* transition animation */
+.animate {
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 1s;
+  animation-name: animate;
+  animation-duration: 2s;
+}
 
-/******** overKarri ********/
-.overKarri {
-  padding: 150px 0;
+@keyframes animate {
+  from {
+    transform: scale(1.1) rotateY(10deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
 }
-.overKarri .overKarri_field {
-  width: 85%;
-}
-.overKarri .text {
-  color: #585c5a;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0;
-  word-break: break-all;
-}
-.overKarri button {
-  margin-top: 25px;
-  border-radius: 30px;
-  background-color: #2FAC73;
-  border: none;
-  outline: none;
-  width: 95px;
-  height: 35px;
-  font-size: 13px;
-  color: #FFFFFF;
-  font-family: Montserrat;
-}
-.overKarri .items {
-  margin: 100px 0px;
-  border: 1px solid #DDE6E2;
-  border-radius: 7px;
-}
-.overKarri .items .item {
-  padding-top: 50px;
-  height: 170px;
-  border-bottom: 1px solid #DDE6E2;
-  border-right: 1px solid #DDE6E2;
-}
-.overKarri .items .item img {
-  width: 45px;
-  height: 35px;
-}
-.overKarri .items .item span {
-  color: #2FAC73;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0;
-  margin-top: 10px;
+
+.hetTitle {
+  font-size: 40px;
+  font-weight: 700;
+  max-width: 80%;
+  margin: auto;  
+  padding: 80px 0;
   text-align: center;
 }
+.dot {
+  width: 50px;
+  height: 45px;
+  margin-top: -50px;
+}
+.hetTitle span {
+  color: #e1cc1f;
+}
+.hetText {
+  font-size: 23px;
+  font-weight: 700;
+  text-align: center;
+  margin: -25px 0 50px 0;
+}
 
-/********* onzeWorking ***********/
-.onzeWerking {
-  background-color:#2FAC73;
+/********* meerwaarde **********/
+.meerwaarde {
+  padding: 80px 0;
 }
-.onzeWerking .body img {
-  margin-top: -90px;
-  width: 86%;
-}
-.onzeWerking .body .details {
-  width: 86%;
+.meerwaarde .title {
+  font-size: 50px;
+  font-weight: 700;
+  max-width: 31%;
+  line-height: 55px;
   margin: auto;
+  margin-bottom: 70px;
+}
+.meerwaarde .title span {
+  color: #e1cc1f;
+}
+.meerwaarde .item_field {
+  display: flex;
+  justify-content: space-between;
+}
+.meerwaarde .item_field .item {
+  width: 22%;
+}
+.meerwaarde .item_field img {
+  width: 100%;
+}
+.meerwaarde .mid_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 5px 0;
+}
+.meerwaarde .text {  
+  font-size: 16px;
+  max-width: 95%;
+}
+/********* nood **********/
+.nood {
+  padding: 20px 0;
+}
+.nood .title {
+  font-size: 50px;
+  font-weight: 700;
+  max-width: 31%;
+  line-height: 55px;
+  margin-bottom: 70px;
+}
+.nood .title span {
+  color: #e1cc1f;
+}
+.nood .item_field {
+  display: flex;
+  justify-content: space-between;
+}
+.nood .item_field .item {
+  width: 48%;
+  position: relative;
+}
+.nood .item_field .text_field {
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  width: 100%;
+}
+.nood .item_field .text_field .yellowField {
+  border-left: 45px solid #e1cc1f;
+  border-right: 45px solid #e1cc1f;
+  border-top: 45px solid #e1cc1f;
+  border-bottom: 75px solid #e1cc1f;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.nood .item_field .text_position {
+  position: absolute;
+  bottom: -66px;
+  width: 100%;
+}
+.nood .item_field .text_position .text {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+.nood .item_field .item img {
+  width: 100%;
+}
+/******** bevindingen **********/
+.bevindingen {
+  padding: 80px 0 40px 0;
+}
+.bevindingen .title {
+  font-size: 50px;
+  font-weight: 700;
+  max-width: 30%;
+  line-height: 55px;
+  margin-bottom: 70px;
+}
+.bevindingen .title span {
+  color: #e1cc1f;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+  transform: scroll(calc(var(--i,0)/var(--n)*-100%));
+  scroll-behavior: smooth;
+}
+.slider::-webkit-scrollbar {
+  height: 5px;
+  width: 150px;
+  display: none;
+}
+.slider::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slider::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.slide {
+  position: relative;
+}
+.slide_body {
+  width: 392px;
+  height: 265px;
+  overflow-y: auto;
+  box-shadow: -1px 2px 6px 2px #e8e8e8;
+  margin: 5px 20px;
+  border-radius: 3px;
+  padding: 20px;
+}
+.control-prev-btn {
+  position: absolute;
+  top: 55%;
+  left: -7px;
+  cursor: pointer;
+}
+.control-next-btn {
+  position: absolute;
+  top: 55%;
+  right: -7px;
+  cursor: pointer;
+}
+.control-prev-btn i,
+.control-next-btn i {
+  color: rgb(169 169 169);
+  font-size: 25px;
+}
+.slide .google_icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+.slide_body .userId {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  margin-right: 10px;
+}
+.slide_body .userName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4d4d4d;
+  margin-bottom: 5px;
+}
+.slide_body .star {
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+}
+.slide_body .date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8f8f8f;
+  margin-top: 5px;
+}
+.slide_body .details {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #484848;
+}
+/********* emailadres **********/
+.emailadres {
+  background-color: #ececec;
+  padding: 15px 0;
+}
+.emailadres .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emailadres .title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.emailadres input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+.emailadres button {
+  border: none;
+  outline: none;
+  background: #eede04;
+  padding: 7px 25px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.emailadres button:hover {
+  background: #d0c414;
+}
+/********** Footer **********/
+footer {
+  background: black;
+  padding: 25px 0;
+}
+footer .footer_field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_logo_field {
+  position: absolute;
+  top: 20px;
+  width: 98.2%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+footer .footer_logo {
+  margin: auto;
+  width: 120px;
+  height: 110px;
+}
+footer .footer_nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+footer .footer_nav .item {
+  width: 50%;
+  cursor: pointer;
+}
+footer .footer_nav a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0px;
+}
+footer .footer_nav .item:hover a {
+  margin-left: 20px;
+  transition: 0.5s;
+}
+footer .footer_nav i {
+  font-size: 11px;
+  color: white;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+footer .text {
+  font-size: 14px;
+  color: white;
+}
+footer .footer_field1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+footer .footer_logo1 {
+  width: 120px;
+}
+footer .social {
+  position: absolute;
+  right: 10px;
+}
+footer .social i {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+}
+.min_footer_field {
+  margin-top: 20px;
+}
+.min_footer_field span {
+  margin-left: 10px;
+}
+.min_footer_field a {
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.min_footer_field_field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.min_footer_field .text {
+  font-size: 12px;
+  font-family: Lato !important;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.gray_color {
+  background: #45b64b;
+}
+.yellow_color {
+  background: #febf0e;
+}
+.w-92 {
+  width: 92px;
+}
+.w-30-1 {
+  width: 30%;
+}
+.w-30-2 {
+  width: 30%;
+}
+header .active_menu {
+  display: flex !important;
+  position: absolute !important;
+  background: #201e1e;
+  width: 100%;
+  padding: 20px 0 !important;
+  left: 0;
+}
+
+
+/******** Media Query *********/
+@media screen and (max-width: 1400px) {
+  .hetTitle {
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 89%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .header_title {
+    max-width: 80%;
+  }
+  .ontdeskProjecten {
+    flex-direction: column;
+  }
+  .ontdeskProjecten .title {
+    max-width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .meerwaarde .item_field .item {
+    width: 26%;
+  }
+  .nood .item_field .text_field .yellowField {
+    border-left: 30px solid #e1cc1f;
+    border-right: 30px solid #e1cc1f;
+    border-top: 30px solid #e1cc1f;
+    border-bottom: 45px solid #e1cc1f;
+  }
+  .nood .item_field .text_position {
+    bottom: -44px;
+  }
+  .nood .item_field .text_position .text {
+    font-size: 30px;
+  }
+  .bevindingen .title {
+    max-width: 41%;
+  }
+  .w-30-2 {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .logo {
+    width: 75px;
+  }
+  header .active_menu {
+    padding: 0px !important;
+  }
+  header nav .navbar-collapse {
+    padding: 15px 0 !important;
+  }
+  .hetTitle {
+    max-width: 100%;
+  }
+  .meerwaarde .item_field .item {
+    width: 32%;
+  }
+  .nood .title {
+    max-width: 65%;
+  }
+  .nood .item_field .text_field {
+    top: 22px;
+    bottom: 22px;
+  }
+  .bevindingen .title {
+    max-width: 50%;
+  }
+  .emailadres .body {
+    flex-direction: column;
+  }
+  .emailadres .title {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  footer .footer_logo_field {
+    top: 95px;
+  }
+  footer .footer_field1 {
+    margin-top: 120px;
+    margin-left: 10px;
+  }
+  .w-30-1 {
+    width: 42%;
+  }
+  .w-30-2 {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .header_title {
+    font-size: 55px;
+    max-width: 100%;
+  }
+  .hetTitle {
+    font-size: 30px;
+  }
+  .hetText {
+    font-size: 18px;
+  }
+  .dot {
+    width: 35px;
+    height: 30px;
+    margin-top: -33px;
+    margin-right: -8px;
+  }
+  .ontdeskProjecten .title {
+    font-size: 35px;
+  }
+  .meerwaarde .title {
+    font-size: 35px;
+    max-width: 100%;
+    text-align: center;
+    line-height: 55px;
+    margin-bottom: 25px;
+  }
+  .meerwaarde .item_field {
+    flex-direction: column;
+    align-items: center;
+  }
+  .meerwaarde .item_field .item {
+    width: 70%;
+    margin: 20px 0;
+  }
+  .meerwaarde .text {
+    max-width: 100%;
+  }
+  .nood {
+    margin-top: -70px;
+  }
+  .nood .item_field {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nood .item_field .item {
+    width: 90%;
+    margin: 10px 0;
+  }
+  .nood .title {
+    max-width: 100%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .bevindingen .title {
+    max-width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  footer .footer_field {
+    flex-direction: column;
+  }
+  .w-30-1 {
+    width: 100%;
+  }
+  .w-30-2 {
+    width: 100%;
+    margin-top: 200px;
+  }
+  footer .footer_nav .item {
+    width: 26%;
+  }
+  footer .footer_field1 {
+    margin-top: -110px;
+    margin-left: 0px;
+  }
+  .min_footer_field {
+    margin-top: 130px;
+  }
+  footer .social {
+    position: absolute;
+    right: 10px;
+    margin-top: 135px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .navbar-toggler i {
+    font-size: 23px;
+  }
+  header .header_title {
+    font-size: 45px;
+  }
+  .nood .item_field .text_field .yellowField {
+    border-left: 15px solid #e1cc1f;
+    border-right: 15px solid #e1cc1f;
+    border-top: 15px solid #e1cc1f;
+    border-bottom: 30px solid #e1cc1f;
+  }
+  .nood .item_field .text_position {
+    bottom: -30px;
+  }
+  .nood .item_field .text_position .text {
+    font-size: 20px;
+  }
+  .slide_body {
+    width: 360px;
+  }
+  .bevindingen {
+    padding: 20px 0 0px 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header {
+    height: 500px;
+  }
+  header .logo {
+    width: 65px;
+  }
+  header .header_title {
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 30px;
+  }
+  header .header_text {
+    margin-top: 60px;
+  }
+  header .ontdesk_field {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  header .ontdesk_field a {
+    font-size: 18px;
+    padding: 15px 15px;
+  }
+  .hetTitle {
+    font-size: 20px;
+    padding: 45px 0;
+  }
+  .dot {
+    width: 20px;
+    height: 15px;
+    margin-top: -20px;
+    margin-right: -3px;
+  }
+  .ontdeskProjecten .title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .prev, .next {
+    padding: 8px;
+    font-size: 20px;
+  }
+  .control-prev-btn,
+  .control-next-btn {
+    top: 47%;
+  }
+  .dots {
+    height: 8px;
+    width: 8px;
+  }
+  .meerwaarde .title,
+  .nood .title,
+  .bevindingen .title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .slide_body {
+    width: 340px;
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  header .header_text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .meerwaarde {
+    padding: 50px 0;
+  }
+  .meerwaarde .item_field .item {
+    width: 95%;
+  }
+  .meerwaarde .mid_title {
+    font-size: 18px;
+  }
+  .meerwaarde .text {
+    font-size: 14px;
+  }
+  footer .footer_nav .item {
+    width: 33%;
+  }
+  .emailadres input {
+    width: 180px;
+  }
+  .emailadres button {
+    padding: 6px 20px;
+    font-weight: 600;
+  }
+  .slide_body {
+    width: 330px;
+  }
+  header .navbar-toggler i {
+    color: white !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .slide_body {
+    width: 310px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .slide_body {
+    width: 250px;
+}
 }
