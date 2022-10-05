@@ -1,318 +1,94 @@
 
 /********* Header **********/
+body, div, p, a {
+  font-family: 'Acumin Pro';
+}
 header {
-  background-image: url("../images/header_1.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 730px;
+  display: flex;
+}
+header .item {
+  width: 20%;
   position: relative;
 }
-header .logo {
-  width: 100px;
+header .item img {
+  width: 100%;
+  height: 100%;
 }
-header .navbar-toggler i {
-  font-size: 30px;
+header .item .text_field {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+header .item .text_field .text {
+  text-align: center;
   color: white;
-}
-header nav {
-  display: none !important;
-}
-header nav ul li a {
-  padding: 5px 10px;
-  margin: -2px 5px;
-  text-decoration: none;
-  color: #fff !important;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-header nav ul li a span {
-  font-size: 0.8em;
-  margin: 0 0 0 0.4em;
-  box-sizing: border-box;
-  color: #fff;
-  letter-spacing: 1px;
-}
-header nav .dropdown-menu {
-  background-color: initial;
-  margin-top: -10px !important;
-  border: none !important;
-}
-header nav .dropdown-toggle::after {
-  vertical-align: 0.055em;
-}
-.navbar-nav .dropdown-menu {
-  position: static !important;
-}
-
-
-header .header_title {
-  font-size: 75px;
-  font-weight: 700;
-  max-width: 50%;
-  line-height: 70px;
-  color: white;
-  margin-top: 50px;
-}
-header .header_text {
-  font-size: 25px;
-  font-weight: 600;
-  color: white;
-  margin-top: 90px;
-}
-header .ontdesk_field {
-  margin-top: 115px;
-}
-header .ontdesk_field a {
-  background: #e4d500;
-  color: black;
-  font-size: 23px;
+  font-size: 15px;
   font-weight: 500;
-  text-decoration: none;
-  padding: 20px 20px;
-  border-radius: 50px;
 }
-header .ontdesk_field a:hover {
-  color: white;
-  transition: 0.5s;
-}
-/********* OntdeskProjecten ***********/
-.ontdeskProjecten {
+
+/********* Navbar ************/
+.navbar_field {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.ontdeskProjecten .title {
-  font-size: 50px;
-  font-weight: 700;
-  max-width: 37%;
-  line-height: 55px;
+.navbar_field .left {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.ontdeskProjecten .title span {
-  color: #e3d003;
+.navbar_field .right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
 }
-
-.carousel-container {
-  border-radius: 30px;
-  overflow: hidden;
-  max-width: 800px;
-  position: relative;
-  box-shadow: 0 0 30px -20px #223344;
-  margin: auto;
-  z-index: 0;
+.navbar_field .logo img {
+  width: 220px;
 }
-.carousel-container .slider_logo {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: black;
-  width: 90px;
-  height: 70px;
-  padding: 5px;
+.navbar_field nav {
+  padding: 20px 0 15px 0;
 }
-.carousel-container .slider_logo img {
-  width: 100%;
-  height: 100%;
-}
-
-/* Hide the images by default */
-.mySlides {
+.navbar2 {
   display: none;
 }
-.mySlides img {
-  display: block;
-  width: 100%;
-}
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: auto;
-  padding: 20px;
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  border-radius: 0 8px 8px 0;
-  background: rgba(173, 216, 230, 0.1);
-  user-select: none;
+nav a {
   text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: black !important;
+  margin-left: 20px;
 }
-.next {
-  right: 0;
-  border-radius: 8px 0 0 8px;
+.navbar_field .navbar-toggler {
+  display: none;
 }
-.prev:hover,
-.next:hover {
-  background-color: rgba(173, 216, 230, 0.3);
-  color: white;
+.navbar_field .lang_item {
+  margin-right: 10px;
 }
-.dots-container {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translate(-50%);
+.navbar_field .lang_active {
+  text-decoration: underline;
 }
-.dots {
+.navbar_field .lang_item span {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 5px;
   cursor: pointer;
-  height: 14px;
-  width: 14px;
-  margin: 0 4px;
-  background-color: rgba(173, 216, 230, 0.2);
-  backdrop-filter: blur(2px);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-.active,
-.dots:hover {
-  background-color: rgba(173, 216, 230, 0.8);
 }
 
-/* transition animation */
-.animate {
-  -webkit-animation-name: animate;
-  -webkit-animation-duration: 1s;
-  animation-name: animate;
-  animation-duration: 2s;
-}
-
-@keyframes animate {
-  from {
-    transform: scale(1.1) rotateY(10deg);
-  }
-  to {
-    transform: scale(1) rotateY(0deg);
-  }
-}
-
-.hetTitle {
-  font-size: 40px;
-  font-weight: 700;
-  max-width: 80%;
-  margin: auto;  
-  padding: 80px 0;
-  text-align: center;
-}
-.dot {
-  width: 50px;
-  height: 45px;
-  margin-top: -50px;
-}
-.hetTitle span {
-  color: #e1cc1f;
-}
-.hetText {
-  font-size: 23px;
-  font-weight: 700;
-  text-align: center;
-  margin: -25px 0 50px 0;
-}
-
-/********* meerwaarde **********/
-.meerwaarde {
-  padding: 80px 0;
-}
-.meerwaarde .title {
-  font-size: 50px;
-  font-weight: 700;
-  max-width: 31%;
-  line-height: 55px;
-  margin: auto;
-  margin-bottom: 70px;
-}
-.meerwaarde .title span {
-  color: #e1cc1f;
-}
-.meerwaarde .item_field {
+/********* Body ***********/
+.body {
   display: flex;
   justify-content: space-between;
 }
-.meerwaarde .item_field .item {
-  width: 22%;
-}
-.meerwaarde .item_field img {
-  width: 100%;
-}
-.meerwaarde .mid_title {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 20px 0 5px 0;
-}
-.meerwaarde .text {  
-  font-size: 16px;
-  max-width: 95%;
-}
-/********* nood **********/
-.nood {
-  padding: 20px 0;
-}
-.nood .title {
-  font-size: 50px;
-  font-weight: 700;
-  max-width: 31%;
-  line-height: 55px;
-  margin-bottom: 70px;
-}
-.nood .title span {
-  color: #e1cc1f;
-}
-.nood .item_field {
-  display: flex;
-  justify-content: space-between;
-}
-.nood .item_field .item {
-  width: 48%;
+.body .left {
+  width: 80%;
   position: relative;
+  margin-right: 10px;
 }
-.nood .item_field .text_field {
-  position: absolute;
-  top: 30px;
-  bottom: 30px;
-  width: 100%;
-}
-.nood .item_field .text_field .yellowField {
-  border-left: 45px solid #e1cc1f;
-  border-right: 45px solid #e1cc1f;
-  border-top: 45px solid #e1cc1f;
-  border-bottom: 75px solid #e1cc1f;
-  width: 90%;
-  height: 100%;
-  margin: auto;
-  position: relative;
-}
-.nood .item_field .text_position {
-  position: absolute;
-  bottom: -66px;
-  width: 100%;
-}
-.nood .item_field .text_position .text {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-}
-.nood .item_field .item img {
-  width: 100%;
-}
-/******** bevindingen **********/
-.bevindingen {
-  padding: 80px 0 40px 0;
-}
-.bevindingen .title {
-  font-size: 50px;
-  font-weight: 700;
-  max-width: 30%;
-  line-height: 55px;
-  margin-bottom: 70px;
-}
-.bevindingen .title span {
-  color: #e1cc1f;
-}
+
 .slider {
   display: flex;
-  justify-content: space-between;
-  height: 350px;
+  height: 494px;
   overflow-y: hidden;
   overflow-x: scroll !important;
   transform: scroll(calc(var(--i,0)/var(--n)*-100%));
@@ -329,195 +105,142 @@ header .ontdesk_field a:hover {
 .slider::-webkit-scrollbar-thumb {
   background: #888;
 }
+.slider::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.slider img:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+}
 .slide {
   position: relative;
 }
-.slide_body {
-  width: 392px;
-  height: 265px;
-  overflow-y: auto;
-  box-shadow: -1px 2px 6px 2px #e8e8e8;
-  margin: 5px 20px;
-  border-radius: 3px;
-  padding: 20px;
+.slide img {
+  height: 100%;
+  width: 259px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: .25s ease-in-out;
 }
 .control-prev-btn {
   position: absolute;
-  top: 55%;
-  left: -7px;
+  top: 45%;
+  left: 0px;
+  background-color: rgb(118 114 114 / 55%);
+  height: 35px;
+  line-height: 35px;
+  width: 30px;
+  text-align: center;
+  user-select: none;
+  color: #444;
   cursor: pointer;
 }
 .control-next-btn {
   position: absolute;
-  top: 55%;
-  right: -7px;
+  top: 45%;
+  right: 0px;
+  background-color: rgb(118 114 114 / 55%);
+  height: 37px;
+  line-height: 35px;
+  width: 32px;
+  text-align: center;
+  user-select: none;
+  color: #444;
   cursor: pointer;
 }
 .control-prev-btn i,
-.control-next-btn i {
-  color: rgb(169 169 169);
-  font-size: 25px;
-}
-.slide .google_icon {
-  width: 25px;
-  height: 25px;
-  margin-top: 10px;
-}
-.slide_body .userId {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
+.control-next-btn {
   color: white;
-  margin-right: 10px;
 }
-.slide_body .userName {
-  font-size: 18px;
-  font-weight: 700;
-  color: #4d4d4d;
-  margin-bottom: 5px;
+.slide img.zoomed{
+   width: 500px;
+   height: 600px;
+   position: fixed;
+   left: 25%;
+   top: 0%;
+   z-index: 1000;
+   transform: scale(1) translatey(0) !important; 
 }
-.slide_body .star {
-  width: 15px;
-  height: 15px;
-  margin: 0 2px;
-}
-.slide_body .date {
-  font-size: 14px;
-  font-weight: 500;
-  color: #8f8f8f;
-  margin-top: 5px;
-}
-.slide_body .details {
-  margin-top: 10px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #484848;
-}
-/********* emailadres **********/
-.emailadres {
-  background-color: #ececec;
-  padding: 15px 0;
-}
-.emailadres .body {
+
+.body .right {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.emailadres .title {
-  font-size: 22px;
-  font-weight: 700;
-  margin-right: 20px;
-}
-.emailadres input {
-  border: none;
-  outline: none;
-  padding: 5px 10px;
-  margin-right: 5px;
-}
-.emailadres button {
-  border: none;
-  outline: none;
-  background: #eede04;
-  padding: 7px 25px;
-  font-size: 15px;
-  font-weight: 600;
-}
-.emailadres button:hover {
-  background: #d0c414;
-}
-/********** Footer **********/
-footer {
-  background: black;
-  padding: 25px 0;
-}
-footer .footer_field {
-  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
-footer .footer_logo_field {
-  position: absolute;
-  top: 20px;
-  width: 98.2%;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
+.body .right .vraag {
+  border: 1px solid #9c9b9b;
+  padding: 20px 25px 25px 25px;
 }
-footer .footer_logo {
+.body .right .title {
+  text-align: center;
+  font-size: 13px;
+  color: black;
+  font-weight: 700;
+  max-width: 70%;
   margin: auto;
-  width: 120px;
-  height: 110px;
+  margin-bottom: 15px;
 }
-footer .footer_nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-}
-footer .footer_nav .item {
-  width: 50%;
-  cursor: pointer;
-}
-footer .footer_nav a {
+.body .right button {
   font-size: 14px;
+  color:#4c4c4c;
+  border: 1px solid #c6c6c6;
+  background: none;
+  padding: 7px 6px 4px 6px;
+  margin: 20px 0 30px 0;
+}
+.body .right a {
+  font-size: 14px;
+  background: black;
+  text-align: center;
+  padding: 7px 6px 4px 6px;
   color: white;
   text-decoration: none;
-  margin: 5px 0px;
+  margin-top: 30px;
 }
-footer .footer_nav .item:hover a {
-  margin-left: 20px;
-  transition: 0.5s;
+.body .right .download {
+  border: 1px solid #9c9b9b;
+  padding: 20px 25px;
 }
-footer .footer_nav i {
-  font-size: 11px;
-  color: white;
-  margin-right: 8px;
-  margin-top: 2px;
+.body .right .download .downloadImg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.body .right .download .downloadImg img {
+  width: 150px;
+}
+.body .right .download i {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/********* Footer *********/
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
 }
 footer .text {
-  font-size: 14px;
-  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 5px 0;
 }
-footer .footer_field1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+footer .title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 1px 0;
 }
-footer .footer_logo1 {
-  width: 120px;
+footer .right {
+  margin-top: -20px;
 }
-footer .social {
-  position: absolute;
-  right: 10px;
+
+.min_footer {
+  background-color: black;
+  padding: 8px 0;
 }
-footer .social i {
-  color: white;
-  font-size: 20px;
-  margin: 0 10px;
-}
-.min_footer_field {
-  margin-top: 20px;
-}
-.min_footer_field span {
-  margin-left: 10px;
-}
-.min_footer_field a {
-  color: white;
-  text-decoration: none;
-  margin-left: 5px;
-}
-.min_footer_field_field {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.min_footer_field .text {
+.min_footer .text {
   font-size: 12px;
   font-family: Lato !important;
   color: white;
@@ -525,344 +248,180 @@ footer .social i {
   justify-content: center;
   align-items: center;
 }
-
-.navbar-toggler:focus {
-  box-shadow: none;
+.min_footer img {
+  width: 15px;
+  margin: 0 5px;
 }
-.gray_color {
-  background: #45b64b;
-}
-.yellow_color {
-  background: #febf0e;
-}
-.w-92 {
-  width: 92px;
-}
-.w-30-1 {
-  width: 30%;
-}
-.w-30-2 {
-  width: 30%;
-}
-header .active_menu {
-  display: flex !important;
-  position: absolute !important;
-  background: #201e1e;
-  width: 100%;
-  padding: 20px 0 !important;
-  left: 0;
-}
-
 
 /******** Media Query *********/
 @media screen and (max-width: 1400px) {
-  .hetTitle {
-    font-size: 40px;
-    font-weight: 700;
-    max-width: 89%;
+  .body .left {
+    margin-right: 10px;
+  }
+  .slide img {
+    width: 223px;
   }
 }
 @media screen and (max-width: 1200px) {
-  header .header_title {
-    max-width: 80%;
+  .body .right {
+    height: 445px;
   }
-  .ontdeskProjecten {
-    flex-direction: column;
+  .body .right button {
+    font-size: 13px;
   }
-  .ontdeskProjecten .title {
+  .body .right .title {
     max-width: 100%;
-    margin-bottom: 30px;
-    text-align: center;
   }
-  .meerwaarde .item_field .item {
-    width: 26%;
+  .body .right button {
+    margin: 10px 0;
   }
-  .nood .item_field .text_field .yellowField {
-    border-left: 30px solid #e1cc1f;
-    border-right: 30px solid #e1cc1f;
-    border-top: 30px solid #e1cc1f;
-    border-bottom: 45px solid #e1cc1f;
+  .slide img {
+    width: 250px;
+    height: 445px;
   }
-  .nood .item_field .text_position {
-    bottom: -44px;
+  .body .right .download .downloadImg img {
+    width: 100%;
   }
-  .nood .item_field .text_position .text {
-    font-size: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  header .header_bg {
+    height: 500px;
   }
-  .bevindingen .title {
-    max-width: 41%;
+  header .header_over_bg {
+    height: 500px;
   }
-  .w-30-2 {
-    width: 35%;
+  header .header_context {
+    top: 160px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  header .logo {
-    width: 75px;
+  .body .right button {
+    font-size: 14px;
   }
-  header .active_menu {
-    padding: 0px !important;
+  .navbar2 {
+    display: block;
+    padding: 0 !important;
+    position: absolute !important;
+    background: #ffffff;
+    left: 0;
+    z-index: 100;
+    width: 100%;
   }
-  header nav .navbar-collapse {
-    padding: 15px 0 !important;
+  .navbar_field .navbar-toggler {
+    display: block;
   }
-  .hetTitle {
-    max-width: 100%;
+  .body .right .download .downloadImg img {
+    width: 85%;
   }
-  .meerwaarde .item_field .item {
-    width: 32%;
+  .body .left {
+    width: 70%;
+    margin-right: 10px;
   }
-  .nood .title {
-    max-width: 65%;
-  }
-  .nood .item_field .text_field {
-    top: 22px;
-    bottom: 22px;
-  }
-  .bevindingen .title {
-    max-width: 50%;
-  }
-  .emailadres .body {
-    flex-direction: column;
-  }
-  .emailadres .title {
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
-  footer .footer_logo_field {
-    top: 95px;
-  }
-  footer .footer_field1 {
-    margin-top: 120px;
-    margin-left: 10px;
-  }
-  .w-30-1 {
-    width: 42%;
-  }
-  .w-30-2 {
-    width: 48%;
+  .slide img {
+    width: 243px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  header .header_title {
-    font-size: 55px;
-    max-width: 100%;
+  header {    
+    max-width: 540px;
+    overflow: auto;
   }
-  .hetTitle {
-    font-size: 30px;
+  header .item {
+    width: 150px;
   }
-  .hetText {
-    font-size: 18px;
+  header .item img {
+    width: 129px;
   }
-  .dot {
-    width: 35px;
-    height: 30px;
-    margin-top: -33px;
-    margin-right: -8px;
+  .watIs .right img {
+    width: 80%;
   }
-  .ontdeskProjecten .title {
-    font-size: 35px;
-  }
-  .meerwaarde .title {
-    font-size: 35px;
-    max-width: 100%;
-    text-align: center;
-    line-height: 55px;
-    margin-bottom: 25px;
-  }
-  .meerwaarde .item_field {
-    flex-direction: column;
-    align-items: center;
-  }
-  .meerwaarde .item_field .item {
-    width: 70%;
-    margin: 20px 0;
-  }
-  .meerwaarde .text {
-    max-width: 100%;
-  }
-  .nood {
-    margin-top: -70px;
-  }
-  .nood .item_field {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nood .item_field .item {
-    width: 90%;
-    margin: 10px 0;
-  }
-  .nood .title {
-    max-width: 100%;
-    text-align: center;
-    line-height: 55px;
-    font-size: 35px;
-    margin-bottom: 20px;
-  }
-  .bevindingen .title {
-    max-width: 100%;
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 20px;
-  }
-  footer .footer_field {
+  .body {
+    display: flex;
     flex-direction: column;
   }
-  .w-30-1 {
+  .body .left {
     width: 100%;
   }
-  .w-30-2 {
-    width: 100%;
-    margin-top: 200px;
+  .body .right {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    height: auto;
   }
-  footer .footer_nav .item {
-    width: 26%;
+  .slider {
+    height: auto;
+    margin-bottom: 20px;
   }
-  footer .footer_field1 {
-    margin-top: -110px;
-    margin-left: 0px;
-  }
-  .min_footer_field {
-    margin-top: 130px;
-  }
-  footer .social {
-    position: absolute;
-    right: 10px;
-    margin-top: 135px;
+  .slide img {
+    width: 258px; 
+    height: 420px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  header .navbar-toggler i {
-    font-size: 23px;
-  }
-  header .header_title {
-    font-size: 45px;
-  }
-  .nood .item_field .text_field .yellowField {
-    border-left: 15px solid #e1cc1f;
-    border-right: 15px solid #e1cc1f;
-    border-top: 15px solid #e1cc1f;
-    border-bottom: 30px solid #e1cc1f;
-  }
-  .nood .item_field .text_position {
-    bottom: -30px;
-  }
-  .nood .item_field .text_position .text {
-    font-size: 20px;
-  }
-  .slide_body {
-    width: 360px;
-  }
-  .bevindingen {
-    padding: 20px 0 0px 0;
+  .min_footer .text {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  header {
-    height: 500px;
+  .navbar_field .logo img {
+    width: 180px;
   }
-  header .logo {
-    width: 65px;
-  }
-  header .header_title {
-    font-size: 40px;
-    line-height: 45px;
-    margin-top: 30px;
-  }
-  header .header_text {
-    margin-top: 60px;
-  }
-  header .ontdesk_field {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-  }
-  header .ontdesk_field a {
-    font-size: 18px;
-    padding: 15px 15px;
-  }
-  .hetTitle {
-    font-size: 20px;
-    padding: 45px 0;
-  }
-  .dot {
-    width: 20px;
-    height: 15px;
-    margin-top: -20px;
-    margin-right: -3px;
-  }
-  .ontdeskProjecten .title {
-    font-size: 25px;
-    line-height: 32px;
-  }
-  .prev, .next {
-    padding: 8px;
-    font-size: 20px;
-  }
-  .control-prev-btn,
-  .control-next-btn {
-    top: 47%;
-  }
-  .dots {
-    height: 8px;
-    width: 8px;
-  }
-  .meerwaarde .title,
-  .nood .title,
-  .bevindingen .title {
-    font-size: 25px;
-    line-height: 32px;
-  }
-  .slide_body {
-    width: 340px;
-  } 
+  .slider {
+    padding: 0;
+ }
+  .slide img {
+    margin: 0;
+ }
 }
 
 @media screen and (max-width: 400px) {
-  header .header_text {
-    font-size: 20px;
-    text-align: center;
+  .body .right {
+    flex-direction: column;
   }
-  .meerwaarde {
-    padding: 50px 0;
+  .body .right .vraag,
+  .body .right .download {
+    margin: 5px 0;
   }
-  .meerwaarde .item_field .item {
-    width: 95%;
+  .body .right .download .downloadImg img {
+    width: 150px;
   }
-  .meerwaarde .mid_title {
-    font-size: 18px;
+  .slider {
+    margin-bottom: 6px;
   }
-  .meerwaarde .text {
-    font-size: 14px;
+  .slide img {
+    height: 380px;
   }
-  footer .footer_nav .item {
-    width: 33%;
+  footer {
+    width: 100%;
+    padding: 30px 0;
   }
-  .emailadres input {
-    width: 180px;
+  footer .right {
+    margin-top: 0px;
   }
-  .emailadres button {
-    padding: 6px 20px;
-    font-weight: 600;
-  }
-  .slide_body {
-    width: 330px;
-  }
-  header .navbar-toggler i {
-    color: white !important;
+  footer .title {
+    font-size: 15px;
+    margin-top: 3px !important;
   }
 }
 @media screen and (max-width: 380px) {
-  .slide_body {
-    width: 310px;
+  header .item img {
+    width: 117px;
+  } 
+  .slide img {
+    width: 350px;
   }
 }
-@media screen and (max-width: 330px) {
-  .slide_body {
-    width: 250px;
-}
+@media screen and (max-width: 350px) {
+  header .item img {
+    width: 148px;
+  }
+  .slide img {
+    width: 295px;
+  }
 }

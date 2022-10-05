@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BOSMAN</title>
+    <title>DOMINO</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,480 +11,205 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/fonts/acumin-pro-cufonfonts-webfont/style.css">
     <script src="https://kit.fontawesome.com/9920bc3869.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <div class="d-flex justify-content-between navbar">
-        <div class="container">
-          <img class="logo" src="./assets/images/logowhite.png">
-          <button onclick="menuClick()" id="menubar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
+    <div class="container position-relative">
+      <header>
+        <div class="item">
+          <img src="./assets/images/header1.png" >
+          <div class="text_field">
+            <div class="text">SHOWROOM <br> ASSE</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/images/header2.png" >
+          <div class="text_field">
+            <div class="text">TRAPPEN</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/images/header3.png" >
+          <div class="text_field">
+            <div class="text">DEUREN</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/images/header4.png" >
+          <div class="text_field">
+            <div class="text">PARKET</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/images/header5.png" >
+          <div class="text_field">
+            <div class="text">SHOWROOM <br> NAZARETH</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="navbar_field">
+        <div class="left">
+          <div class="logo">
+            <img src="./assets/images/logo.png" alt="logo">
+          </div>
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <div class="navbars1">
+                <a href="#">GALERIJ</a>
+                <a href="#">SHOWROOMS</a>
+                <a href="#">CONTACT</a>
+                <a href="#">JOBS</a>
+                <a href="#">OFFERTE</a>
+                <a href="#">PK-INTERIEUR</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="right">
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center lang_item">
+              <span class="lang_active">NL</span>
+              <span>FR</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
         </div>
       </div>
+
       <nav class="navbar navbar-expand-lg navbar-dark navbar2">
         <div class="container">  
           <div class="collapse navbar-collapse" id="main_nav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#"> Home </a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                Inspiratie
-              </a>
-              <div class="dropdown-menu">
-                <div class="body">
-                  <div class="dropdown_field">
-                    <div class="d-flex flex-column dropdown_item_field">
-                      <a href="#">Pastorijwoningen</a>
-                      <a href="#">Hedendaagse woningen</a>
-                      <a href="#">Strakke woningen</a>
-                      <a href="#">Appartenmentsbouw</a>
-                      <a href="#">1. Wat zijn BEN-woningen?</a>
-                      <a href="#">2. Het sleutel-op-de-deurconcept</a>
-                      <a href="#">3. Vind jouw droomhuis</a>
-                      <a href="#">4. Wat zijn de extra kosten net?</a>
-                      <a href="#">5. Ontmoet het leiderschapsteam</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                Projecten
-              </a>
-              <div class="dropdown-menu">
-                <div class="body">
-                  <div class="dropdown_field">
-                    <div class="d-flex flex-column dropdown_item_field">
-                      <a href="#">Woningen</a>
-                      <a href="#">Appartementen</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#"> Over ons </a></li>
-            <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
-            <li class="nav-item"><a class="nav-link" href="#"> Samenwerken </a></li>
-          </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#"> GALERIJ </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> SHOWROOMS </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> CONTACT </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> JOBS </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> OFFERTE </a></li>
+              <li class="nav-item"><a class="nav-link" href="#"> PK-INTERIEUR </a></li>
+            </ul>
           </div>
         </div>
       </nav>
+
+      <div class="body">
+        <div class="left">
+          <div id="slider-container" class="slider">
+            <div class="slide">
+                <img src="./assets/images/slider1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/images/slider2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/images/slider3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/images/slider1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/images/slider2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/images/slider1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/images/slider2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/images/slider3.png" alt="">
+            </div>
+            <div onclick="prev()" class="control-prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div onclick="next()" class="control-next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="d-flex flex-column vraag">
+            <div class="title">VRAAG SNEL EEN OFFERTE AAN!</div>
+            <button>Naam & voornaam</button>
+            <a href="#" target="_self">Verzenden</a>
+          </div>
+          <div class="d-flex flex-column download">
+            <div class="title">DOWNLOAD ONZE BROCHURE</div>
+            <div class="downloadImg">
+              <img src="./assets/images/download_img.png">
+            </div>
+            <div class="d-flex justify-content-center">
+              <i class="fas fa-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="d-flex flex-column left">
+          <div class="text">GALERIJ</div>
+          <div class="text">SHOWROOMS</div>
+          <div class="text">CONTACT</div>
+          <div class="text">JOBS</div>
+          <div class="text">OFFERTE</div>
+          <div class="text">PK-INTERIEUR</div>
+        </div>
+        <div class="d-flex flex-column right">
+          <div class="title">DOMINO NV</div>
+          <div class="title">Leenstraat 3</div>
+          <div class="title">9750 ZINGEM</div>
+          <span class="mt-4">09 389 68 68</span>
+          <span>info@trappendominos.be</span>
+          <div class="title mt-4">BTWBE 0455 025 911</div>
+        </div>
+      </footer>
+    </div>
+    <div class="min_footer">
       <div class="container">
-        <div class="header_title">Wonen zonder zorgen</div>
-        <div class="header_text">Stijlvolle nieuwbouwwoningen</div>
-        <div class="ontdesk_field">
-          <a href="#" target="_blank">ONTDESK PROJECTEN</a>
-        </div>
-      </div>
-    </header>
-
-    <div class="container">
-      <div class="d-flex flex-column">
-        <div class="hetTitle">
-          <img class="dot" src="./assets/images/dot.png">
-          Het is voor ons belangrikjk dat de mensen <span>gelukkig worden</span> van hun aankoop en dat ze exact weten waar ze voor staan wanneer ze aan hun droom beginnen
-        </div>
-        <div class="hetText">-Annick & Danny</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="ontdeskProjecten">
-        <div class="title">Ontdek onze <span>nieuwe</span> projecten</div>
-        
-        <div class="carousel-container">
-          <div class="mySlides animate">
-            <img src="./assets/images/slider_1.png" alt="slide" />
-          </div>
-  
-          <div class="mySlides animate">
-            <img src="./assets/images/slider_2.png" alt="slide" />
-          </div>
-  
-          <div class="mySlides animate">
-            <img src="./assets/images/slider_3.png" alt="slide" />
-          </div>
-  
-          <div class="mySlides animate">
-            <img src="./assets/images/slider_1.png" alt="slide" />
-          </div>
-  
-          <div class="mySlides animate">
-            <img src="./assets/images/slider_3.png" alt="slide" />
-          </div>
-  
-          <div class="slider_logo">
-            <img src="./assets/images/logowhite.png">
-          </div>
-          <a class="prev" onclick="prevSlide()">&#10094;</a>
-          <a class="next" onclick="nextSlide()">&#10095;</a>
-  
-          <div class="dots-container">
-            <span class="dots" onclick="currentSlide(1)"></span>
-            <span class="dots" onclick="currentSlide(2)"></span>
-            <span class="dots" onclick="currentSlide(3)"></span>
-            <span class="dots" onclick="currentSlide(4)"></span>
-            <span class="dots" onclick="currentSlide(5)"></span>
-          </div>
+        <div class="text text-center">
+          <span>
+            web by <img src="./assets/images/Footer_Symbol.png" alt="footer icon"> RedBit
+            • 2022 • Algemene voorwaarden • Privacy policy&nbsp;•&nbsp;cookie policy
+          </span>
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <div class="meerwaarde">
-        <div class="title">Onze meer<span>waarde</span></div>
-        <div class="item_field">
-          <div class="item">
-            <img src="./assets/images/img1.png">
-            <div class="mid_title">Familiebedrijf</div>
-            <div class="text">
-              We zijn een familiebedrijf met meer dan 40 jaar ervaring in nieuwbouwprojecten.
-              Hierdoor krijg je bij zoektocht naar een nieuwe woonst niet enkel top kwaliteit maar ook een persoonlijke aanpak en correct advies.
-              Enkel zo vind je echt je droomhuis.
-            </div>
-          </div>
-          <div class="item">
-            <img src="./assets/images/img2.png">
-            <div class="mid_title">Afwerking op meat</div>
-            <div class="text">
-              Met onze sleutel-op-de-deur-woningen kan je dan ook de inrichting van je huis bijna volledig zelf bepaien.
-              <br><br>
-              Wij bieden een breed gamma mogelijkheden aan zodat jij jouw nieuwe woonst helemaal naar je/jullie hand kan zetten.
-            </div>
-          </div>
-          <div class="item">
-            <img src="./assets/images/img3.png">
-            <div class="mid_title">Pppg vppr energie</div>
-            <div class="text">
-              De toekomst is voor ons zeer belangrijk. Je koopt namelijk niet elke dag een (droom)huis.
-              <br><br>
-              Al onze nieuwbouwwoningen worden afgeleverd als Bijna Energie Neutrale wongingen (BEN) en hebben alle ruimte voor uw toekomstplannen.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="nood">
-        <div class="title">Nood aan <span>inspiratie</span> ?</div>
-        <div class="item_field">
-          <div class="item">
-            <img src="./assets/images/slider_1.png">
-            <div class="text_field">
-              <div class="yellowField">
-                <div class="text_position">
-                  <div class="text">Bouwstijlen</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="./assets/images/slider_2.png">
-            <div class="text_field">
-              <div class="yellowField">
-                <div class="text_position">
-                  <div class="text">Artikels</div>
-                </div>
-              </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="bevindingen position-relative">
-        <div class="title">
-          Bevingingen van <span>dronmers</span>
-        </div>
-
-        <iframe style="width: 1px; min-width: 100%; height: 293px; border: none; overflow: hidden;" data-default-styles="width: 1px; min-width: 100%; height: 0px; border: none;" scrolling="no" src="https://reviewsonmywebsite.com/embed/v2/tOZ4ng6XqlaVn9cIqgjuE5qjPjTnQckDu6BJkszyL9K9lSV4WX" id="iFrameResizer0"></iframe>
-
-        <!-- <div id="slider-container" class="slider">
-          <div class="slide">
-            <div class="slide_body">
-              <div class="d-flex justify-content-between align-items-star">
-                <div class="d-flex align-items-center userInfo">
-                  <div class="userId gray_color">
-                    EW
-                  </div>
-                  <div class="">
-                    <div class="userName">Eddy Weyn</div>
-                    <div class="d-flex align-items-center">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                    </div>
-                    <div class="date">Mar 24, 2001</div>
-                  </div>
-                </div>
-                <img class="google_icon" src="./assets/images/google_icon.svg" >
-              </div>
-              <div class="details">
-                Heel tevreden....
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide_body">
-              <div class="d-flex justify-content-between align-items-star">
-                <div class="d-flex align-items-center userInfo">
-                  <div class="userId gray_color">
-                    PO
-                  </div>
-                  <div class="">
-                    <div class="userName">Pieter-Ja, Van Opdenbosch</div>
-                    <div class="d-flex align-items-center">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                    </div>
-                    <div class="date">Oct 2, 2020</div>
-                  </div>
-                </div>
-                <img class="google_icon" src="./assets/images/google_icon.svg" >
-              </div>
-              <div class="details">
-                Heel tevreden over de samenwerking met deze firma!
-                Vlottie en open commuicatie, goede opvolging.
-                En supertevreden met het eindresultaat!
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide_body">
-              <div class="d-flex justify-content-between align-items-star">
-                <div class="d-flex align-items-center userInfo">
-                  <div class="userId yellow_color">
-                    SD
-                  </div>
-                  <div class="">
-                    <div class="userName">Sam D</div>
-                    <div class="d-flex align-items-center">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                    </div>
-                    <div class="date">Aug 6, 2020</div>
-                  </div>
-                </div>
-                <img class="google_icon" src="./assets/images/google_icon.svg" >
-              </div>
-              <div class="details">
-                Bij het bezichtigen van de kijkwoning een lastenboek ontvangen met de nodige info over wat voorzie zou zijn in onzem toen nog mogelike, nieuwbouwwoning.
-                Uit het lastenboek blijkt al dat de 'standaard' die men voorziet reeds correcte/degelijke materialen en
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide_body">
-              <div class="d-flex justify-content-between align-items-star">
-                <div class="d-flex align-items-center userInfo">
-                  <div class="userId gray_color">
-                    SW
-                  </div>
-                  <div class="">
-                    <div class="userName">Sddy Weyn</div>
-                    <div class="d-flex align-items-center">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                      <img class="star" src="./assets/images/star.png">
-                    </div>
-                    <div class="date">Mar 10, 2001</div>
-                  </div>
-                </div>
-                <img class="google_icon" src="./assets/images/google_icon.svg" >
-              </div>
-              <div class="details">
-                Heel tevreden....
-              </div>
-            </div>
-          </div>
-          <div onclick="prev()" class="control-prev-btn">
-            <i class="fas fa-chevron-left"></i>
-          </div>
-          <div onclick="next()" class="control-next-btn">
-            <i class="fas fa-chevron-right"></i>
-          </div>
-        </div> -->
-      </div>
-    </div>
-    
-    <div class="emailadres">
-      <div class="container body">
-        <div class="title">Inschrijven op onze nieuwsbrief</div>
-        <div class="d-flex align-items-center">
-          <input type="email" placeholder="E-mailadres" >
-          <button>Inschrijven</button>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <div class="container position-relative">
-        <div class="footer_field">
-          <div class="footer_nav w-30-1">
-              <div class="d-flex align-items-center item">
-                <i class="fas fa-chevron-right"></i>
-                <a href="#" target="_blank" class="d-flex align-items-center">
-                  Home
-                </a>
-              </div>
-              <div class="d-flex align-items-center item">
-                <i class="fas fa-chevron-right"></i>
-                <a href="#" target="_blank" class="d-flex align-items-center">
-                  Inspiratie
-                </a>
-              </div>
-              <div class="d-flex align-items-center item">
-                <i class="fas fa-chevron-right"></i>
-                <a href="#" target="_blank" class="d-flex align-items-center">
-                  Projecten
-                </a>
-              </div>
-              <div class="d-flex align-items-center item">
-                <i class="fas fa-chevron-right"></i>
-                <a href="#" target="_blank" class="d-flex align-items-center">
-                  Over ons
-                </a>
-              </div>
-              <div class="d-flex align-items-center item">
-                <i class="fas fa-chevron-right"></i>
-                <a href="#" target="_blank" class="d-flex align-items-center">
-                  Contact
-                </a>
-              </div>
-              <div class="d-flex align-items-center item">
-                <i class="fas fa-chevron-right"></i>
-                <a href="#" target="_blank" class="d-flex align-items-center">
-                  Samenwerken
-                </a>
-              </div>
-          </div>
-          <div class="footer_logo_field">
-            <img class="footer_logo" src="./assets/images/logowhite.png">
-          </div>
-          <div class="d-flex justify-content-between align-items-center w-30-2">
-            <div class="d-flex flex-column justify-content-end align-items-end w-92">
-              <div class="text">Dorpsdam 16b</div>
-              <div class="text">9120 Vrasene</div>
-            </div>
-            <div class="d-flex flex-column justify-content-between align-items-end">
-              <div class="text">+32 3 775 38 15</div>
-              <div class="text">info@bosmanwoningbouw.be</div>
-              <div class="text">BE 0882.208.664</div>
-            </div>
-          </div>
-        </div>
-        <div class="footer_field1">
-          <img class="footer_logo1" src="./assets/images/footer_logo1.png">
-          <div class="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest"></i>
-          </div>
-        </div>
-        <div class="min_footer_field">
-          <div class="text text-center">
-            <span>
-              © 2019 | Webdesign by 
-              <a href="https://www.my-websitebuilder.com" target="_blank">My-Websitebuilder.com</a>
-              • SEO & SEA by
-              <a href="https://www.opti-seo.com" target="_blank">Opti-Seo.com</a>
-              • Sitemap • Algemene voorwaarden • Cookie policy • Privacy policy • Disclainmer
-            </span>
-          </div>
-        </div>
-
-      </div>
-    </footer>
-
   </body>
+
   <script>
+
     function prev() {
-      document.getElementById('slider-container').scrollLeft -= 470;
+      document.getElementById('slider-container').scrollLeft -= 270;
+    }
+    function next()  {
+      document.getElementById('slider-container').scrollLeft += 270;
     }
 
-    function next() {
-      document.getElementById('slider-container').scrollLeft += 470;
-    }
+    function setButtonListener () {
+      let lang_Buttons = document.querySelectorAll(".lang_item span");
 
-    let slideIndex = 0;
-    showSlides();
-
-    function nextSlide() {
-      slideIndex++;
-      showSlides();
-      timer = _timer;
-    }
-
-    function prevSlide() {
-      slideIndex--;
-      showSlides();
-      timer = _timer;
-    }
-
-    function currentSlide(n) {
-      slideIndex = n - 1;
-      showSlides();
-      timer = _timer;
-    }
-
-    function showSlides() {
-      let slides = document.querySelectorAll(".mySlides");
-      let dots = document.querySelectorAll(".dots");
-
-      if (slideIndex > slides.length - 1) slideIndex = 0;
-      if (slideIndex < 0) slideIndex = slides.length - 1;
-      
-      slides.forEach((slide) => {
-        slide.style.display = "none";
-      });
-      
-      slides[slideIndex].style.display = "block";
-      
-      dots.forEach((dot) => {
-        dot.classList.remove("active");
-      });
-      
-      dots[slideIndex].classList.add("active");
-    }
-
-    let timer = 7; 
-    const _timer = timer;
-
-    setInterval(() => {
-      timer--;
-
-      if (timer < 1) {
-        nextSlide();
-        timer = _timer; 
+      for (let button of lang_Buttons) {
+        button.addEventListener('click', (e) => {
+          const et = e.target;
+          const active = document.querySelector(".lang_active");
+          if (active) {
+            active.classList.remove("lang_active");
+          }
+          et.classList.add("lang_active");
+        });
       }
-    }, 1000); 
-
-
-    
-    function menuClick() {
-      const active = document.querySelector(".navbar2");
-      if(active.classList.contains("active_menu")) {
-        active.classList.remove("active_menu");
-        console.log("dsfsdfsdf")
-      } else 
-      active.classList.add("active_menu");
     }
+
+    document.onload = function () {
+      setButtonListener()
+    }
+    setButtonListener()
   </script>
+
 </html>
