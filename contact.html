@@ -138,9 +138,6 @@
     function setButtonListener () {
 
       let lang_Buttons = document.querySelectorAll(".lang_item span");
-      let sections = document.getElementsByClassName('sections_item');
-      let allContent = document.querySelectorAll('.sections_container');
-      let length = sections.length;
 
       for (let button of lang_Buttons) {
         button.addEventListener('click', (e) => {
@@ -153,24 +150,6 @@
         });
       }
 
-      for(let i = 0; i < length; i += 1) {
-        let section = sections[i]
-        section.onclick = function() {
-          const active = document.querySelectorAll('.active_item')
-          if(active) {
-            active[0].classList.remove('active_item')
-          }
-          section.classList.add('active_item')
-          for (let content of allContent) {
-            if(content.getAttribute('data-number') === section.getAttribute('data-number')) {
-              content.style.display = "block";
-            }
-            else {
-              content.style.display = "none";
-            }
-          }
-        }
-      }
     }
 
     document.onload = function () {

@@ -12,23 +12,86 @@
 .referenties .greenplaces_item {
   margin: 35px 0;
 }
+.referenties .greenplaces_item .item_field {
+  display: flex;
+  justify-content: space-between;
+}
+.referenties .greenplaces_item .item_field .item {
+  width: 50%;
+}
 .referenties .greenplaces_item .title {
   font-size: 25px;
   color: #707070;
 }
-.referenties .greenplaces_item a {
+.referenties .greenplaces_item .text {
+  margin-top: 20px;
+  font-size: 16px;
+  max-width: 75%;
+}
+.referenties .greenplaces_item button {
   font-size: 18px;
+  background-color: white;
+  outline: none;
+  border: none;
   text-decoration: underline;
   text-decoration-color: #97C975;
   text-decoration-thickness: 3px;
   text-underline-offset: 6px;
   color: #707070;
+  box-shadow: none;
+}
+.referenties .greenplaces_item button:focus {
+  box-shadow: none;
 }
 .referenties .border_bottom {
   border-bottom: 2px solid #c5c5c5;
   margin: 50px -65px 0 -65px;
 }
 
+.more_active {
+  display: block;
+}
+.more_nonactive {
+  display: none;
+}
+.margin_top_25 {
+  margin-top: -25px;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .referenties .greenplaces_item .text {
+    max-width: 85%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .referenties .greenplaces_item .text {
+    margin-top: 20px;
+    font-size: 14px;
+    max-width: 95%;
+  }
+  .referenties .greenplaces_item button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .referenties .greenplaces_item .item_field {
+    flex-direction: column;
+  }
+  .referenties .greenplaces_item .item_field .item {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .referenties .greenplaces_item .text {
+    margin-top: 10px;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .margin_top_25 {
+    margin-top: 0px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .referenties {
@@ -45,6 +108,9 @@
   }
   .referenties .border_bottom {
     margin: 30px 0px 0 0px;
+  }
+  .referenties .greenplaces_item button {
+    font-size: 14px;
   }
 }
 
@@ -66,5 +132,12 @@
   }
   .referenties .greenplaces_item a {
     font-size: 12px;
+  }
+  .referenties .greenplaces_item button {
+    font-size: 12px;
+  }
+  .referenties .greenplaces_item .text {
+    margin-top: 5px;
+    font-size: 13px;
   }
 }
